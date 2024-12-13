@@ -1,0 +1,109 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Product">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CustomerName" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerContact" type="xs:string" minOccurs="0" />
+              <xs:element name="InvoiceNo" type="xs:string" minOccurs="0" />
+              <xs:element name="InvoiceDate" type="xs:string" minOccurs="0" />
+              <xs:element name="Subtotal" type="xs:decimal" minOccurs="0" />
+              <xs:element name="SalesTax" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Reference" type="xs:string" minOccurs="0" />
+              <xs:element name="CreditRemaining" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Reaon" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductName" type="xs:string" minOccurs="0" />
+              <xs:element name="Quantity" type="xs:float" minOccurs="0" />
+              <xs:element name="SalesRate" type="xs:decimal" minOccurs="0" />
+              <xs:element name="ItemTotal" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Company">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" type="xs:int" minOccurs="0" />
+              <xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+              <xs:element name="MailingName" type="xs:string" minOccurs="0" />
+              <xs:element name="Country" type="xs:string" minOccurs="0" />
+              <xs:element name="Address" type="xs:string" minOccurs="0" />
+              <xs:element name="City" type="xs:string" minOccurs="0" />
+              <xs:element name="State" type="xs:string" minOccurs="0" />
+              <xs:element name="PinCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Fax" type="xs:string" minOccurs="0" />
+              <xs:element name="Email" type="xs:string" minOccurs="0" />
+              <xs:element name="Website" type="xs:string" minOccurs="0" />
+              <xs:element name="TIN" type="xs:string" minOccurs="0" />
+              <xs:element name="LicenseNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ServiceTaxNo" type="xs:string" minOccurs="0" />
+              <xs:element name="CST" type="xs:string" minOccurs="0" />
+              <xs:element name="PAN" type="xs:string" minOccurs="0" />
+              <xs:element name="CurrencyCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Currency" type="xs:string" minOccurs="0" />
+              <xs:element name="Logo" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="ShowLogo" type="xs:string" minOccurs="0" />
+              <xs:element name="CapitalAccount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="NP" type="xs:int" minOccurs="0" />
+              <xs:element name="QCode" type="xs:string" minOccurs="0" />
+              <xs:element name="BCode" type="xs:string" minOccurs="0" />
+              <xs:element name="InvoiceHeader" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemWiseVAT" type="xs:string" minOccurs="0" />
+              <xs:element name="QTC" type="xs:string" minOccurs="0" />
+              <xs:element name="ZeroPrice" type="xs:string" minOccurs="0" />
+              <xs:element name="BelowCost" type="xs:string" minOccurs="0" />
+              <xs:element name="ActiveBelow" type="xs:string" minOccurs="0" />
+              <xs:element name="wscalable" type="xs:boolean" minOccurs="0" />
+              <xs:element name="pscalable" type="xs:boolean" minOccurs="0" />
+              <xs:element name="MultiCurrencyReceipt" type="xs:boolean" minOccurs="0" />
+              <xs:element name="ShowMultiCurrency" type="xs:boolean" minOccurs="0" />
+              <xs:element name="VatNo" type="xs:string" minOccurs="0" />
+              <xs:element name="RevMaxKey" type="xs:string" minOccurs="0" />
+              <xs:element name="ShowDiscount" type="xs:boolean" minOccurs="0" />
+              <xs:element name="EnableRevMax" type="xs:boolean" minOccurs="0" />
+              <xs:element name="selnegative" type="xs:boolean" minOccurs="0" />
+              <xs:element name="patchinter" type="xs:boolean" minOccurs="0" />
+              <xs:element name="cash" type="xs:boolean" minOccurs="0" />
+              <xs:element name="autoprint" type="xs:boolean" minOccurs="0" />
+              <xs:element name="textprinting" type="xs:boolean" minOccurs="0" />
+              <xs:element name="autoprintshift" type="xs:boolean" minOccurs="0" />
+              <xs:element name="vat_display" type="xs:boolean" minOccurs="0" />
+              <xs:element name="resturantui" type="xs:boolean" minOccurs="0" />
+              <xs:element name="Ishavanozimra" type="xs:boolean" minOccurs="0" />
+              <xs:element name="havanozimrakey" type="xs:string" minOccurs="0" />
+              <xs:element name="Ishavanozra" type="xs:boolean" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Customer">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CC_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="CustomerID" type="xs:string" minOccurs="0" />
+              <xs:element name="Name" type="xs:string" minOccurs="0" />
+              <xs:element name="ContactNo" type="xs:string" minOccurs="0" />
+              <xs:element name="Address" type="xs:string" minOccurs="0" />
+              <xs:element name="TRN" type="xs:string" minOccurs="0" />
+              <xs:element name="RegistrationDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Active" type="xs:string" minOccurs="0" />
+              <xs:element name="RateType" type="xs:string" minOccurs="0" />
+              <xs:element name="Discount" type="xs:int" minOccurs="0" />
+              <xs:element name="TradeName" type="xs:string" minOccurs="0" />
+              <xs:element name="Street" type="xs:string" minOccurs="0" />
+              <xs:element name="Email" type="xs:string" minOccurs="0" />
+              <xs:element name="VatNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="Province" type="xs:string" minOccurs="0" />
+              <xs:element name="HouseNo" type="xs:int" minOccurs="0" />
+              <xs:element name="City" type="xs:string" minOccurs="0" />
+              <xs:element name="Cuspin" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
