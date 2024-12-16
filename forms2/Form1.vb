@@ -49,7 +49,7 @@ Public Class Form1
                     If msgresponse Then
                         pnlsqlsettings.Visible = True
                         pnl_login.Visible = False
-                        ServerEnumerationAsync().Wait()
+                        Await ServerEnumerationAsync()
                         Return
                     End If
                 End If
@@ -60,7 +60,8 @@ Public Class Form1
                 If msgresponse Then
                     pnlsqlsettings.Visible = True
                     pnl_login.Visible = False
-                    ServerEnumerationAsync().Wait()
+                    pnlsqlsettings.Visible = True
+                    ' GoTo 11 'ServerEnumerationAsync().Wait()
                     Return
                 Else
                     End
@@ -70,7 +71,7 @@ Public Class Form1
         Else
             pnlsqlsettings.Visible = True
             pnl_login.Visible = False
-            Await ServerEnumerationAsync()
+11:         Await ServerEnumerationAsync()
             Return
         End If
         pnlsqlsettings.Visible = False

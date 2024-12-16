@@ -454,6 +454,7 @@
     <Compile Include="forms\GLOBAL_VARIABLES.vb" />
     <Compile Include="forms\Glob_var.vb" />
     <Compile Include="forms\ModFunc.vb" />
+    <Compile Include="forms\Module1.vb" />
     <Compile Include="forms\variableModule1.vb" />
     <Compile Include="frmdgwrecords.Designer.vb">
       <DependentUpon>frmdgwrecords.vb</DependentUpon>
