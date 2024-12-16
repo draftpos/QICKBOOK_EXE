@@ -19,10 +19,13 @@ SELECT
     i.BalanceRemaining AS TotalAmount,
     i.Currency AS InvoiceCurrency,
     i.TxnId AS Reference,
+'Reason' as Reason,
     it.Name AS ProductName,
     it.Qty AS Quantity,
     it.Rate AS SalesRate,
-    it.Amount AS ItemTotal
+    it.Amount AS ItemTotal,
+    it.Vat AS vatstat 
+
 FROM 
     [dbo].[Invoice] i
 INNER JOIN 
@@ -138,21 +141,23 @@ WHERE
         frmReport.Dispose()
         Dim queryproductand_info As String = $"
 SELECT 
-    c.sClientName AS CustomerName,
+      c.sClientName AS CustomerName,
     c.sPhone AS CustomerContact,
     i.CreditNoteNumber AS InvoiceNo,
     i.TxnDate AS InvoiceDate,
     i.Subtotal AS Subtotal,
     i.SalesTaxTotal AS SalesTax,
     i.TotalAmount AS TotalAmount,
+'$' AS InvoiceCurrency,
       i.TxnId AS Reference,
       i.CreditRemaining AS CreditRemaining,
 i.Message As Reaon,
     it.Name AS ProductName,
     it.Qty AS Quantity,
     it.Rate AS SalesRate,
-    it.Amount AS ItemTotal
-FROM 
+    it.Amount AS ItemTotal,
+ it.Vat AS vatstat 
+  FROM 
     [dbo].[CreditMemo] i
 INNER JOIN 
     [dbo].[Customer] c ON i.CustomerListId = c.sClientCode
@@ -233,8 +238,8 @@ WHERE
             ' myDA.Fill(myDS, "Invoice_Payment")
             myDA1.Fill(myDS, "Company")
             myda4.Fill(myDS, "Customer")
-            '    myDS.WriteXmlSchema("creditnotel.xml")
-            myDS.WriteXmlSchema("crys_xml.xml")
+            myDS.WriteXmlSchema("creditnotel.xml")
+            'myDS.WriteXmlSchema("crys_xml.xml")
             rpt.Subreports(0).SetDataSource(myDS)
             rpt.Subreports(1).SetDataSource(myDS)
             rpt.Subreports(2).SetDataSource(myDS)
@@ -258,6 +263,7 @@ WHERE
         sql = "IF NOT EXISTS (SELECT * FROM sys.tables WHERE name = 'Company') " &
               "BEGIN " &
               "CREATE TABLE [dbo].[Company] (" &
+              "[Id] [int] IDENTITY(1,1) NOT NULL," &
               "[CompanyName] NVARCHAR(255)," &
               "[MailingName] NVARCHAR(255)," &
               "[Country] NVARCHAR(255)," &
@@ -288,10 +294,11 @@ WHERE
               "[BCode] NVARCHAR(10)," &
               "[Website] NVARCHAR(255)," &
               "[TIN] NVARCHAR(50)," &
-              "[Logo] VARBINARY(MAX)," &
+             "[Logo] IMAGE," &
               "[ItemWiseVAT] NVARCHAR(10)," &
+              "[QTC] [nvarchar](max) NULL," &
               "[ServiceTaxNo] NVARCHAR(50)" &
-              ") END"
+                            ") END"
 
         Dim dt As DataTable = Crud(sql, Nothing)
 

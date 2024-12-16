@@ -490,7 +490,7 @@ Partial Class Form1
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(430, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(310, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -504,19 +504,19 @@ Partial Class Form1
         'CompanyInfoToolStripMenuItem
         '
         Me.CompanyInfoToolStripMenuItem.Name = "CompanyInfoToolStripMenuItem"
-        Me.CompanyInfoToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CompanyInfoToolStripMenuItem.Size = New System.Drawing.Size(163, 22)
         Me.CompanyInfoToolStripMenuItem.Text = "Company Info"
         '
         'SubmissionToolStripMenuItem
         '
         Me.SubmissionToolStripMenuItem.Name = "SubmissionToolStripMenuItem"
-        Me.SubmissionToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SubmissionToolStripMenuItem.Size = New System.Drawing.Size(163, 22)
         Me.SubmissionToolStripMenuItem.Text = "Print Credit Note"
         '
         'PrintInvoicePdfToolStripMenuItem
         '
         Me.PrintInvoicePdfToolStripMenuItem.Name = "PrintInvoicePdfToolStripMenuItem"
-        Me.PrintInvoicePdfToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PrintInvoicePdfToolStripMenuItem.Size = New System.Drawing.Size(163, 22)
         Me.PrintInvoicePdfToolStripMenuItem.Text = "Print Invoice Pdf"
         '
         'UsersToolStripMenuItem
@@ -540,10 +540,10 @@ Partial Class Form1
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(899, 473)
         Me.ControlBox = False
-        Me.Controls.Add(Me.pnlsqlsettings)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.pnl_login)
         Me.Controls.Add(Me.pnlmenu)
+        Me.Controls.Add(Me.pnlsqlsettings)
         Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1

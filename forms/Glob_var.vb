@@ -15,19 +15,17 @@ Module Glob_var
     Public rdr1 As SqlDataReader = Nothing
     Function getOrgName() As Company
         Try
-            Using con As New SqlConnection(cs)
-                con.Open()
-                Using cmd As SqlCommand = con.CreateCommand()
-                    cmd.CommandText = "SELECT * FROM Company"
-                    Using reader As SqlDataReader = cmd.ExecuteReader()
-                        If reader.Read() Then
-                            Dim showlog As Boolean
-                            If LCase(reader("ShowLogo").ToString().Trim()) = "yes" Then
-                                showlog = True
-                            Else
-                                showlog = False
-                            End If
-                            Dim company As New Company() With {
+            'MsgBox(cs)
+            dt = Crud("Select * from Company", Nothing)
+            'MsgBox(dt(0)(0).ToString())
+            For Each reader As DataRow In dt.Rows
+                Dim showlog As Boolean
+                If LCase(reader("ShowLogo").ToString().Trim()) = "yes" Then
+                showlog = True
+            Else
+                showlog = False
+            End If
+                Dim company As New Company() With {
                                 .CompanyName = If(IsDBNull(reader("CompanyName")), "", reader("CompanyName").ToString()),
                                 .MailingName = If(IsDBNull(reader("MailingName")), "", reader("MailingName").ToString()),
                                 .Country = If(IsDBNull(reader("Country")), "", reader("Country").ToString()),
@@ -35,56 +33,25 @@ Module Glob_var
                                 .City = If(IsDBNull(reader("City")), "", reader("City").ToString()),
                                 .State = If(IsDBNull(reader("State")), "", reader("State").ToString()),
                                 .PinCode = If(IsDBNull(reader("PinCode")), "", reader("PinCode").ToString()),
-                                .ContactNo = If(IsDBNull(reader("ContactNo")), "", reader("ContactNo").ToString()),
-                                .Fax = If(IsDBNull(reader("Fax")), "", reader("Fax").ToString()),
+                                .ContactNo = If(IsDBNull(reader("ContactNo")), "", reader("ContactNo").ToString()),' .Fax = If(IsDBNull(reader("Fax")), "", reader("Fax").ToString()),
                                 .Email = If(IsDBNull(reader("Email")), "", reader("Email").ToString()),
                                 .Website = If(IsDBNull(reader("Website")), "", reader("Website").ToString()),
                                 .TIN = If(IsDBNull(reader("TIN")), "", reader("TIN").ToString()),
-                                .LicenseNo = If(IsDBNull(reader("LicenseNo")), "", reader("LicenseNo").ToString()),
-                                .ServiceTaxNo = If(IsDBNull(reader("ServiceTaxNo")), "", reader("ServiceTaxNo").ToString()),
-                                .CST = If(IsDBNull(reader("CST")), "", reader("CST").ToString()),
-                                .PAN = If(IsDBNull(reader("PAN")), "", reader("PAN").ToString()),
-                                .CurrencyCode = If(IsDBNull(reader("CurrencyCode")), "", reader("CurrencyCode").ToString()),
-                                .Currency = If(IsDBNull(reader("Currency")), "", reader("Currency").ToString()),
+                                                              .ServiceTaxNo = If(IsDBNull(reader("ServiceTaxNo")), "", reader("ServiceTaxNo").ToString()),
+                                                              .CurrencyCode = If(IsDBNull(reader("CurrencyCode")), "", reader("CurrencyCode").ToString()),
                                 .Logo = If(IsDBNull(reader("Logo")), Nothing, DirectCast(reader("Logo"), Byte())),
                                 .ShowLogo = showlog, ' SafeConvertToBoolean(reader("ShowLogo")),
-                                .CapitalAccount = If(IsDBNull(reader("CapitalAccount")), "", reader("CapitalAccount").ToString()),
-                                .NP = If(IsDBNull(reader("NP")), "", reader("NP").ToString()),
-                                .QCode = If(IsDBNull(reader("QCode")), "", reader("QCode").ToString()),
-                                .BCode = If(IsDBNull(reader("BCode")), "", reader("BCode").ToString()),
-                                .InvoiceHeader = If(IsDBNull(reader("InvoiceHeader")), "", reader("InvoiceHeader").ToString()),
+                                 .InvoiceHeader = If(IsDBNull(reader("InvoiceHeader")), "", reader("InvoiceHeader").ToString()),
                                 .ItemWiseVAT = SafeConvertToBoolean(reader("ItemWiseVAT")),
                                 .QTC = If(IsDBNull(reader("QTC")), "", reader("QTC").ToString()),
-                                .ZeroPrice = SafeConvertToBoolean(reader("ZeroPrice")),
-                                .BelowCost = SafeConvertToBoolean(reader("BelowCost")),
-                                .ActiveBelow = SafeConvertToBoolean(reader("ActiveBelow")),
-                                .wscalable = SafeConvertToBoolean(reader("wscalable")),
-                                .pscalable = SafeConvertToBoolean(reader("pscalable")),
-                                .MultiCurrencyReceipt = SafeConvertToBoolean(reader("MultiCurrencyReceipt")),
-                                .ShowMultiCurrency = SafeConvertToBoolean(reader("ShowMultiCurrency")),
-                                .VatNo = If(IsDBNull(reader("VatNo")), "", reader("VatNo").ToString()),
-                                .RevMaxKey = If(IsDBNull(reader("RevMaxKey")), "", reader("RevMaxKey").ToString()),
-                                .ShowDiscount = SafeConvertToBoolean(reader("ShowDiscount")),
-                                .EnableRevMax = SafeConvertToBoolean(reader("EnableRevMax")),
-                                .selnegative = SafeConvertToBoolean(reader("selnegative")),
-                                .patchinter = SafeConvertToBoolean(reader("patchinter")),
-                                .autoprint = SafeConvertToBoolean(reader("autoprint")),
-                                .autoprintshift = SafeConvertToBoolean(reader("autoprintshift")),
-                                .textprinting = SafeConvertToBoolean(reader("textprinting")),
-                                .vat_display = SafeConvertToBoolean(reader("vat_display")),
-                                .resturantui = SafeConvertToBoolean(reader("resturantui")),
-                                .cash = SafeConvertToBoolean(reader("cash"))
+                                                                .VatNo = If(IsDBNull(reader("VatNo")), "", reader("VatNo").ToString())
                             }
-                            Return company
-                        Else
-                            Return Nothing
-                        End If
+                Return company
 
-                    End Using
-                End Using
-            End Using
+            Next
+            '   Else
         Catch ex As Exception
-            ' Handle the exception as needed, possibly logging it
+            MsgBox(ex.ToString())
             Return Nothing
         End Try
     End Function
