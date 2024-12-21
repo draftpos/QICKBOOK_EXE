@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frm_credinot_lst
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,11 +20,11 @@ Partial Class frm_credinot_lst
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle12 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle11 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.GelButton2 = New GelButtons.GelButton()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
@@ -32,6 +32,7 @@ Partial Class frm_credinot_lst
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.GelButton1 = New GelButtons.GelButton()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.dgw = New System.Windows.Forms.DataGridView()
@@ -39,8 +40,15 @@ Partial Class frm_credinot_lst
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.lbltotalvat = New System.Windows.Forms.Label()
+        Me.lbltotalExcl = New System.Windows.Forms.Label()
+        Me.lbltotalsum = New System.Windows.Forms.Label()
         Me.Panel2.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.dgw, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,7 +64,7 @@ Partial Class frm_credinot_lst
         Me.GelButton2.GradientBottom = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.GelButton2.GradientTop = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.GelButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.GelButton2.Location = New System.Drawing.Point(795, 6)
+        Me.GelButton2.Location = New System.Drawing.Point(822, 3)
         Me.GelButton2.Name = "GelButton2"
         Me.GelButton2.Size = New System.Drawing.Size(103, 34)
         Me.GelButton2.TabIndex = 398
@@ -69,9 +77,9 @@ Partial Class frm_credinot_lst
         Me.DateTimePicker2.CustomFormat = "31-12-2024"
         Me.DateTimePicker2.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker2.Location = New System.Drawing.Point(616, 9)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(617, 9)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(165, 23)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(187, 23)
         Me.DateTimePicker2.TabIndex = 5
         Me.DateTimePicker2.Value = New Date(2024, 12, 10, 0, 0, 0, 0)
         '
@@ -80,9 +88,9 @@ Partial Class frm_credinot_lst
         Me.DateTimePicker1.CustomFormat = "31-12-2024"
         Me.DateTimePicker1.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(387, 14)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(370, 12)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(165, 23)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(187, 23)
         Me.DateTimePicker1.TabIndex = 4
         Me.DateTimePicker1.Value = New Date(2024, 12, 10, 0, 0, 0, 0)
         '
@@ -90,7 +98,7 @@ Partial Class frm_credinot_lst
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(558, 14)
+        Me.Label3.Location = New System.Drawing.Point(559, 14)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(52, 16)
         Me.Label3.TabIndex = 3
@@ -100,7 +108,7 @@ Partial Class frm_credinot_lst
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(314, 16)
+        Me.Label2.Location = New System.Drawing.Point(297, 14)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(67, 16)
         Me.Label2.TabIndex = 2
@@ -110,7 +118,7 @@ Partial Class frm_credinot_lst
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(11, 16)
+        Me.Label1.Location = New System.Drawing.Point(-2, 13)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(116, 16)
         Me.Label1.TabIndex = 0
@@ -119,6 +127,7 @@ Partial Class frm_credinot_lst
         'Panel2
         '
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.GelButton1)
         Me.Panel2.Controls.Add(Me.GelButton2)
         Me.Panel2.Controls.Add(Me.DateTimePicker2)
         Me.Panel2.Controls.Add(Me.DateTimePicker1)
@@ -129,25 +138,49 @@ Partial Class frm_credinot_lst
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(903, 48)
+        Me.Panel2.Size = New System.Drawing.Size(1176, 48)
         Me.Panel2.TabIndex = 0
+        '
+        'GelButton1
+        '
+        Me.GelButton1.BackColor = System.Drawing.Color.SteelBlue
+        Me.GelButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GelButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.GelButton1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.GelButton1.ForeColor = System.Drawing.Color.White
+        Me.GelButton1.GradientBottom = System.Drawing.Color.Black
+        Me.GelButton1.GradientTop = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.GelButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.GelButton1.Location = New System.Drawing.Point(931, 3)
+        Me.GelButton1.Name = "GelButton1"
+        Me.GelButton1.Size = New System.Drawing.Size(103, 34)
+        Me.GelButton1.TabIndex = 400
+        Me.GelButton1.Text = "Export Excel"
+        Me.GelButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.GelButton1.UseVisualStyleBackColor = False
         '
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(133, 11)
+        Me.TextBox1.Location = New System.Drawing.Point(120, 8)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(175, 23)
         Me.TextBox1.TabIndex = 1
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.lbltotalsum)
+        Me.Panel1.Controls.Add(Me.lbltotalExcl)
+        Me.Panel1.Controls.Add(Me.lbltotalvat)
+        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Controls.Add(Me.Label5)
+        Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.dgw)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(903, 450)
+        Me.Panel1.Size = New System.Drawing.Size(1176, 468)
         Me.Panel1.TabIndex = 1
         '
         'dgw
@@ -161,24 +194,24 @@ Partial Class frm_credinot_lst
         Me.dgw.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.dgw.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders
         Me.dgw.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.[Single]
-        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        DataGridViewCellStyle4.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgw.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Trebuchet MS", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgw.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle10
         Me.dgw.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgw.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column6, Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
-        DataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle6.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Green
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.dgw.DefaultCellStyle = DataGridViewCellStyle6
+        Me.dgw.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column6, Me.Column1, Me.Column2, Me.Column3, Me.Column7, Me.Column4, Me.Column5})
+        DataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.Green
+        DataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.dgw.DefaultCellStyle = DataGridViewCellStyle12
         Me.dgw.Location = New System.Drawing.Point(0, 44)
         Me.dgw.MultiSelect = False
         Me.dgw.Name = "dgw"
@@ -186,7 +219,7 @@ Partial Class frm_credinot_lst
         Me.dgw.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
         Me.dgw.RowTemplate.Height = 33
         Me.dgw.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgw.Size = New System.Drawing.Size(903, 406)
+        Me.dgw.Size = New System.Drawing.Size(1176, 341)
         Me.dgw.TabIndex = 1
         '
         'Column6
@@ -210,12 +243,18 @@ Partial Class frm_credinot_lst
         '
         'Column3
         '
-        DataGridViewCellStyle5.Format = "d"
-        DataGridViewCellStyle5.NullValue = Nothing
-        Me.Column3.DefaultCellStyle = DataGridViewCellStyle5
+        DataGridViewCellStyle11.Format = "d"
+        DataGridViewCellStyle11.NullValue = Nothing
+        Me.Column3.DefaultCellStyle = DataGridViewCellStyle11
         Me.Column3.HeaderText = "Date"
         Me.Column3.Name = "Column3"
         Me.Column3.ReadOnly = True
+        '
+        'Column7
+        '
+        Me.Column7.HeaderText = "Vat"
+        Me.Column7.Name = "Column7"
+        Me.Column7.ReadOnly = True
         '
         'Column4
         '
@@ -229,12 +268,78 @@ Partial Class frm_credinot_lst
         Me.Column5.Name = "Column5"
         Me.Column5.ReadOnly = True
         '
+        'Label4
+        '
+        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(895, 388)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(90, 24)
+        Me.Label4.TabIndex = 2
+        Me.Label4.Text = "Total Vat"
+        '
+        'Label5
+        '
+        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(894, 413)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(106, 24)
+        Me.Label5.TabIndex = 3
+        Me.Label5.Text = "Total Excl."
+        '
+        'Label6
+        '
+        Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(893, 439)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(142, 24)
+        Me.Label6.TabIndex = 4
+        Me.Label6.Text = "Total Summary"
+        '
+        'lbltotalvat
+        '
+        Me.lbltotalvat.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbltotalvat.AutoSize = True
+        Me.lbltotalvat.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbltotalvat.Location = New System.Drawing.Point(1039, 388)
+        Me.lbltotalvat.Name = "lbltotalvat"
+        Me.lbltotalvat.Size = New System.Drawing.Size(77, 21)
+        Me.lbltotalvat.TabIndex = 5
+        Me.lbltotalvat.Text = "Total Vat"
+        '
+        'lbltotalExcl
+        '
+        Me.lbltotalExcl.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbltotalExcl.AutoSize = True
+        Me.lbltotalExcl.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbltotalExcl.Location = New System.Drawing.Point(1039, 414)
+        Me.lbltotalExcl.Name = "lbltotalExcl"
+        Me.lbltotalExcl.Size = New System.Drawing.Size(91, 21)
+        Me.lbltotalExcl.TabIndex = 6
+        Me.lbltotalExcl.Text = "Total Excl."
+        '
+        'lbltotalsum
+        '
+        Me.lbltotalsum.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbltotalsum.AutoSize = True
+        Me.lbltotalsum.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbltotalsum.Location = New System.Drawing.Point(1039, 443)
+        Me.lbltotalsum.Name = "lbltotalsum"
+        Me.lbltotalsum.Size = New System.Drawing.Size(124, 21)
+        Me.lbltotalsum.TabIndex = 7
+        Me.lbltotalsum.Text = "Total Summary"
+        '
         'frm_credinot_lst
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(903, 450)
+        Me.ClientSize = New System.Drawing.Size(1176, 468)
         Me.Controls.Add(Me.Panel1)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -245,6 +350,7 @@ Partial Class frm_credinot_lst
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         CType(Me.dgw, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -264,6 +370,14 @@ Partial Class frm_credinot_lst
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents GelButton1 As GelButtons.GelButton
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents lbltotalsum As Label
+    Friend WithEvents lbltotalExcl As Label
+    Friend WithEvents lbltotalvat As Label
 End Class

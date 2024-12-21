@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SqlClient
 Imports System.Drawing.Printing
-Imports System.IO : Imports WinFormsApp1.STANNIC_POS.Reports
+Imports System.IO
 Imports System.Text
 Imports Microsoft.Win32
 Imports System.Management

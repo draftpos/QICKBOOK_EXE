@@ -12,4 +12,5 @@ Module Module1
     Public dtable, dtable1, dtable2, dtable3, dtable4 As DataTable
     Public TempFileNames2, TempFileNames3 As String
     Public rdr1 As SqlDataReader = Nothing
+    Public saveFileDialog As New SaveFileDialog()
 End Module

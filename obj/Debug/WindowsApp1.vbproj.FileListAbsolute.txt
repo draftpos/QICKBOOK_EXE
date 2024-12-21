@@ -405,3 +405,14 @@ C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\obj\Debug\WindowsA.0BF8
 C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\obj\Debug\WindowsApp1.exe
 C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\obj\Debug\WindowsApp1.xml
 C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\obj\Debug\WindowsApp1.pdb
+C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\EPPlus.dll
+C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\EPPlus.Interfaces.dll
+C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\EPPlus.System.Drawing.dll
+C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\System.Drawing.Common.dll
+C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\EPPlus.xml
+C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\System.Drawing.Common.pdb
+C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\System.Drawing.Common.xml

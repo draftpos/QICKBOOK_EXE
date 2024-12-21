@@ -32,10 +32,12 @@ Partial Class frmdgwrecords
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.GelButton1 = New GelButtons.GelButton()
         Me.GelButton2 = New GelButtons.GelButton()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
@@ -43,6 +45,14 @@ Partial Class frmdgwrecords
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.lbltotalsum = New System.Windows.Forms.Label()
+        Me.lbltotalExcl = New System.Windows.Forms.Label()
+        Me.lbltotalvat = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         CType(Me.dgw, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -50,12 +60,18 @@ Partial Class frmdgwrecords
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.lbltotalsum)
+        Me.Panel1.Controls.Add(Me.lbltotalExcl)
+        Me.Panel1.Controls.Add(Me.lbltotalvat)
+        Me.Panel1.Controls.Add(Me.Label6)
+        Me.Panel1.Controls.Add(Me.Label5)
+        Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.dgw)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(906, 450)
+        Me.Panel1.Size = New System.Drawing.Size(1134, 450)
         Me.Panel1.TabIndex = 0
         '
         'dgw
@@ -78,7 +94,7 @@ Partial Class frmdgwrecords
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgw.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgw.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgw.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column6, Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column7})
+        Me.dgw.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column6, Me.Column1, Me.Column2, Me.Column3, Me.Column8, Me.Column4, Me.Column5, Me.Column7})
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -94,7 +110,7 @@ Partial Class frmdgwrecords
         Me.dgw.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
         Me.dgw.RowTemplate.Height = 33
         Me.dgw.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgw.Size = New System.Drawing.Size(906, 406)
+        Me.dgw.Size = New System.Drawing.Size(1134, 323)
         Me.dgw.TabIndex = 1
         '
         'Column6
@@ -125,6 +141,12 @@ Partial Class frmdgwrecords
         Me.Column3.Name = "Column3"
         Me.Column3.ReadOnly = True
         '
+        'Column8
+        '
+        Me.Column8.HeaderText = "Vat"
+        Me.Column8.Name = "Column8"
+        Me.Column8.ReadOnly = True
+        '
         'Column4
         '
         Me.Column4.HeaderText = "Sub Total"
@@ -146,6 +168,9 @@ Partial Class frmdgwrecords
         'Panel2
         '
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel2.Controls.Add(Me.ComboBox1)
+        Me.Panel2.Controls.Add(Me.Label7)
+        Me.Panel2.Controls.Add(Me.GelButton1)
         Me.Panel2.Controls.Add(Me.GelButton2)
         Me.Panel2.Controls.Add(Me.DateTimePicker2)
         Me.Panel2.Controls.Add(Me.DateTimePicker1)
@@ -156,8 +181,26 @@ Partial Class frmdgwrecords
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(906, 48)
+        Me.Panel2.Size = New System.Drawing.Size(1134, 48)
         Me.Panel2.TabIndex = 0
+        '
+        'GelButton1
+        '
+        Me.GelButton1.BackColor = System.Drawing.Color.SteelBlue
+        Me.GelButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.GelButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.GelButton1.Font = New System.Drawing.Font("Segoe UI Semibold", 10.0!, System.Drawing.FontStyle.Bold)
+        Me.GelButton1.ForeColor = System.Drawing.Color.White
+        Me.GelButton1.GradientBottom = System.Drawing.Color.Black
+        Me.GelButton1.GradientTop = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.GelButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.GelButton1.Location = New System.Drawing.Point(1018, 6)
+        Me.GelButton1.Name = "GelButton1"
+        Me.GelButton1.Size = New System.Drawing.Size(103, 34)
+        Me.GelButton1.TabIndex = 399
+        Me.GelButton1.Text = "Export Excel"
+        Me.GelButton1.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.GelButton1.UseVisualStyleBackColor = False
         '
         'GelButton2
         '
@@ -169,7 +212,7 @@ Partial Class frmdgwrecords
         Me.GelButton2.GradientBottom = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.GelButton2.GradientTop = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.GelButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.GelButton2.Location = New System.Drawing.Point(799, 6)
+        Me.GelButton2.Location = New System.Drawing.Point(909, 6)
         Me.GelButton2.Name = "GelButton2"
         Me.GelButton2.Size = New System.Drawing.Size(103, 34)
         Me.GelButton2.TabIndex = 398
@@ -182,9 +225,9 @@ Partial Class frmdgwrecords
         Me.DateTimePicker2.CustomFormat = "31-12-2024"
         Me.DateTimePicker2.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker2.Location = New System.Drawing.Point(616, 14)
+        Me.DateTimePicker2.Location = New System.Drawing.Point(764, 14)
         Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(165, 23)
+        Me.DateTimePicker2.Size = New System.Drawing.Size(121, 23)
         Me.DateTimePicker2.TabIndex = 5
         Me.DateTimePicker2.Value = New Date(2024, 12, 10, 0, 0, 0, 0)
         '
@@ -193,9 +236,9 @@ Partial Class frmdgwrecords
         Me.DateTimePicker1.CustomFormat = "31-12-2024"
         Me.DateTimePicker1.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.DateTimePicker1.Location = New System.Drawing.Point(387, 14)
+        Me.DateTimePicker1.Location = New System.Drawing.Point(568, 14)
         Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(165, 23)
+        Me.DateTimePicker1.Size = New System.Drawing.Size(121, 23)
         Me.DateTimePicker1.TabIndex = 4
         Me.DateTimePicker1.Value = New Date(2024, 12, 10, 0, 0, 0, 0)
         '
@@ -203,7 +246,7 @@ Partial Class frmdgwrecords
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(558, 14)
+        Me.Label3.Location = New System.Drawing.Point(706, 17)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(52, 16)
         Me.Label3.TabIndex = 3
@@ -213,7 +256,7 @@ Partial Class frmdgwrecords
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(314, 16)
+        Me.Label2.Location = New System.Drawing.Point(495, 16)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(67, 16)
         Me.Label2.TabIndex = 2
@@ -222,27 +265,111 @@ Partial Class frmdgwrecords
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(107, 13)
+        Me.TextBox1.Location = New System.Drawing.Point(339, 14)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(201, 23)
+        Me.TextBox1.Size = New System.Drawing.Size(150, 23)
         Me.TextBox1.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(7, 14)
+        Me.Label1.Location = New System.Drawing.Point(239, 15)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(96, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Invoice Number"
+        '
+        'lbltotalsum
+        '
+        Me.lbltotalsum.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbltotalsum.AutoSize = True
+        Me.lbltotalsum.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbltotalsum.Location = New System.Drawing.Point(986, 425)
+        Me.lbltotalsum.Name = "lbltotalsum"
+        Me.lbltotalsum.Size = New System.Drawing.Size(124, 21)
+        Me.lbltotalsum.TabIndex = 13
+        Me.lbltotalsum.Text = "Total Summary"
+        '
+        'lbltotalExcl
+        '
+        Me.lbltotalExcl.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbltotalExcl.AutoSize = True
+        Me.lbltotalExcl.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbltotalExcl.Location = New System.Drawing.Point(986, 396)
+        Me.lbltotalExcl.Name = "lbltotalExcl"
+        Me.lbltotalExcl.Size = New System.Drawing.Size(91, 21)
+        Me.lbltotalExcl.TabIndex = 12
+        Me.lbltotalExcl.Text = "Total Excl."
+        '
+        'lbltotalvat
+        '
+        Me.lbltotalvat.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbltotalvat.AutoSize = True
+        Me.lbltotalvat.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbltotalvat.Location = New System.Drawing.Point(986, 370)
+        Me.lbltotalvat.Name = "lbltotalvat"
+        Me.lbltotalvat.Size = New System.Drawing.Size(77, 21)
+        Me.lbltotalvat.TabIndex = 11
+        Me.lbltotalvat.Text = "Total Vat"
+        '
+        'Label6
+        '
+        Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(840, 421)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(142, 24)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "Total Summary"
+        '
+        'Label5
+        '
+        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(841, 395)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(106, 24)
+        Me.Label5.TabIndex = 9
+        Me.Label5.Text = "Total Excl."
+        '
+        'Label4
+        '
+        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(842, 370)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(90, 24)
+        Me.Label4.TabIndex = 8
+        Me.Label4.Text = "Total Vat"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(11, 17)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(91, 16)
+        Me.Label7.TabIndex = 404
+        Me.Label7.Text = "Filter Currency"
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(108, 14)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(132, 21)
+        Me.ComboBox1.TabIndex = 405
         '
         'frmdgwrecords
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(906, 450)
+        Me.ClientSize = New System.Drawing.Size(1134, 450)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
@@ -251,6 +378,7 @@ Partial Class frmdgwrecords
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         CType(Me.dgw, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
@@ -267,12 +395,22 @@ Partial Class frmdgwrecords
     Friend WithEvents Label1 As Label
     Friend WithEvents DateTimePicker2 As DateTimePicker
     Friend WithEvents dgw As DataGridView
+    Friend WithEvents GelButton2 As GelButtons.GelButton
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
     Friend WithEvents Column4 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
-    Friend WithEvents GelButton2 As GelButtons.GelButton
+    Friend WithEvents GelButton1 As GelButtons.GelButton
+    Friend WithEvents lbltotalsum As Label
+    Friend WithEvents lbltotalExcl As Label
+    Friend WithEvents lbltotalvat As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label7 As Label
+    Friend WithEvents ComboBox1 As ComboBox
 End Class

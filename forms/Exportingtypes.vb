@@ -1,7 +1,9 @@
 ﻿Imports iTextSharp.text
 Imports iTextSharp.text.pdf
 Imports System.Data.SqlClient
-Imports System.IO : Imports WinFormsApp1.STANNIC_POS.Reports
+Imports System.IO
+Imports Microsoft.Office.Interop
+Imports Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6
 
 Module Exportingtypes
     Public advancesettingsvar As advancesetting = GetAdvanceSettings()
@@ -72,6 +74,51 @@ Module Exportingtypes
         End Using
         Return settings
     End Function
+    Sub ExportExcel(ByVal st As Object)
+        Dim officeType As Type = Type.GetTypeFromProgID("Excel.Application")
+        If officeType Is Nothing Then
+            MessageBox.Show("Microsoft Excel is not installed in this PC.", "", MessageBoxButtons.OK, MessageBoxIcon.Stop)
+            Exit Sub
+        End If
+        Dim rowsTotal, colsTotal As Short
+        Dim I, j, iC As Short
+        System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.WaitCursor
+        Dim xlApp As New Excel.Application
+        Try
+            Dim excelBook As Excel.Workbook = xlApp.Workbooks.Add
+            Dim excelWorksheet As Excel.Worksheet = CType(excelBook.Worksheets(1), Excel.Worksheet)
+            xlApp.Visible = True
+
+            rowsTotal = st.RowCount
+            colsTotal = st.Columns.Count - 1
+            With excelWorksheet
+                .Cells.Select()
+                .Cells.Delete()
+                For iC = 0 To colsTotal
+                    .Cells(1, iC + 1).Value = st.Columns(iC).HeaderText
+                Next
+                For I = 0 To rowsTotal - 1
+                    For j = 0 To colsTotal
+                        .Cells(I + 2, j + 1).value = st.Rows(I).Cells(j).Value
+                    Next j
+                Next I
+                .Rows("1:1").Font.FontStyle = "Bold"
+                .Rows("1:1").Font.Size = 12
+
+                .Cells.Columns.AutoFit()
+                .Cells.Select()
+                .Cells.EntireColumn.AutoFit()
+                .Cells(1, 1).Select()
+            End With
+        Catch ex As Exception
+            '   MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Finally
+            'RELEASE ALLOACTED RESOURCES
+            System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default
+            xlApp = Nothing
+        End Try
+    End Sub
+
 End Module
 Public Class advancesetting
     Public Property dmarkup As String

@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|c:\\users\\user\\desktop\\quickbook\\windowsapp1\\qickbook_exe\\forms\\module1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|solutionrelative:forms\\module1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|c:\\users\\user\\desktop\\quickbook\\windowsapp1\\qickbook_exe\\frm_credinot_lst.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|solutionrelative:frm_credinot_lst.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|c:\\users\\user\\desktop\\quickbook\\windowsapp1\\qickbook_exe\\forms\\glob_var.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|solutionrelative:forms\\glob_var.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\frmdgwrecords.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|solutionrelative:frmdgwrecords.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\forms2\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|solutionrelative:forms2\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\frmdgwrecords.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|solutionrelative:frmdgwrecords.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|c:\\users\\user\\desktop\\quickbook\\windowsapp1\\qickbook_exe\\forms2\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|solutionrelative:forms2\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\frm_credinot_lst.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|solutionrelative:frm_credinot_lst.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,54 +42,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Glob_var.vb",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\forms\\Glob_var.vb",
-              "RelativeDocumentMoniker": "forms\\Glob_var.vb",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\forms\\Glob_var.vb",
-              "RelativeToolTip": "forms\\Glob_var.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "frmdgwrecords.vb",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\frmdgwrecords.vb",
+              "RelativeDocumentMoniker": "frmdgwrecords.vb",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\frmdgwrecords.vb",
+              "RelativeToolTip": "frmdgwrecords.vb",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAswHEAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-12-16T14:36:34.795Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Module1.vb",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\forms\\Module1.vb",
-              "RelativeDocumentMoniker": "forms\\Module1.vb",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\forms\\Module1.vb",
-              "RelativeToolTip": "forms\\Module1.vb",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-12-16T14:36:31.97Z",
+              "WhenOpened": "2024-12-20T18:47:45.722Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Form1.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\forms2\\Form1.vb",
-              "RelativeDocumentMoniker": "forms2\\Form1.vb",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\forms2\\Form1.vb [Design]",
-              "RelativeToolTip": "forms2\\Form1.vb [Design]",
+              "Title": "frm_credinot_lst.vb",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\frm_credinot_lst.vb",
+              "RelativeDocumentMoniker": "frm_credinot_lst.vb",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\frm_credinot_lst.vb",
+              "RelativeToolTip": "frm_credinot_lst.vb",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAC0AAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-12-16T14:25:41.622Z",
+              "WhenOpened": "2024-12-20T18:47:34.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frm_credinot_lst.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\frm_credinot_lst.vb",
+              "RelativeDocumentMoniker": "frm_credinot_lst.vb",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\frm_credinot_lst.vb [Design]",
+              "RelativeToolTip": "frm_credinot_lst.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-20T18:47:18.445Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.vb",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\forms2\\Form1.vb",
-              "RelativeDocumentMoniker": "forms2\\Form1.vb",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\forms2\\Form1.vb",
-              "RelativeToolTip": "forms2\\Form1.vb",
-              "ViewState": "AgIAACQAAAAAAAAAAAAUwDQAAAAeAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "frmdgwrecords.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\frmdgwrecords.vb",
+              "RelativeDocumentMoniker": "frmdgwrecords.vb",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\frmdgwrecords.vb [Design]",
+              "RelativeToolTip": "frmdgwrecords.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-12-16T10:42:07.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T18:03:26.879Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

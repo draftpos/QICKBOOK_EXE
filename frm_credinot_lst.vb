@@ -56,9 +56,17 @@ Public Class frm_credinot_lst
             parameters.Add(New SqlParameter("@SearchText", datap))
         End If
         Dim dt As DataTable = Crud(sql, parameters)
+        Dim sumtotal, vattotal, totalexcl As Double
+        sumtotal = 0 : vattotal = 0 : totalexcl = 0
         For Each row As DataRow In dt.Rows
-            dgw.Rows.Add(row("CreditNoteNumber"), row("TxnId"), row("CustomerName"), row("TxnDate"), row("Subtotal"), row("TotalAmount"))
+            dgw.Rows.Add(row("CreditNoteNumber"), row("TxnId"), row("CustomerName"), row("TxnDate"), row("SalesTaxTotal"), row("Subtotal"), row("TotalAmount"))
+            sumtotal += Val(row("TotalAmount"))
+            totalexcl += Val(row("Subtotal"))
+            vattotal += Val(row("SalesTaxTotal"))
         Next
+        lbltotalExcl.Text = totalexcl.ToString()
+        lbltotalsum.Text = sumtotal.ToString()
+        lbltotalvat.Text = vattotal.ToString()
         If dt.Rows.Count = 0 Then
             Return False
         Else
@@ -93,5 +101,13 @@ Public Class frm_credinot_lst
         Else
             dgw_MouseDoubleClick(sender, e)
         End If
+    End Sub
+
+    Private Sub GelButton1_Click(sender As Object, e As EventArgs) Handles GelButton1.Click
+        ExportToExcel(dgw, saveFileDialog)
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
     End Sub
 End Class
