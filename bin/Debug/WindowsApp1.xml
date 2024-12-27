@@ -59,5 +59,12 @@ WindowsApp1
  <param name="st">string to moving characters</param>
  <returns>moved characters string</returns>
 </member>
+<member name="M:WindowsApp1.ERPNextSyncHelper.UpdateIsSynced(System.String,System.String)">
+ <summary>
+ Updates the `is_synced` column in the `tabSales Invoice` table for the specified invoice.
+ </summary>
+ <param name="erpConnectionString">The connection string for the ERPNext MySQL database.</param>
+ <param name="invoiceName">The name of the invoice to update.</param>
+</member>
 </members>
 </doc>

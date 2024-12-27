@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Showlines\\QICKBOOK_EXE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|c:\\showlines\\qickbook_exe\\forms2\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|solutionrelative:forms2\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|c:\\showlines\\qickbook_exe\\service\\erpnextsynchelper.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|solutionrelative:service\\erpnextsynchelper.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|c:\\showlines\\qickbook_exe\\forms2\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|solutionrelative:forms2\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|c:\\showlines\\qickbook_exe\\service\\fetchsalesinvoicedetails.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|solutionrelative:service\\fetchsalesinvoicedetails.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|c:\\showlines\\qickbook_exe\\forms\\module1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|solutionrelative:forms\\module1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|c:\\showlines\\qickbook_exe\\forms\\modfunc.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|solutionrelative:forms\\modfunc.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|c:\\showlines\\qickbook_exe\\forms\\cruds.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|solutionrelative:forms\\cruds.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|c:\\showlines\\qickbook_exe\\exportlibrary\\module2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0B22D7F2-C9A5-40BE-A190-CD949D9DE8D0}|WindowsApp1.vbproj|solutionrelative:exportlibrary\\module2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +39,80 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.vb",
-              "DocumentMoniker": "C:\\Showlines\\QICKBOOK_EXE\\forms2\\Form1.vb",
-              "RelativeDocumentMoniker": "forms2\\Form1.vb",
-              "ToolTip": "C:\\Showlines\\QICKBOOK_EXE\\forms2\\Form1.vb",
-              "RelativeToolTip": "forms2\\Form1.vb",
-              "ViewState": "AgIAALEBAAAAAAAAAAAwwN8BAAAdAAAAAAAAAA==",
+              "Title": "ERPNextSyncHelper.vb",
+              "DocumentMoniker": "C:\\Showlines\\QICKBOOK_EXE\\Service\\ERPNextSyncHelper.vb",
+              "RelativeDocumentMoniker": "Service\\ERPNextSyncHelper.vb",
+              "ToolTip": "C:\\Showlines\\QICKBOOK_EXE\\Service\\ERPNextSyncHelper.vb",
+              "RelativeToolTip": "Service\\ERPNextSyncHelper.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-12-27T07:43:23.325Z",
+              "WhenOpened": "2024-12-27T15:39:39.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ModFunc.vb",
+              "DocumentMoniker": "C:\\Showlines\\QICKBOOK_EXE\\forms\\ModFunc.vb",
+              "RelativeDocumentMoniker": "forms\\ModFunc.vb",
+              "ToolTip": "C:\\Showlines\\QICKBOOK_EXE\\forms\\ModFunc.vb",
+              "RelativeToolTip": "forms\\ModFunc.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-27T11:39:42.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Module1.vb",
+              "DocumentMoniker": "C:\\Showlines\\QICKBOOK_EXE\\forms\\Module1.vb",
+              "RelativeDocumentMoniker": "forms\\Module1.vb",
+              "ToolTip": "C:\\Showlines\\QICKBOOK_EXE\\forms\\Module1.vb",
+              "RelativeToolTip": "forms\\Module1.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-27T11:39:39.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "cruds.vb",
+              "DocumentMoniker": "C:\\Showlines\\QICKBOOK_EXE\\forms\\cruds.vb",
+              "RelativeDocumentMoniker": "forms\\cruds.vb",
+              "ToolTip": "C:\\Showlines\\QICKBOOK_EXE\\forms\\cruds.vb",
+              "RelativeToolTip": "forms\\cruds.vb",
+              "ViewState": "AgIAABkBAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-27T11:39:16.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Module2.vb",
+              "DocumentMoniker": "C:\\Showlines\\QICKBOOK_EXE\\ExportLibrary\\Module2.vb",
+              "RelativeDocumentMoniker": "ExportLibrary\\Module2.vb",
+              "ToolTip": "C:\\Showlines\\QICKBOOK_EXE\\ExportLibrary\\Module2.vb",
+              "RelativeToolTip": "ExportLibrary\\Module2.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-27T11:39:07.112Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.vb [Design]",
-              "DocumentMoniker": "C:\\Showlines\\QICKBOOK_EXE\\forms2\\Form1.vb",
-              "RelativeDocumentMoniker": "forms2\\Form1.vb",
-              "ToolTip": "C:\\Showlines\\QICKBOOK_EXE\\forms2\\Form1.vb [Design]",
-              "RelativeToolTip": "forms2\\Form1.vb [Design]",
+              "Title": "FetchSalesInvoiceDetails.vb",
+              "DocumentMoniker": "C:\\Showlines\\QICKBOOK_EXE\\Service\\FetchSalesInvoiceDetails.vb",
+              "RelativeDocumentMoniker": "Service\\FetchSalesInvoiceDetails.vb",
+              "ToolTip": "C:\\Showlines\\QICKBOOK_EXE\\Service\\FetchSalesInvoiceDetails.vb",
+              "RelativeToolTip": "Service\\FetchSalesInvoiceDetails.vb",
+              "ViewState": "AgIAADIAAAAAAAAAAAAIwMoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-12-27T07:43:18.13Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-27T08:51:19.504Z",
+              "EditorCaption": ""
             }
           ]
         }
