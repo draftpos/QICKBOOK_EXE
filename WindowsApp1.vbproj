@@ -536,6 +536,9 @@
     <EmbeddedResource Include="forms2\frm_company.resx">
       <DependentUpon>frm_company.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="forms2\frm_reg.resx">
+      <DependentUpon>frm_reg.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forms2\inputdialog.resx">
       <DependentUpon>inputdialog.vb</DependentUpon>
     </EmbeddedResource>
