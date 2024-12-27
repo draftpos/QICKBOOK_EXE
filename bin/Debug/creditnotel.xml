@@ -13,6 +13,12 @@
               <xs:element name="Subtotal" type="xs:decimal" minOccurs="0" />
               <xs:element name="SalesTax" type="xs:decimal" minOccurs="0" />
               <xs:element name="TotalAmount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="QRcode" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="DeviceID" type="xs:string" minOccurs="0" />
+              <xs:element name="FiscalDay" type="xs:string" minOccurs="0" />
+              <xs:element name="CustomerRef" type="xs:string" minOccurs="0" />
+              <xs:element name="Vcode" type="xs:string" minOccurs="0" />
+              <xs:element name="HavanoZimraStatus" type="xs:boolean" minOccurs="0" />
               <xs:element name="InvoiceCurrency" type="xs:string" minOccurs="0" />
               <xs:element name="Reference" type="xs:string" minOccurs="0" />
               <xs:element name="CreditRemaining" type="xs:decimal" minOccurs="0" />

@@ -19,6 +19,7 @@ SELECT
     i.BalanceRemaining AS TotalAmount,
     i.Currency AS InvoiceCurrency,
     i.TxnId AS Reference,
+i.QRcode,i.DeviceID,i.FiscalDay,i.CustomerRef,i.ReceiptNo,i.Vcode,i.HavanoZimraStatus,
 'Reason' as Reason,
     it.Name AS ProductName,
     it.Qty AS Quantity,
@@ -49,7 +50,7 @@ WHERE
             If (rdr IsNot Nothing) Then
                 rdr.Close()
             End If
-            Return False
+            '  Return False
         End If
         Dim sql As String = $"SELECT C.[id] AS CC_ID, C.[sClientCode] AS CustomerID, C.[sClientName] AS Name, " &
                     "C.[sPhone] AS ContactNo, C.[sAddress] AS Address, C.[sCustomerTin] AS TRN, " &
@@ -85,8 +86,8 @@ WHERE
         cmd.Parameters.AddWithValue("@d1", InvNo)
         cmd.CommandTimeout = 0
         rdr = cmd.ExecuteReader()
-        If rdr.Read() Then
-            Cursor.Current = Cursors.WaitCursor
+        'If rdr.Read() Then
+        Cursor.Current = Cursors.WaitCursor
             myConnection = New SqlConnection(cs)
             MyCommand.Connection = myConnection
             MyCommand1.Connection = myConnection
@@ -124,7 +125,7 @@ WHERE
             frmReport.CrystalReportViewer1.ReportSource = rpt
             frmReport.ShowDialog()
             Return True '   Exit Sub
-        End If
+        '   End If
 
         ' Catch ex As Exception
         'MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -148,6 +149,7 @@ SELECT
     i.Subtotal AS Subtotal,
     i.SalesTaxTotal AS SalesTax,
     i.TotalAmount AS TotalAmount,
+i.QRcode,i.DeviceID,i.FiscalDay,i.CustomerRef,i.Vcode,i.HavanoZimraStatus,
 '$' AS InvoiceCurrency,
       i.TxnId AS Reference,
       i.CreditRemaining AS CreditRemaining,
@@ -180,7 +182,7 @@ WHERE
             If (rdr IsNot Nothing) Then
                 rdr.Close()
             End If
-            Return False
+            ' Return False
         End If
         Dim sql As String = $"SELECT C.[id] AS CC_ID, C.[sClientCode] AS CustomerID, C.[sClientName] AS Name, " &
                     "C.[sPhone] AS ContactNo, C.[sAddress] AS Address, C.[sCustomerTin] AS TRN, " &
@@ -216,8 +218,8 @@ WHERE
         cmd.Parameters.AddWithValue("@d1", InvNo)
         cmd.CommandTimeout = 0
         rdr = cmd.ExecuteReader()
-        If rdr.Read() Then
-            Cursor.Current = Cursors.WaitCursor
+        '    If rdr.Read() Then
+        Cursor.Current = Cursors.WaitCursor
             myConnection = New SqlConnection(cs)
             MyCommand.Connection = myConnection
             MyCommand1.Connection = myConnection
@@ -248,7 +250,7 @@ WHERE
             frmReport.CrystalReportViewer1.ReportSource = rpt
             frmReport.ShowDialog()
             Return True '   Exit Sub
-        End If
+        ' End If
 
         ' Catch ex As Exception
         'MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)

@@ -10,7 +10,7 @@ Module GLOBAL_VARIABLES
     Public parameters As New List(Of SqlParameter)()
     Public waiters_status As Boolean = False
     Public tables_set As Boolean = False
-    Public msgtitle, msgcontent, msgicon As String
+    Public msgtitle As String = "", msgcontent As String = "", msgicon As String = ""
     Public msgresponse As Boolean = False
     Public tables_status_differ As Boolean = False
     Public companyInfo As Company = getOrgName()
