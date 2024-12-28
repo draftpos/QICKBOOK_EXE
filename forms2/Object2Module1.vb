@@ -50,7 +50,7 @@ WHERE
             If (rdr IsNot Nothing) Then
                 rdr.Close()
             End If
-            '  Return False
+            Return False
         End If
         Dim sql As String = $"SELECT C.[id] AS CC_ID, C.[sClientCode] AS CustomerID, C.[sClientName] AS Name, " &
                     "C.[sPhone] AS ContactNo, C.[sAddress] AS Address, C.[sCustomerTin] AS TRN, " &
@@ -182,7 +182,7 @@ WHERE
             If (rdr IsNot Nothing) Then
                 rdr.Close()
             End If
-            ' Return False
+            Return False
         End If
         Dim sql As String = $"SELECT C.[id] AS CC_ID, C.[sClientCode] AS CustomerID, C.[sClientName] AS Name, " &
                     "C.[sPhone] AS ContactNo, C.[sAddress] AS Address, C.[sCustomerTin] AS TRN, " &
@@ -315,7 +315,7 @@ WHERE
               "[Logo], [ItemWiseVAT], [ServiceTaxNo]" &
               ") VALUES (" &
               "'Havano Stores', 'Barcode with Price', 'Zimbabwe', 'No. 56 Rhodes Streets', 'Chivhu', 'Harare', " &
-              "'263', '0771713407', 'info@havano.net', 'Yes', 'USD', 'USD', 'TAX INVOICE', 0, 0, 1, 1, " &
+              "'263', '0771713407', 'info@havano.net', 'Yes', 'USD', 'USD', 'FISCAL TAX INVOICE', 0, 0, 1, 1, " &
               "'<Binary data>', 'false', '800001', 'false', 'false', 'No', 'No', 'No', 1, 'No', 'Yes', " &
               "'80mm RollPaper', '900001', '<Binary data>', 'Yes', 'Thanks....Visit Again!'" &
               ") END"
