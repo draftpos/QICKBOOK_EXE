@@ -421,10 +421,8 @@ Public Class Form1
         ProgressBar1.Value = 0
         ProgressBar1.Visible = True
         Timer1.Enabled = True
-        Dim fetchSales As New FetchSalesInvoiceDetails()
 
-        ' Call the method or run its logic
-        fetchSales.Main() ' Replace 'RunFetchLogic' with your actual method name
+        FetchSalesInvoiceDetails.Main()
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick

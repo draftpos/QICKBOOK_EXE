@@ -1,11 +1,10 @@
-﻿Imports System.Net.NetworkInformation
+﻿Imports System.Data.SqlClient
+Imports System.Net.NetworkInformation
 Imports System.Timers
-Imports Microsoft.Data.SqlClient
 Imports MySql.Data.MySqlClient
 
-Public Class FetchSalesInvoiceDetails
-
-    Private Shared fetchTimer As Timer
+Module FetchSalesInvoiceDetails
+    Private fetchTimer As Timer
 
     Public Sub Main()
         ' Start the process with a timer
@@ -42,14 +41,14 @@ Public Class FetchSalesInvoiceDetails
         Dim erpUser As String = "frapperemote"
         Dim erpPassword As String = "frapperemote@123$#"
         Dim erpPort As String = "3306" ' Default MySQL/MariaDB port
-        Dim erpConnectionString As String = $"Server={erpServer};Port={erpPort};Database={erpDatabase};Uid={erpUser};Pwd={erpPassword}"
+        Dim erpConnectionString As String = $"Server={erpServer};Port={erpPort};Database={erpDatabase};Uid={erpUser};Pwd={erpPassword};"
 
         ' SQL Server connection details
         Dim sqlServer As String = "DESKTOP-TKNB1T8"
         Dim sqlDatabase As String = "FetchInv"
         Dim sqlUser As String = "sa"
         Dim sqlPassword As String = "12345"
-        Dim sqlConnectionString As String = $"Server={sqlServer};Database={sqlDatabase};User Id={sqlUser};Password={sqlPassword}, TrustServerCertificate=True;"
+        Dim sqlConnectionString As String = $"Server={sqlServer};Database={sqlDatabase};User Id={sqlUser};Password={sqlPassword};"
 
         ' Query to fetch sales invoices and items
         Dim fetchQuery As String = "
@@ -199,4 +198,4 @@ Public Class FetchSalesInvoiceDetails
             Console.WriteLine($"An error occurred: {ex.Message}")
         End Try
     End Sub
-End Class
+End Module
