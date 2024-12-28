@@ -42,14 +42,14 @@ Public Class FetchSalesInvoiceDetails
         Dim erpUser As String = "frapperemote"
         Dim erpPassword As String = "frapperemote@123$#"
         Dim erpPort As String = "3306" ' Default MySQL/MariaDB port
-        Dim erpConnectionString As String = $"Server={erpServer};Port={erpPort};Database={erpDatabase};Uid={erpUser};Pwd={erpPassword};"
+        Dim erpConnectionString As String = $"Server={erpServer};Port={erpPort};Database={erpDatabase};Uid={erpUser};Pwd={erpPassword}"
 
         ' SQL Server connection details
         Dim sqlServer As String = "DESKTOP-TKNB1T8"
         Dim sqlDatabase As String = "FetchInv"
         Dim sqlUser As String = "sa"
         Dim sqlPassword As String = "12345"
-        Dim sqlConnectionString As String = $"Server={sqlServer};Database={sqlDatabase};User Id={sqlUser};Password={sqlPassword};"
+        Dim sqlConnectionString As String = $"Server={sqlServer};Database={sqlDatabase};User Id={sqlUser};Password={sqlPassword}, TrustServerCertificate=True;"
 
         ' Query to fetch sales invoices and items
         Dim fetchQuery As String = "
