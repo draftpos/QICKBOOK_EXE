@@ -7,9 +7,9 @@ Public Class FetchSalesInvoiceDetails
 
     Private Shared fetchTimer As Timer
 
-    Public Shared Sub Main()
+    Public Sub Main()
         ' Start the process with a timer
-        fetchTimer = New Timer(30000) ' Set interval to 30 seconds (30000 ms)
+        fetchTimer = New Timer(10000) ' Set interval to 30 seconds (30000 ms)
         AddHandler fetchTimer.Elapsed, AddressOf OnTimedEvent
         fetchTimer.AutoReset = True
         fetchTimer.Enabled = True
@@ -18,7 +18,7 @@ Public Class FetchSalesInvoiceDetails
         Console.ReadLine() ' Keep the application running
     End Sub
 
-    Private Shared Sub OnTimedEvent(source As Object, e As ElapsedEventArgs)
+    Private Sub OnTimedEvent(source As Object, e As ElapsedEventArgs)
         If IsInternetAvailable() Then
             Console.WriteLine($"Internet available. Running fetch process at {DateTime.Now}.")
             FetchAndInsertSalesInvoices()
@@ -27,7 +27,7 @@ Public Class FetchSalesInvoiceDetails
         End If
     End Sub
 
-    Private Shared Function IsInternetAvailable() As Boolean
+    Private Function IsInternetAvailable() As Boolean
         Try
             Return NetworkInterface.GetIsNetworkAvailable()
         Catch ex As Exception
@@ -35,7 +35,7 @@ Public Class FetchSalesInvoiceDetails
             Return False
         End Try
     End Function
-    Private Shared Sub FetchAndInsertSalesInvoices()
+    Private Sub FetchAndInsertSalesInvoices()
         ' ERPNext MySQL database connection details
         Dim erpServer As String = "89.250.67.36"
         Dim erpDatabase As String = "_f6c6c961c16d9264"
