@@ -16,6 +16,4 @@ Public Class frmReport
         Cursor = Cursors.Default
         Timer1.Enabled = False
     End Sub
-
-
 End Class

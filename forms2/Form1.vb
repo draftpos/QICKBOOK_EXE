@@ -416,12 +416,14 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        pnlsqlsettings.Visible = False
-        pnl_login.Visible = False
-        ProgressBar1.Value = 0
-        ProgressBar1.Visible = True
-        Timer1.Enabled = True
+        'pnlsqlsettings.Visible = False
+        'pnl_login.Visible = False
+        ' ProgressBar1.Value = 0
+        '  ProgressBar1.Visible = True
+        ' Timer1.Enabled = True
         PictureBox1.SizeMode = PictureBoxSizeMode.AutoSize
+        'pnl_login.BringToFront()
+        'pnlsqlsettings.BringToFront()
         FetchSalesInvoiceDetails.Main()
     End Sub
 
@@ -521,5 +523,9 @@ Public Class Form1
     End Sub
 
     Private Sub PictureBox2_Click_1(sender As Object, e As EventArgs)
+    End Sub
+
+    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
+
     End Sub
 End Class

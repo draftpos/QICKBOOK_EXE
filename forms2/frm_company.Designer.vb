@@ -359,7 +359,7 @@ Partial Class frm_company
         'PictureBox1
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Image = Global.WindowsApp1.My.Resources.Resources.sample_logo
+        Me.PictureBox1.Image = Global.Havano_Fiscal.My.Resources.Resources.sample_logo
         Me.PictureBox1.Location = New System.Drawing.Point(353, 10)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(151, 127)

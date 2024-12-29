@@ -45,7 +45,7 @@ Public Class DReport1
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "WindowsApp1.DReport1.rpt"
+            Return "Havano_Fiscal.DReport1.rpt"
         End Get
         Set
             'Do nothing
