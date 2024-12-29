@@ -78,7 +78,8 @@ Partial Class Form1
         'pnlsqlsettings
         '
         Me.pnlsqlsettings.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.pnlsqlsettings.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.pnlsqlsettings.BackColor = System.Drawing.Color.Transparent
+        Me.pnlsqlsettings.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.pnlsqlsettings.Controls.Add(Me.btnConnect)
         Me.pnlsqlsettings.Controls.Add(Me.Panel2)
         Me.pnlsqlsettings.Controls.Add(Me.btnDemoDB)
@@ -115,7 +116,7 @@ Partial Class Form1
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.Green
+        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel2.Controls.Add(Me.Label1)
@@ -123,7 +124,7 @@ Partial Class Form1
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(299, 36)
+        Me.Panel2.Size = New System.Drawing.Size(297, 36)
         Me.Panel2.TabIndex = 2
         '
         'Label1
@@ -201,44 +202,48 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(3, 176)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(148, 16)
+        Me.Label3.Size = New System.Drawing.Size(189, 18)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "SQL Server User Name :"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(3, 136)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(97, 16)
+        Me.Label7.Size = New System.Drawing.Size(126, 18)
         Me.Label7.TabIndex = 17
         Me.Label7.Text = "Authentication :"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(5, 221)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(128, 16)
+        Me.Label2.Size = New System.Drawing.Size(164, 18)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "SQL User Password :"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(2, 96)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(110, 16)
+        Me.Label6.Size = New System.Drawing.Size(144, 18)
         Me.Label6.TabIndex = 21
         Me.Label6.Text = "Installation Type :"
         '
@@ -256,11 +261,12 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(2, 55)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(118, 16)
+        Me.Label5.Size = New System.Drawing.Size(150, 18)
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "SQL Server Name :"
         '
@@ -276,6 +282,7 @@ Partial Class Form1
         'pnl_login
         '
         Me.pnl_login.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.pnl_login.BackColor = System.Drawing.Color.Transparent
         Me.pnl_login.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.pnl_login.Controls.Add(Me.Panel4)
         Me.pnl_login.Controls.Add(Me.Panel3)
@@ -352,11 +359,11 @@ Partial Class Form1
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold)
-        Me.Label9.ForeColor = System.Drawing.SystemColors.WindowText
+        Me.Label9.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.ForeColor = System.Drawing.Color.White
         Me.Label9.Location = New System.Drawing.Point(3, 185)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(83, 18)
+        Me.Label9.Size = New System.Drawing.Size(87, 19)
         Me.Label9.TabIndex = 12
         Me.Label9.Text = "Password"
         '
@@ -373,11 +380,11 @@ Partial Class Form1
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold)
-        Me.Label8.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.Label8.Location = New System.Drawing.Point(3, 144)
+        Me.Label8.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.Location = New System.Drawing.Point(0, 137)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(85, 18)
+        Me.Label8.Size = New System.Drawing.Size(91, 19)
         Me.Label8.TabIndex = 10
         Me.Label8.Text = "Username"
         '
@@ -401,7 +408,7 @@ Partial Class Form1
         '
         'Panel3
         '
-        Me.Panel3.BackColor = System.Drawing.Color.Green
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel3.Controls.Add(Me.Label4)
@@ -485,60 +492,64 @@ Partial Class Form1
         '
         'MenuStrip1
         '
+        Me.MenuStrip1.BackColor = System.Drawing.Color.Purple
         Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None
+        Me.MenuStrip1.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CustomToolStripMenuItem, Me.UsersToolStripMenuItem, Me.ShowInvoicesToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(310, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(450, 27)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'CustomToolStripMenuItem
         '
         Me.CustomToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CompanyInfoToolStripMenuItem, Me.SubmissionToolStripMenuItem, Me.PrintInvoicePdfToolStripMenuItem})
+        Me.CustomToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.CustomToolStripMenuItem.Name = "CustomToolStripMenuItem"
-        Me.CustomToolStripMenuItem.Size = New System.Drawing.Size(101, 20)
+        Me.CustomToolStripMenuItem.Size = New System.Drawing.Size(146, 23)
         Me.CustomToolStripMenuItem.Text = "Customizations"
         '
         'CompanyInfoToolStripMenuItem
         '
         Me.CompanyInfoToolStripMenuItem.Name = "CompanyInfoToolStripMenuItem"
-        Me.CompanyInfoToolStripMenuItem.Size = New System.Drawing.Size(163, 22)
+        Me.CompanyInfoToolStripMenuItem.Size = New System.Drawing.Size(217, 24)
         Me.CompanyInfoToolStripMenuItem.Text = "Company Info"
         '
         'SubmissionToolStripMenuItem
         '
         Me.SubmissionToolStripMenuItem.Name = "SubmissionToolStripMenuItem"
-        Me.SubmissionToolStripMenuItem.Size = New System.Drawing.Size(163, 22)
+        Me.SubmissionToolStripMenuItem.Size = New System.Drawing.Size(217, 24)
         Me.SubmissionToolStripMenuItem.Text = "Print Credit Note"
         '
         'PrintInvoicePdfToolStripMenuItem
         '
         Me.PrintInvoicePdfToolStripMenuItem.Name = "PrintInvoicePdfToolStripMenuItem"
-        Me.PrintInvoicePdfToolStripMenuItem.Size = New System.Drawing.Size(163, 22)
+        Me.PrintInvoicePdfToolStripMenuItem.Size = New System.Drawing.Size(217, 24)
         Me.PrintInvoicePdfToolStripMenuItem.Text = "Print Invoice Pdf"
         '
         'UsersToolStripMenuItem
         '
+        Me.UsersToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.UsersToolStripMenuItem.Name = "UsersToolStripMenuItem"
-        Me.UsersToolStripMenuItem.Size = New System.Drawing.Size(108, 20)
+        Me.UsersToolStripMenuItem.Size = New System.Drawing.Size(160, 23)
         Me.UsersToolStripMenuItem.Text = "View Credit Note"
         '
         'ShowInvoicesToolStripMenuItem
         '
+        Me.ShowInvoicesToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.ShowInvoicesToolStripMenuItem.Name = "ShowInvoicesToolStripMenuItem"
-        Me.ShowInvoicesToolStripMenuItem.Size = New System.Drawing.Size(94, 20)
+        Me.ShowInvoicesToolStripMenuItem.Size = New System.Drawing.Size(137, 23)
         Me.ShowInvoicesToolStripMenuItem.Text = "Show Invoices"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.sbseg_en_au_oa_retargeting_hero_rw__no_widget
-        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.ClientSize = New System.Drawing.Size(899, 473)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BackgroundImage = Global.WindowsApp1.My.Resources.Resources._1__2_
+        Me.ClientSize = New System.Drawing.Size(899, 484)
         Me.ControlBox = False
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.pnl_login)
@@ -549,7 +560,7 @@ Partial Class Form1
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "QuickBook"
+        Me.Text = "Havano Fiscal"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.pnlsqlsettings.ResumeLayout(False)
         Me.pnlsqlsettings.PerformLayout()

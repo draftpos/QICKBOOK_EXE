@@ -282,7 +282,6 @@ C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\System.Thread
 C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\System.ValueTuple.dll
 C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\DevExpress.Pdf.v23.2.Core.dll
 C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\DevExpress.Pdf.v23.2.Drawing.dll
-C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\WebCamLib.dll
 C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\Azure.Core.xml
 C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\Azure.Identity.xml
 C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\BouncyCastle.Cryptography.xml

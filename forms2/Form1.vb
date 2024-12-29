@@ -421,7 +421,7 @@ Public Class Form1
         ProgressBar1.Value = 0
         ProgressBar1.Visible = True
         Timer1.Enabled = True
-
+        PictureBox1.SizeMode = PictureBoxSizeMode.AutoSize
         FetchSalesInvoiceDetails.Main()
     End Sub
 
@@ -512,5 +512,14 @@ Public Class Form1
         frm_credinot_lst.ShowDialog()
     End Sub
 
+    Private Sub pnlmenu_Paint(sender As Object, e As PaintEventArgs) Handles pnlmenu.Paint
 
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub PictureBox2_Click_1(sender As Object, e As EventArgs)
+    End Sub
 End Class
