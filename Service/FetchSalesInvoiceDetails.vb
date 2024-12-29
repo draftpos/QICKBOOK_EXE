@@ -168,7 +168,7 @@ Module FetchSalesInvoiceDetails
                                     currentCustomer = customerName
                                     Console.WriteLine($"Entered customer update: {customerName}")
                                     ERPNextSyncHelper.AddOrUpdateCustomer(sqlConnectionString, customerName, customerCode, custom_customer_address, custom_customer_tin, custom_customer_vat, custom_customer_phone, custom_customer_email, currency)
-                                    'ERPNextSyncHelper.UpdateIsSynced(erpConnectionString, currentInvoice)
+                                    ERPNextSyncHelper.UpdateIsSynced(erpConnectionString, currentInvoice)
 
                                 End If
 
