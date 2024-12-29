@@ -109,9 +109,18 @@ Module FetchSalesInvoiceDetails
                             Console.WriteLine("Connected to the SQL Server database.")
 
                             Dim currentInvoice As String = String.Empty
+                            Dim currentCustomer As String = String.Empty
 
                             While reader.Read()
                                 Dim invoiceName As String = reader("invoice_name").ToString()
+                                Dim customerName As String = reader("customer").ToString()
+                                Dim customerCode As String = reader("customer").ToString()
+                                Dim custom_customer_address As String = reader("custom_customer_address").ToString()
+                                Dim custom_customer_tin As String = reader("custom_customer_tin").ToString()
+                                Dim custom_customer_vat As String = reader("custom_customer_vat").ToString()
+                                Dim custom_customer_phone As String = reader("custom_customer_phone").ToString()
+                                Dim custom_customer_email As String = reader("custom_customer_email").ToString()
+                                Dim currency As String = reader("currency").ToString()
 
                                 ' Insert invoice details only once per invoice
                                 If invoiceName <> currentInvoice Then
@@ -156,7 +165,10 @@ Module FetchSalesInvoiceDetails
                                     End Using
 
                                     currentInvoice = invoiceName
-                                    ERPNextSyncHelper.UpdateIsSynced(erpConnectionString, currentInvoice)
+                                    currentCustomer = customerName
+                                    Console.WriteLine($"Entered customer update: {customerName}")
+                                    ERPNextSyncHelper.AddOrUpdateCustomer(sqlConnectionString, customerName, customerCode, custom_customer_address, custom_customer_tin, custom_customer_vat, custom_customer_phone, custom_customer_email, currency)
+                                    'ERPNextSyncHelper.UpdateIsSynced(erpConnectionString, currentInvoice)
 
                                 End If
 
