@@ -108,6 +108,7 @@ Module FetchSalesInvoiceDetails
                 sii.qty, 
                 sii.rate, 
                 sii.amount,
+                sii.item_tax_template,
                 cu.custom_customer_address,
                 cu.custom_customer_tin,
                 cu.custom_customer_vat,
@@ -229,7 +230,7 @@ Module FetchSalesInvoiceDetails
                                     itemCommand.Parameters.AddWithValue("@Rate", Convert.ToDecimal(reader("rate")))
                                     itemCommand.Parameters.AddWithValue("@Amount", Convert.ToDecimal(reader("amount")))
                                     itemCommand.Parameters.AddWithValue("@TxnId", invoiceName)
-                                    itemCommand.Parameters.AddWithValue("@Vat", reader("custom_customer_vat").ToString()) ' Replace with VAT if available
+                                    itemCommand.Parameters.AddWithValue("@Vat", reader("item_tax_template").ToString()) ' Replace with VAT if available
 
                                     itemCommand.ExecuteNonQuery()
                                     Console.WriteLine($"Inserted item: {reader("item_name").ToString()} for invoice: {invoiceName}")
