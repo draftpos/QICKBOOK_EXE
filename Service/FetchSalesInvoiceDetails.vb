@@ -130,13 +130,13 @@ Module FetchSalesInvoiceDetails
                                             [Amount], [AppliedAmount], [Subtotal], 
                                             [SalesTaxPercentage], [SalesTaxTotal], 
                                             [BalanceRemaining], [Currency], 
-                                            [ExchangeRate], [BalanceRemainingInHomeCurrency], [InvoiceNumber], [CustomerAddress], [CustomerTin], [CustomerVat], [CustomerEmail], [CustomerPhone])
+                                            [ExchangeRate], [BalanceRemainingInHomeCurrency], [InvoiceNumber], [CustomerAddress], [CustomerTin], [CustomerVat], [CustomerEmail], [CustomerPhone], [ReceiptNo])
                                         VALUES
                                            (@TxnId, @CustomerName, @TxnDate, @CustomerListId, 
                                             @Amount, @AppliedAmount, @Subtotal, 
                                             @SalesTaxPercentage, @SalesTaxTotal, 
                                             @BalanceRemaining, @Currency, 
-                                            @ExchangeRate, @BalanceRemainingInHomeCurrency, @InvoiceNumber, @CustomerAddress, @CustomerTin, @CustomerVat, @CustomerEmail, @CustomerPhone);
+                                            @ExchangeRate, @BalanceRemainingInHomeCurrency, @InvoiceNumber, @CustomerAddress, @CustomerTin, @CustomerVat, @CustomerEmail, @CustomerPhone, @ReceiptNo);
                                     "
 
                                     Using invoiceCommand As New SqlCommand(invoiceInsertQuery, sqlConnection)
@@ -159,6 +159,7 @@ Module FetchSalesInvoiceDetails
                                         invoiceCommand.Parameters.AddWithValue("@CustomerVat", reader("custom_customer_vat").ToString())
                                         invoiceCommand.Parameters.AddWithValue("@CustomerEmail", reader("custom_customer_email").ToString())
                                         invoiceCommand.Parameters.AddWithValue("@CustomerPhone", reader("custom_customer_phone").ToString())
+                                        invoiceCommand.Parameters.AddWithValue("@ReceiptNo", invoiceName)
 
                                         invoiceCommand.ExecuteNonQuery()
                                         Console.WriteLine($"Inserted invoice: {invoiceName}")
