@@ -6,6 +6,7 @@ Imports MySql.Data.MySqlClient
 
 Module FetchSalesInvoiceDetails
     Private fetchTimer As Timer
+    Dim logFilePath As String = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ServiceLog.txt")
 
     Public Sub Main()
         ' Start the process with a timer
@@ -15,12 +16,18 @@ Module FetchSalesInvoiceDetails
         fetchTimer.Enabled = True
 
         Console.WriteLine("FetchSalesInvoiceDetails service started. Press [Enter] to exit.")
+
+
+        ' Log the start message
+        LogMessage(logFilePath, "FetchSalesInvoiceDetails service started. Press [Enter] to exit.")
+
         Console.ReadLine() ' Keep the application running
     End Sub
 
     Private Sub OnTimedEvent(source As Object, e As ElapsedEventArgs)
         If IsInternetAvailable() Then
             Console.WriteLine($"Internet available. Running fetch process at {DateTime.Now}.")
+            LogMessage(logFilePath, $"Internet available. Running fetch process at {DateTime.Now}.")
             FetchAndInsertSalesInvoices()
         Else
             Console.WriteLine($"No internet connection detected at {DateTime.Now}. Retrying in 30 seconds.")
@@ -142,6 +149,7 @@ Module FetchSalesInvoiceDetails
             Using erpConnection As New MySqlConnection(erpConnectionString)
                 erpConnection.Open()
                 Console.WriteLine("Connected to the ERPNext database.")
+                LogMessage(logFilePath, "Connected to the ERPNext database.")
 
                 Using fetchCommand As New MySqlCommand(fetchQuery, erpConnection)
                     Using reader As MySqlDataReader = fetchCommand.ExecuteReader()
@@ -149,6 +157,7 @@ Module FetchSalesInvoiceDetails
                         Using sqlConnection As New SqlConnection(sqlConnectionString)
                             sqlConnection.Open()
                             Console.WriteLine("Connected to the SQL Server database.")
+                            LogMessage(logFilePath, "Connected to the SQL Server database.")
 
                             Dim currentInvoice As String = String.Empty
                             Dim currentCustomer As String = String.Empty
@@ -210,6 +219,7 @@ Module FetchSalesInvoiceDetails
                                     currentInvoice = invoiceName
                                     currentCustomer = customerName
                                     Console.WriteLine($"Entered customer update: {customerName}")
+                                    LogMessage(logFilePath, $"Entered customer update: {customerName}")
                                     ERPNextSyncHelper.AddOrUpdateCustomer(sqlConnectionString, customerName, customerCode, custom_customer_address, custom_customer_tin, custom_customer_vat, custom_customer_phone, custom_customer_email, currency)
                                     ERPNextSyncHelper.UpdateIsSynced(erpConnectionString, currentInvoice)
 
@@ -234,6 +244,7 @@ Module FetchSalesInvoiceDetails
 
                                     itemCommand.ExecuteNonQuery()
                                     Console.WriteLine($"Inserted item: {reader("item_name").ToString()} for invoice: {invoiceName}")
+                                    LogMessage(logFilePath, $"Inserted item: {reader("item_name").ToString()} for invoice: {invoiceName}")
                                 End Using
 
                             End While
@@ -241,6 +252,8 @@ Module FetchSalesInvoiceDetails
                             Console.WriteLine("Disconnected from the SQL Server database.")
                             erpConnection.Close()
                             Console.WriteLine("Disconnected from the ERPNext database.")
+                            LogMessage(logFilePath, "Disconnected from the SQL database.")
+                            LogMessage(logFilePath, "Disconnected from the ERPNext database.")
 
                         End Using
                     End Using
@@ -253,4 +266,25 @@ Module FetchSalesInvoiceDetails
             Console.WriteLine($"An error occurred: {ex.Message}")
         End Try
     End Sub
+
+
+    Sub LogMessage(filePath As String, message As String)
+        Try
+            ' Ensure the directory exists
+            Dim directoryPath As String = Path.GetDirectoryName(filePath)
+            If Not Directory.Exists(directoryPath) Then
+                Directory.CreateDirectory(directoryPath)
+            End If
+
+            ' Append the message to the log file with a timestamp
+            Using writer As New StreamWriter(filePath, True)
+                writer.WriteLine($"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - {message}")
+            End Using
+        Catch ex As Exception
+            ' Handle exceptions (optional)
+            Console.WriteLine($"Error logging message: {ex.Message}")
+        End Try
+    End Sub
+
+
 End Module
