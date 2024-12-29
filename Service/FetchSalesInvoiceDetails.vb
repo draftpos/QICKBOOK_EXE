@@ -48,7 +48,7 @@ Module FetchSalesInvoiceDetails
         Dim sqlDatabase As String = "FetchInv"
         Dim sqlUser As String = "sa"
         Dim sqlPassword As String = "12345"
-        Dim sqlConnectionString As String = $"Server={sqlServer};Database={sqlDatabase};User Id={sqlUser};Password={sqlPassword};"
+        Dim sqlConnectionString As String = cs ' $"Server={sqlServer};Database={sqlDatabase};User Id={sqlUser};Password={sqlPassword};"
 
         ' Query to fetch sales invoices and items
         Dim fetchQuery As String = "

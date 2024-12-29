@@ -4,8 +4,8 @@ Imports System.Data.SqlClient
 
 Public Class frm_credinot_lst
     Private Sub frmdgwrecords_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        DateTimePicker1.Value = Now.Date
-        DateTimePicker2.Value = Now.Date
+        DateTimePicker1.Value = Now.Date.ToString("dd/MM/yyyy")
+        DateTimePicker2.Value = Now.Date.ToString("dd/MM/yyyy")
         LoadData("")
     End Sub
 
