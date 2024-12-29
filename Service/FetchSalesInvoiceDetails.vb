@@ -58,38 +58,7 @@ Module FetchSalesInvoiceDetails
         Dim erpPassword As String = "frapperemote@123$#"
         Dim erpPort As String = "3306" ' Default MySQL/MariaDB port
         Dim erpConnectionString As String = $"Server={erpServer};Port={erpPort};Database={erpDatabase};Uid={erpUser};Pwd={erpPassword};"
-        Dim sqlConnectionString As String = String.Empty
-        Try
-            ' Path to havno.dll in debug folder
-            Dim debugFolder As String = AppDomain.CurrentDomain.BaseDirectory
-            Dim filePath As String = Path.Combine(debugFolder, "havanquickbook_sql_settings.ini")
-
-            ' Check if the file exists
-            If File.Exists(filePath) Then
-                ' Read the file contents
-                Dim connectionString As String = File.ReadAllText(filePath)
-
-                ' Parse the connection string
-                Dim sqlServer As String = GetConnectionStringValue(connectionString, "Data Source")
-                Dim sqlDatabase As String = GetConnectionStringValue(connectionString, "Initial Catalog")
-                Dim sqlUser As String = GetConnectionStringValue(connectionString, "User ID")
-                Dim sqlPassword As String = GetConnectionStringValue(connectionString, "Password")
-
-                ' Build the connection string
-                sqlConnectionString = $"Server={sqlServer};Database={sqlDatabase};User Id={sqlUser};Password={sqlPassword};"
-
-                ' Display the parsed details
-                Console.WriteLine("SQL Server: " & sqlServer)
-                Console.WriteLine("Database: " & sqlDatabase)
-                Console.WriteLine("User: " & sqlUser)
-                Console.WriteLine("Password: " & sqlPassword)
-                Console.WriteLine("Connection String: " & sqlConnectionString)
-            Else
-                Console.WriteLine("File 'havanquickbook_sql_settings.dll' not found in debug folder.")
-            End If
-        Catch ex As Exception
-            Console.WriteLine("An error occurred: " & ex.Message)
-        End Try
+        Dim sqlConnectionString As String = cs
 
         ' SQL Server connection details
         ' Dim sqlServer As String = "DESKTOP-TKNB1T8"
