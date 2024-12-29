@@ -2,8 +2,8 @@
 
 Public Class frmdgwrecords
     Private Sub frmdgwrecords_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        DateTimePicker1.Value = Now.Date
-        DateTimePicker2.Value = Now.Date
+        DateTimePicker1.Value = Now.Date.ToString("dd/MM/yyyy")
+        DateTimePicker2.Value = Now.Date.ToString("dd/MM/yyyy")
         LoadData("", "")
         Dim query As String = "SELECT DISTINCT [Currency] FROM Invoice"
         dt = Crud(query, Nothing)

@@ -27,6 +27,12 @@ Partial Class frmdgwrecords
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmdgwrecords))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lbltotalsum = New System.Windows.Forms.Label()
+        Me.lbltotalExcl = New System.Windows.Forms.Label()
+        Me.lbltotalvat = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.dgw = New System.Windows.Forms.DataGridView()
         Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -37,6 +43,8 @@ Partial Class frmdgwrecords
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.GelButton1 = New GelButtons.GelButton()
         Me.GelButton2 = New GelButtons.GelButton()
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
@@ -45,14 +53,6 @@ Partial Class frmdgwrecords
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.lbltotalsum = New System.Windows.Forms.Label()
-        Me.lbltotalExcl = New System.Windows.Forms.Label()
-        Me.lbltotalvat = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Panel1.SuspendLayout()
         CType(Me.dgw, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
@@ -73,6 +73,72 @@ Partial Class frmdgwrecords
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1134, 450)
         Me.Panel1.TabIndex = 0
+        '
+        'lbltotalsum
+        '
+        Me.lbltotalsum.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbltotalsum.AutoSize = True
+        Me.lbltotalsum.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbltotalsum.Location = New System.Drawing.Point(986, 425)
+        Me.lbltotalsum.Name = "lbltotalsum"
+        Me.lbltotalsum.Size = New System.Drawing.Size(124, 21)
+        Me.lbltotalsum.TabIndex = 13
+        Me.lbltotalsum.Text = "Total Summary"
+        '
+        'lbltotalExcl
+        '
+        Me.lbltotalExcl.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbltotalExcl.AutoSize = True
+        Me.lbltotalExcl.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbltotalExcl.Location = New System.Drawing.Point(986, 396)
+        Me.lbltotalExcl.Name = "lbltotalExcl"
+        Me.lbltotalExcl.Size = New System.Drawing.Size(91, 21)
+        Me.lbltotalExcl.TabIndex = 12
+        Me.lbltotalExcl.Text = "Total Excl."
+        '
+        'lbltotalvat
+        '
+        Me.lbltotalvat.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbltotalvat.AutoSize = True
+        Me.lbltotalvat.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbltotalvat.Location = New System.Drawing.Point(986, 370)
+        Me.lbltotalvat.Name = "lbltotalvat"
+        Me.lbltotalvat.Size = New System.Drawing.Size(77, 21)
+        Me.lbltotalvat.TabIndex = 11
+        Me.lbltotalvat.Text = "Total Vat"
+        '
+        'Label6
+        '
+        Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(840, 421)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(142, 24)
+        Me.Label6.TabIndex = 10
+        Me.Label6.Text = "Total Summary"
+        '
+        'Label5
+        '
+        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(841, 395)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(106, 24)
+        Me.Label5.TabIndex = 9
+        Me.Label5.Text = "Total Excl."
+        '
+        'Label4
+        '
+        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(842, 370)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(90, 24)
+        Me.Label4.TabIndex = 8
+        Me.Label4.Text = "Total Vat"
         '
         'dgw
         '
@@ -184,6 +250,24 @@ Partial Class frmdgwrecords
         Me.Panel2.Size = New System.Drawing.Size(1134, 48)
         Me.Panel2.TabIndex = 0
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(108, 14)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(132, 21)
+        Me.ComboBox1.TabIndex = 405
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(11, 17)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(91, 16)
+        Me.Label7.TabIndex = 404
+        Me.Label7.Text = "Filter Currency"
+        '
         'GelButton1
         '
         Me.GelButton1.BackColor = System.Drawing.Color.SteelBlue
@@ -222,7 +306,7 @@ Partial Class frmdgwrecords
         '
         'DateTimePicker2
         '
-        Me.DateTimePicker2.CustomFormat = "31-12-2024"
+        Me.DateTimePicker2.CustomFormat = "dd/MM/yyyy"
         Me.DateTimePicker2.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.DateTimePicker2.Location = New System.Drawing.Point(764, 14)
@@ -233,7 +317,7 @@ Partial Class frmdgwrecords
         '
         'DateTimePicker1
         '
-        Me.DateTimePicker1.CustomFormat = "31-12-2024"
+        Me.DateTimePicker1.CustomFormat = "dd/MM/yyyy"
         Me.DateTimePicker1.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom
         Me.DateTimePicker1.Location = New System.Drawing.Point(568, 14)
@@ -279,90 +363,6 @@ Partial Class frmdgwrecords
         Me.Label1.Size = New System.Drawing.Size(96, 16)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Invoice Number"
-        '
-        'lbltotalsum
-        '
-        Me.lbltotalsum.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbltotalsum.AutoSize = True
-        Me.lbltotalsum.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbltotalsum.Location = New System.Drawing.Point(986, 425)
-        Me.lbltotalsum.Name = "lbltotalsum"
-        Me.lbltotalsum.Size = New System.Drawing.Size(124, 21)
-        Me.lbltotalsum.TabIndex = 13
-        Me.lbltotalsum.Text = "Total Summary"
-        '
-        'lbltotalExcl
-        '
-        Me.lbltotalExcl.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbltotalExcl.AutoSize = True
-        Me.lbltotalExcl.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbltotalExcl.Location = New System.Drawing.Point(986, 396)
-        Me.lbltotalExcl.Name = "lbltotalExcl"
-        Me.lbltotalExcl.Size = New System.Drawing.Size(91, 21)
-        Me.lbltotalExcl.TabIndex = 12
-        Me.lbltotalExcl.Text = "Total Excl."
-        '
-        'lbltotalvat
-        '
-        Me.lbltotalvat.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbltotalvat.AutoSize = True
-        Me.lbltotalvat.Font = New System.Drawing.Font("Times New Roman", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbltotalvat.Location = New System.Drawing.Point(986, 370)
-        Me.lbltotalvat.Name = "lbltotalvat"
-        Me.lbltotalvat.Size = New System.Drawing.Size(77, 21)
-        Me.lbltotalvat.TabIndex = 11
-        Me.lbltotalvat.Text = "Total Vat"
-        '
-        'Label6
-        '
-        Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(840, 421)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(142, 24)
-        Me.Label6.TabIndex = 10
-        Me.Label6.Text = "Total Summary"
-        '
-        'Label5
-        '
-        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(841, 395)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(106, 24)
-        Me.Label5.TabIndex = 9
-        Me.Label5.Text = "Total Excl."
-        '
-        'Label4
-        '
-        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(842, 370)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(90, 24)
-        Me.Label4.TabIndex = 8
-        Me.Label4.Text = "Total Vat"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(11, 17)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(91, 16)
-        Me.Label7.TabIndex = 404
-        Me.Label7.Text = "Filter Currency"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(108, 14)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(132, 21)
-        Me.ComboBox1.TabIndex = 405
         '
         'frmdgwrecords
         '
