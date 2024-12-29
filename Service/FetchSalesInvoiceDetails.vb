@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SqlClient
+Imports System.IO
 Imports System.Net.NetworkInformation
 Imports System.Timers
 Imports MySql.Data.MySqlClient
@@ -34,6 +35,14 @@ Module FetchSalesInvoiceDetails
             Return False
         End Try
     End Function
+
+    Private Function GetConnectionStringValue(connectionString As String, key As String) As String
+        Dim startIndex As Integer = connectionString.IndexOf(key & "=") + key.Length + 1
+        Dim endIndex As Integer = connectionString.IndexOf(";", startIndex)
+        If endIndex = -1 Then endIndex = connectionString.Length
+        Return connectionString.Substring(startIndex, endIndex - startIndex).Trim()
+    End Function
+
     Private Sub FetchAndInsertSalesInvoices()
         ' ERPNext MySQL database connection details
         Dim erpServer As String = "89.250.67.36"
@@ -42,13 +51,45 @@ Module FetchSalesInvoiceDetails
         Dim erpPassword As String = "frapperemote@123$#"
         Dim erpPort As String = "3306" ' Default MySQL/MariaDB port
         Dim erpConnectionString As String = $"Server={erpServer};Port={erpPort};Database={erpDatabase};Uid={erpUser};Pwd={erpPassword};"
+        Dim sqlConnectionString As String = String.Empty
+        Try
+            ' Path to havno.dll in debug folder
+            Dim debugFolder As String = AppDomain.CurrentDomain.BaseDirectory
+            Dim filePath As String = Path.Combine(debugFolder, "havanquickbook_sql_settings.ini")
+
+            ' Check if the file exists
+            If File.Exists(filePath) Then
+                ' Read the file contents
+                Dim connectionString As String = File.ReadAllText(filePath)
+
+                ' Parse the connection string
+                Dim sqlServer As String = GetConnectionStringValue(connectionString, "Data Source")
+                Dim sqlDatabase As String = GetConnectionStringValue(connectionString, "Initial Catalog")
+                Dim sqlUser As String = GetConnectionStringValue(connectionString, "User ID")
+                Dim sqlPassword As String = GetConnectionStringValue(connectionString, "Password")
+
+                ' Build the connection string
+                sqlConnectionString = $"Server={sqlServer};Database={sqlDatabase};User Id={sqlUser};Password={sqlPassword};"
+
+                ' Display the parsed details
+                Console.WriteLine("SQL Server: " & sqlServer)
+                Console.WriteLine("Database: " & sqlDatabase)
+                Console.WriteLine("User: " & sqlUser)
+                Console.WriteLine("Password: " & sqlPassword)
+                Console.WriteLine("Connection String: " & sqlConnectionString)
+            Else
+                Console.WriteLine("File 'havanquickbook_sql_settings.dll' not found in debug folder.")
+            End If
+        Catch ex As Exception
+            Console.WriteLine("An error occurred: " & ex.Message)
+        End Try
 
         ' SQL Server connection details
-        Dim sqlServer As String = "DESKTOP-TKNB1T8"
-        Dim sqlDatabase As String = "FetchInv"
-        Dim sqlUser As String = "sa"
-        Dim sqlPassword As String = "12345"
-        Dim sqlConnectionString As String = $"Server={sqlServer};Database={sqlDatabase};User Id={sqlUser};Password={sqlPassword};"
+        ' Dim sqlServer As String = "DESKTOP-TKNB1T8"
+        ' Dim sqlDatabase As String = "FetchInv"
+        ' Dim sqlUser As String = "sa"
+        ' Dim sqlPassword As String = "12345"
+        ' Dim sqlConnectionString As String = $"Server={sqlServer};Database={sqlDatabase};User Id={sqlUser};Password={sqlPassword};"
 
         ' Query to fetch sales invoices and items
         Dim fetchQuery As String = "
