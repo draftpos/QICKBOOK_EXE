@@ -184,7 +184,7 @@ Module FetchSalesInvoiceDetails
                                         invoiceCommand.Parameters.AddWithValue("@TxnId", invoiceName)
                                         invoiceCommand.Parameters.AddWithValue("@CustomerName", reader("customer").ToString())
                                         invoiceCommand.Parameters.AddWithValue("@TxnDate", Convert.ToDateTime(reader("posting_date")).ToString("yyyy-MM-dd"))
-                                        invoiceCommand.Parameters.AddWithValue("@CustomerListId", reader("custom_customer_tin").ToString()) ' Update with appropriate field if available
+                                        invoiceCommand.Parameters.AddWithValue("@CustomerListId", reader("customer").ToString()) ' Update with appropriate field if available
                                         invoiceCommand.Parameters.AddWithValue("@Amount", Convert.ToDecimal(reader("grand_total")))
                                         invoiceCommand.Parameters.AddWithValue("@AppliedAmount", Convert.ToDecimal(reader("grand_total"))) ' Update with appropriate field if available
                                         invoiceCommand.Parameters.AddWithValue("@Subtotal", Convert.ToDecimal(reader("grand_total"))) ' Update with appropriate field if available
