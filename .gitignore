@@ -2,3 +2,11 @@
 .vs/WindowsApp1/FileContentIndex/4c51c425-6d4a-41a0-bfe4-91ce46cee6e3.vsidx
 *.vsidx
 *.vsidx
+/bin
+/obj
+/obj/Debug
+/obj/Debug
+/bin/Debug
+/bin/Debug
+/.vs
+/.vs
