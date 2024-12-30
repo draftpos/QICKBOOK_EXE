@@ -474,7 +474,7 @@ Public Class Form1
         Await companytables_and_data()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click, Button5.Click, btnClose.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button5.Click, Button1.Click, btnClose.Click
         If exitapp() Then
             Application.Exit()
         End If
@@ -516,12 +516,15 @@ Public Class Form1
 
 
 
-    Private Async Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
 
-    End Sub
-
-    Private Async Sub Form1_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        Await Automatically_BackUp()
-        Application.Exit()
+    Private Async Sub Form1_FormClosed(sender As Object, e As FormClosedEventArgs)
+        If exitapp() Then
+            Await Automatically_BackUp()
+            Application.Exit()
+        Else
+            Dim FRML As New Form1
+            FRML.Show()
+            Me.Dispose()
+        End If
     End Sub
 End Class

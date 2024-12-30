@@ -229,3 +229,6 @@ C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\MetroFramewor
 C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\obj\Debug\Havano_Fiscal.frm_Login.resources
 C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\obj\Debug\Havano_Fiscal.frmSqlsever.resources
+C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\log4net.dll
+C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\log4net.pdb
+C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\bin\Debug\log4net.xml
