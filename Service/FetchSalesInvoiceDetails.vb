@@ -14,7 +14,7 @@ Module FetchSalesInvoiceDetails
         AddHandler fetchTimer.Elapsed, AddressOf OnTimedEvent
         fetchTimer.AutoReset = True
         fetchTimer.Enabled = True
-
+        LogMessage(logFilePath, $"SQL database. {cs}")
         Console.WriteLine("FetchSalesInvoiceDetails service started. Press [Enter] to exit.")
 
 
@@ -59,6 +59,7 @@ Module FetchSalesInvoiceDetails
         Dim erpPort As String = "3306" ' Default MySQL/MariaDB port
         Dim erpConnectionString As String = $"Server={erpServer};Port={erpPort};Database={erpDatabase};Uid={erpUser};Pwd={erpPassword};"
         Dim sqlConnectionString As String = cs
+        LogMessage(logFilePath, $"SQL database. {cs}")
 
         ' SQL Server connection details
         ' Dim sqlServer As String = "DESKTOP-TKNB1T8"
@@ -116,17 +117,40 @@ Module FetchSalesInvoiceDetails
 
         Try
             Using erpConnection As New MySqlConnection(erpConnectionString)
-                erpConnection.Open()
-                Console.WriteLine("Connected to the ERPNext database.")
-                LogMessage(logFilePath, "Connected to the ERPNext database.")
+
+                Try
+                    erpConnection.Open()
+                Catch Exception As Exception
+                    Console.WriteLine($"Failed to connect to the ERPNEXT Server database. {Exception}")
+                    LogMessage(logFilePath, $"Failed to connect to the ERPNEXT Server database. {Exception}")
+                End Try
+                If erpConnection.State = ConnectionState.Closed Then
+                    Console.WriteLine("Failed to connect to the ERPNEXT Server database.")
+                    LogMessage(logFilePath, "Failed to connect to the ERPNEXT Server database.")
+                Else
+                    Console.WriteLine("Connected to the ERPNext database.")
+                    LogMessage(logFilePath, "Connected to the ERPNext database.")
+                End If
 
                 Using fetchCommand As New MySqlCommand(fetchQuery, erpConnection)
                     Using reader As MySqlDataReader = fetchCommand.ExecuteReader()
 
+
                         Using sqlConnection As New SqlConnection(sqlConnectionString)
-                            sqlConnection.Open()
-                            Console.WriteLine("Connected to the SQL Server database.")
-                            LogMessage(logFilePath, "Connected to the SQL Server database.")
+                            Try
+                                sqlConnection.Open()
+                            Catch Exception As Exception
+                                Console.WriteLine($"Failed to connect to the SQL Server database. {Exception}")
+                                LogMessage(logFilePath, $"Failed to connect to the SQL Server database. {Exception}")
+                            End Try
+                            If sqlConnection.State = ConnectionState.Closed Then
+                                Console.WriteLine("Failed to connect to the SQL Server database.")
+                                LogMessage(logFilePath, "Failed to connect to the SQL Server database.")
+                            Else
+                                Console.WriteLine("Connected to the SQL Server database.")
+                                LogMessage(logFilePath, "Connected to the SQL Server database.")
+                            End If
+
 
                             Dim currentInvoice As String = String.Empty
                             Dim currentCustomer As String = String.Empty
@@ -183,6 +207,7 @@ Module FetchSalesInvoiceDetails
 
                                         invoiceCommand.ExecuteNonQuery()
                                         Console.WriteLine($"Inserted invoice: {invoiceName}")
+                                        LogMessage(logFilePath, $"Inserted invoice: {invoiceName}")
                                     End Using
 
                                     currentInvoice = invoiceName
@@ -233,6 +258,7 @@ Module FetchSalesInvoiceDetails
             End Using
         Catch ex As Exception
             Console.WriteLine($"An error occurred: {ex.Message}")
+            LogMessage(logFilePath, $"An error occurred: {ex.Message}")
         End Try
     End Sub
 
