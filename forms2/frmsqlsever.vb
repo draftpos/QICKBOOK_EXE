@@ -8,7 +8,7 @@ Imports MetroFramework.Forms
 Imports System.Data.Sql
 Imports System.Threading.Tasks
 
-Public Class frmSqlServerSetting
+Public Class frmSqlsever
     Dim st As String
     Dim SqlConnStr As String
 
@@ -96,18 +96,18 @@ Public Class frmSqlServerSetting
         If File.Exists(filePathsqlsetting) Then
             '     Try
             sql = "SELECT 1"
-                dt = Crud(sql, Nothing)
-                If dt.Rows.Count = 0 Then
-                    msgtitle = ("Connection isn't Valid.")
-                    msgcontent = $"Invalid Connection String {vbCrLf} Click Yes to Proceed and No to Connect the DB..."
-                    msgdialog.ShowDialog()
-                    If msgresponse Then
-                        'pnlsqlsettings.Visible = True
-                        'pnl_login.Visible = False
-                        Await ServerEnumerationAsync()
-                        Return
-                    End If
+            dt = Crud(sql, Nothing)
+            If dt.Rows.Count = 0 Then
+                msgtitle = ("Connection isn't Valid.")
+                msgcontent = $"Invalid Connection String {vbCrLf} Click Yes to Proceed and No to Connect the DB..."
+                msgdialog.ShowDialog()
+                If msgresponse Then
+                    'pnlsqlsettings.Visible = True
+                    'pnl_login.Visible = False
+                    Await ServerEnumerationAsync()
+                    Return
                 End If
+            End If
             ' msgresponse = False
             ' Catch ex As Exception
             '    msgresponse = False

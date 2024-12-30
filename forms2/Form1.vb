@@ -514,18 +514,14 @@ Public Class Form1
         frm_credinot_lst.ShowDialog()
     End Sub
 
-    Private Sub pnlmenu_Paint(sender As Object, e As PaintEventArgs) Handles pnlmenu.Paint
+
+
+    Private Async Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
 
     End Sub
 
-    Private Sub PictureBox2_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub PictureBox2_Click_1(sender As Object, e As EventArgs)
-    End Sub
-
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-
+    Private Async Sub Form1_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Await Automatically_BackUp()
+        Application.Exit()
     End Sub
 End Class

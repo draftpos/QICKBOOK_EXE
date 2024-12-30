@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SqlClient
+Imports System.IO
 Imports WinFormsApp1.WinFormsApp1.forms
 
 Module Object2Module1
@@ -88,43 +89,43 @@ WHERE
         rdr = cmd.ExecuteReader()
         'If rdr.Read() Then
         Cursor.Current = Cursors.WaitCursor
-            myConnection = New SqlConnection(cs)
-            MyCommand.Connection = myConnection
-            MyCommand1.Connection = myConnection
-            MyCommand.CommandText = queryproductand_info
-            MyCommand.Parameters.AddWithValue("@d1", InvNo)
-            MyCommand.CommandTimeout = 0
-            MyCommand1.CommandText = "SELECT * from Company"
-            MyCommand.CommandType = CommandType.Text
-            MyCommand1.CommandType = CommandType.Text
-            mycmd4.CommandText = sql
-            myDA.SelectCommand = MyCommand
-            myDA1.SelectCommand = MyCommand1
-            myda3.SelectCommand = mycmd3
-            myda4.SelectCommand = mycmd4
-            ' myDA.Fill(myDS, "InvoiceInfo")
-            'myDA.Fill(myDS, "Invoice_Product")
-            myDA.Fill(myDS, "Product")
-            ' myDA.Fill(myDS, "Invoice_Payment")
-            myDA1.Fill(myDS, "Company")
-            myda4.Fill(myDS, "Customer")
-            myDS.WriteXmlSchema("crys_xml.xml")
-            rpt.Subreports(0).SetDataSource(myDS)
-            rpt.Subreports(1).SetDataSource(myDS)
-            rpt.Subreports(2).SetDataSource(myDS)
-            rpt.SetDataSource(myDS)
-            'rpt.SetParameterValue("p1", rdr.GetValue(0).ToString())
-            'rpt.SetParameterValue("p2", rdr.GetValue(1).ToString())
-            'rpt.SetParameterValue("p3", rdr.GetValue(2).ToString())
-            'rpt.SetParameterValue("p4", rdr.GetValue(3).ToString()) : rpt.SetParameterValue("MainParaterms", $"Terms and Conditions {companyInfo.QTC}")
-            'rpt.SetParameterValue("cusdata", "")
-            'rpt.SetParameterValue("vatno", companyInfo.VatNo)
-            'rpt.SetParameterValue("fiscadata", "")
-            'rpt.SetParameterValue("currency", dtable2(0)("CurrencyCode"))
+        myConnection = New SqlConnection(cs)
+        MyCommand.Connection = myConnection
+        MyCommand1.Connection = myConnection
+        MyCommand.CommandText = queryproductand_info
+        MyCommand.Parameters.AddWithValue("@d1", InvNo)
+        MyCommand.CommandTimeout = 0
+        MyCommand1.CommandText = "SELECT * from Company"
+        MyCommand.CommandType = CommandType.Text
+        MyCommand1.CommandType = CommandType.Text
+        mycmd4.CommandText = sql
+        myDA.SelectCommand = MyCommand
+        myDA1.SelectCommand = MyCommand1
+        myda3.SelectCommand = mycmd3
+        myda4.SelectCommand = mycmd4
+        ' myDA.Fill(myDS, "InvoiceInfo")
+        'myDA.Fill(myDS, "Invoice_Product")
+        myDA.Fill(myDS, "Product")
+        ' myDA.Fill(myDS, "Invoice_Payment")
+        myDA1.Fill(myDS, "Company")
+        myda4.Fill(myDS, "Customer")
+        myDS.WriteXmlSchema("crys_xml.xml")
+        rpt.Subreports(0).SetDataSource(myDS)
+        rpt.Subreports(1).SetDataSource(myDS)
+        rpt.Subreports(2).SetDataSource(myDS)
+        rpt.SetDataSource(myDS)
+        'rpt.SetParameterValue("p1", rdr.GetValue(0).ToString())
+        'rpt.SetParameterValue("p2", rdr.GetValue(1).ToString())
+        'rpt.SetParameterValue("p3", rdr.GetValue(2).ToString())
+        'rpt.SetParameterValue("p4", rdr.GetValue(3).ToString()) : rpt.SetParameterValue("MainParaterms", $"Terms and Conditions {companyInfo.QTC}")
+        'rpt.SetParameterValue("cusdata", "")
+        'rpt.SetParameterValue("vatno", companyInfo.VatNo)
+        'rpt.SetParameterValue("fiscadata", "")
+        'rpt.SetParameterValue("currency", dtable2(0)("CurrencyCode"))
 
-            frmReport.CrystalReportViewer1.ReportSource = rpt
-            frmReport.ShowDialog()
-            Return True '   Exit Sub
+        frmReport.CrystalReportViewer1.ReportSource = rpt
+        frmReport.ShowDialog()
+        Return True '   Exit Sub
         '   End If
 
         ' Catch ex As Exception
@@ -220,36 +221,36 @@ WHERE
         rdr = cmd.ExecuteReader()
         '    If rdr.Read() Then
         Cursor.Current = Cursors.WaitCursor
-            myConnection = New SqlConnection(cs)
-            MyCommand.Connection = myConnection
-            MyCommand1.Connection = myConnection
-            MyCommand.CommandText = queryproductand_info
-            MyCommand.Parameters.AddWithValue("@d1", InvNo)
-            MyCommand.CommandTimeout = 0
-            MyCommand1.CommandText = "SELECT * from Company"
-            MyCommand.CommandType = CommandType.Text
-            MyCommand1.CommandType = CommandType.Text
-            mycmd4.CommandText = sql
-            myDA.SelectCommand = MyCommand
-            myDA1.SelectCommand = MyCommand1
-            myda3.SelectCommand = mycmd3
-            myda4.SelectCommand = mycmd4
-            ' myDA.Fill(myDS, "InvoiceInfo")
-            'myDA.Fill(myDS, "Invoice_Product")
-            myDA.Fill(myDS, "Product")
-            ' myDA.Fill(myDS, "Invoice_Payment")
-            myDA1.Fill(myDS, "Company")
-            myda4.Fill(myDS, "Customer")
-            myDS.WriteXmlSchema("creditnotel.xml")
-            'myDS.WriteXmlSchema("crys_xml.xml")
-            rpt.Subreports(0).SetDataSource(myDS)
-            rpt.Subreports(1).SetDataSource(myDS)
-            rpt.Subreports(2).SetDataSource(myDS)
-            '  rpt.Subreports(3).SetDataSource(myDS)
-            rpt.SetDataSource(myDS)
-            frmReport.CrystalReportViewer1.ReportSource = rpt
-            frmReport.ShowDialog()
-            Return True '   Exit Sub
+        myConnection = New SqlConnection(cs)
+        MyCommand.Connection = myConnection
+        MyCommand1.Connection = myConnection
+        MyCommand.CommandText = queryproductand_info
+        MyCommand.Parameters.AddWithValue("@d1", InvNo)
+        MyCommand.CommandTimeout = 0
+        MyCommand1.CommandText = "SELECT * from Company"
+        MyCommand.CommandType = CommandType.Text
+        MyCommand1.CommandType = CommandType.Text
+        mycmd4.CommandText = sql
+        myDA.SelectCommand = MyCommand
+        myDA1.SelectCommand = MyCommand1
+        myda3.SelectCommand = mycmd3
+        myda4.SelectCommand = mycmd4
+        ' myDA.Fill(myDS, "InvoiceInfo")
+        'myDA.Fill(myDS, "Invoice_Product")
+        myDA.Fill(myDS, "Product")
+        ' myDA.Fill(myDS, "Invoice_Payment")
+        myDA1.Fill(myDS, "Company")
+        myda4.Fill(myDS, "Customer")
+        myDS.WriteXmlSchema("creditnotel.xml")
+        'myDS.WriteXmlSchema("crys_xml.xml")
+        rpt.Subreports(0).SetDataSource(myDS)
+        rpt.Subreports(1).SetDataSource(myDS)
+        rpt.Subreports(2).SetDataSource(myDS)
+        '  rpt.Subreports(3).SetDataSource(myDS)
+        rpt.SetDataSource(myDS)
+        frmReport.CrystalReportViewer1.ReportSource = rpt
+        frmReport.ShowDialog()
+        Return True '   Exit Sub
         ' End If
 
         ' Catch ex As Exception
@@ -257,8 +258,6 @@ WHERE
         'End Try
         Return True
     End Function
-
-
     Public Async Function companytables_and_data() As Task
         ' Check if the "Company" table exists, create it if not
         Dim sql As String
@@ -322,4 +321,79 @@ WHERE
         dt = Crud(sql, Nothing)
         Return
     End Function
+
+    Public Async Function Automatically_BackUp() As Task
+        Dim backupDir As String = "C:\Havano_Fiscal_DB"
+        Dim hiddenBackupDir As String = "C:\hidden_Havano_Fiscal"
+
+        ' Ensure backup directory exists
+        If Not Directory.Exists(backupDir) Then
+            Directory.CreateDirectory(backupDir)
+        End If
+
+        ' Ensure hidden backup directory exists and is hidden
+        If Not Directory.Exists(hiddenBackupDir) Then
+            Directory.CreateDirectory(hiddenBackupDir)
+            Dim dirInfo As New DirectoryInfo(hiddenBackupDir)
+            dirInfo.Attributes = FileAttributes.Directory Or FileAttributes.Hidden
+        End If
+
+        ' Backup file name with date and time
+        Dim today As String = DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss")
+        Dim backupFileName As String = "Havano_Fiscal_DB_" & today & ".bak"
+        Dim backupFilePath As String = Path.Combine(backupDir, backupFileName)
+
+        ' Check if the database is not corrupt before backup
+        ' If Not Await IsDatabaseHealthy() Then
+        'MsgBox("The database is corrupt. Backup aborted.", MsgBoxStyle.Critical, "Backup Error")
+        'Exit Function
+        'End If
+
+        If File.Exists(backupFilePath) Then
+            File.Delete(backupFilePath)
+        End If
+
+        Dim backupFiles As FileInfo() = New DirectoryInfo(backupDir).GetFiles("Havano_Fiscal_DB_*.bak").OrderBy(Function(f) f.CreationTime).ToArray()
+        If backupFiles.Length > 30 Then
+            For i As Integer = 0 To backupFiles.Length - 31
+                Dim file1 As FileInfo = backupFiles(i)
+                Dim hiddenFilePath As String = Path.Combine(hiddenBackupDir, file1.Name)
+                If File.Exists(hiddenFilePath) Then
+                    File.Delete(hiddenFilePath)
+                End If
+                file1.MoveTo(hiddenFilePath)
+            Next
+        End If
+        SqlConnection.ClearAllPools()
+
+        ' Perform the backup operation asynchronously
+        Await Task.Run(Sub()
+                           Using con As New SqlConnection(cs)
+                               con.Open()
+                               Dim backupQuery As String = "BACKUP DATABASE Fetchinv TO DISK='" & backupFilePath & "' WITH INIT, STATS=10"
+                               Using cmd As New SqlCommand(backupQuery, con)
+                                   cmd.CommandTimeout = 0
+                                   cmd.ExecuteNonQuery()
+                               End Using
+                           End Using
+                       End Sub)
+
+    End Function
+
+
+    Private Async Function IsDatabaseHealthy() As Task(Of Boolean)
+        Try
+            Using con As New SqlConnection(cs)
+                Await con.OpenAsync()
+                Dim cmd As New SqlCommand("DBCC CHECKDB('Fetchinv') WITH NO_INFOMSGS, ALL_ERRORMSGS", con)
+                cmd.CommandTimeout = 0
+                Await cmd.ExecuteNonQueryAsync()
+            End Using
+            Return True
+        Catch ex As Exception
+            ' Log or display the exception if needed
+            Return False
+        End Try
+    End Function
+
 End Module

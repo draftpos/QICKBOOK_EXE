@@ -1,4 +1,6 @@
-﻿Public Class frm_Login
+﻿Imports System.IO
+
+Public Class frm_Login
 
 
     Private Sub frm_Login_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
@@ -30,8 +32,9 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        frmSqlServerSetting.Dispose()
-        frmSqlServerSetting.Show()
+        frmSqlsever.Dispose()
+        System.IO.File.Delete(filePathsqlsetting)
+        frmSqlsever.Show()
         Me.Dispose()
     End Sub
 
