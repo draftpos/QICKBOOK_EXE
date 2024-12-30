@@ -7,6 +7,7 @@ Public Class frm_credinot_lst
         DateTimePicker1.Value = Now.Date.ToString("dd/MM/yyyy")
         DateTimePicker2.Value = Now.Date.ToString("dd/MM/yyyy")
         LoadData("")
+        '  InitializeRefreshTimer()
     End Sub
 
     Function LoadData(datap As String)
@@ -74,7 +75,7 @@ Public Class frm_credinot_lst
         End If
     End Function
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged, DateTimePicker2.ValueChanged, DateTimePicker1.ValueChanged
+    Public Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged, DateTimePicker2.ValueChanged, DateTimePicker1.ValueChanged
         LoadData(TextBox1.Text)
     End Sub
 

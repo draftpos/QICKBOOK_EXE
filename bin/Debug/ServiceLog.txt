@@ -207,3 +207,335 @@
 2024-12-30 08:49:55 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
 2024-12-30 08:50:35 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
 2024-12-30 08:50:35 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-30 15:35:56 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:35:56 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-30 15:36:06 - Internet available. Running fetch process at 30-Dec-24 3:36:06 PM.
+2024-12-30 15:36:06 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:36:09 - Connected to the ERPNext database.
+2024-12-30 15:36:09 - Connected to the SQL Server database.
+2024-12-30 15:36:10 - Disconnected from the SQL database.
+2024-12-30 15:36:10 - Disconnected from the ERPNext database.
+2024-12-30 15:36:16 - Internet available. Running fetch process at 30-Dec-24 3:36:16 PM.
+2024-12-30 15:36:16 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:36:16 - Connected to the ERPNext database.
+2024-12-30 15:36:17 - Connected to the SQL Server database.
+2024-12-30 15:36:17 - Disconnected from the SQL database.
+2024-12-30 15:36:17 - Disconnected from the ERPNext database.
+2024-12-30 15:36:26 - Internet available. Running fetch process at 30-Dec-24 3:36:26 PM.
+2024-12-30 15:36:26 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:36:26 - Connected to the ERPNext database.
+2024-12-30 15:36:27 - Connected to the SQL Server database.
+2024-12-30 15:36:27 - Disconnected from the SQL database.
+2024-12-30 15:36:27 - Disconnected from the ERPNext database.
+2024-12-30 15:36:36 - Internet available. Running fetch process at 30-Dec-24 3:36:36 PM.
+2024-12-30 15:36:36 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:36:36 - Connected to the ERPNext database.
+2024-12-30 15:36:37 - Connected to the SQL Server database.
+2024-12-30 15:36:37 - Disconnected from the SQL database.
+2024-12-30 15:36:37 - Disconnected from the ERPNext database.
+2024-12-30 15:36:46 - Internet available. Running fetch process at 30-Dec-24 3:36:46 PM.
+2024-12-30 15:36:46 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:36:46 - Connected to the ERPNext database.
+2024-12-30 15:36:47 - Connected to the SQL Server database.
+2024-12-30 15:36:47 - Disconnected from the SQL database.
+2024-12-30 15:36:47 - Disconnected from the ERPNext database.
+2024-12-30 15:36:56 - Internet available. Running fetch process at 30-Dec-24 3:36:56 PM.
+2024-12-30 15:36:56 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:36:57 - Connected to the ERPNext database.
+2024-12-30 15:36:57 - Connected to the SQL Server database.
+2024-12-30 15:36:57 - Disconnected from the SQL database.
+2024-12-30 15:36:57 - Disconnected from the ERPNext database.
+2024-12-30 15:37:06 - Internet available. Running fetch process at 30-Dec-24 3:37:06 PM.
+2024-12-30 15:37:06 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:37:06 - Connected to the ERPNext database.
+2024-12-30 15:37:07 - Connected to the SQL Server database.
+2024-12-30 15:37:07 - Disconnected from the SQL database.
+2024-12-30 15:37:07 - Disconnected from the ERPNext database.
+2024-12-30 15:37:16 - Internet available. Running fetch process at 30-Dec-24 3:37:16 PM.
+2024-12-30 15:37:16 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:37:17 - Connected to the ERPNext database.
+2024-12-30 15:37:17 - Connected to the SQL Server database.
+2024-12-30 15:37:17 - Disconnected from the SQL database.
+2024-12-30 15:37:17 - Disconnected from the ERPNext database.
+2024-12-30 15:37:26 - Internet available. Running fetch process at 30-Dec-24 3:37:26 PM.
+2024-12-30 15:37:26 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:37:26 - Connected to the ERPNext database.
+2024-12-30 15:37:27 - Connected to the SQL Server database.
+2024-12-30 15:37:27 - Disconnected from the SQL database.
+2024-12-30 15:37:27 - Disconnected from the ERPNext database.
+2024-12-30 15:37:36 - Internet available. Running fetch process at 30-Dec-24 3:37:36 PM.
+2024-12-30 15:37:36 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:37:37 - Connected to the ERPNext database.
+2024-12-30 15:37:37 - Connected to the SQL Server database.
+2024-12-30 15:37:37 - Disconnected from the SQL database.
+2024-12-30 15:37:37 - Disconnected from the ERPNext database.
+2024-12-30 15:37:46 - Internet available. Running fetch process at 30-Dec-24 3:37:46 PM.
+2024-12-30 15:37:46 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:37:47 - Connected to the ERPNext database.
+2024-12-30 15:37:47 - Connected to the SQL Server database.
+2024-12-30 15:37:47 - Disconnected from the SQL database.
+2024-12-30 15:37:47 - Disconnected from the ERPNext database.
+2024-12-30 15:37:56 - Internet available. Running fetch process at 30-Dec-24 3:37:56 PM.
+2024-12-30 15:37:56 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:37:57 - Connected to the ERPNext database.
+2024-12-30 15:37:57 - Connected to the SQL Server database.
+2024-12-30 15:37:57 - Disconnected from the SQL database.
+2024-12-30 15:37:57 - Disconnected from the ERPNext database.
+2024-12-30 15:38:06 - Internet available. Running fetch process at 30-Dec-24 3:38:06 PM.
+2024-12-30 15:38:06 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:38:07 - Connected to the ERPNext database.
+2024-12-30 15:38:07 - Connected to the SQL Server database.
+2024-12-30 15:38:07 - Disconnected from the SQL database.
+2024-12-30 15:38:07 - Disconnected from the ERPNext database.
+2024-12-30 15:38:16 - Internet available. Running fetch process at 30-Dec-24 3:38:16 PM.
+2024-12-30 15:38:16 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:38:16 - Connected to the ERPNext database.
+2024-12-30 15:38:17 - Connected to the SQL Server database.
+2024-12-30 15:38:17 - Disconnected from the SQL database.
+2024-12-30 15:38:17 - Disconnected from the ERPNext database.
+2024-12-30 15:38:26 - Internet available. Running fetch process at 30-Dec-24 3:38:26 PM.
+2024-12-30 15:38:26 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:38:27 - Connected to the ERPNext database.
+2024-12-30 15:38:27 - Connected to the SQL Server database.
+2024-12-30 15:38:27 - Disconnected from the SQL database.
+2024-12-30 15:38:27 - Disconnected from the ERPNext database.
+2024-12-30 15:38:36 - Internet available. Running fetch process at 30-Dec-24 3:38:36 PM.
+2024-12-30 15:38:36 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:38:37 - Connected to the ERPNext database.
+2024-12-30 15:38:37 - Connected to the SQL Server database.
+2024-12-30 15:38:37 - Disconnected from the SQL database.
+2024-12-30 15:38:37 - Disconnected from the ERPNext database.
+2024-12-30 15:38:46 - Internet available. Running fetch process at 30-Dec-24 3:38:46 PM.
+2024-12-30 15:38:46 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:38:47 - Connected to the ERPNext database.
+2024-12-30 15:38:47 - Connected to the SQL Server database.
+2024-12-30 15:38:47 - Disconnected from the SQL database.
+2024-12-30 15:38:47 - Disconnected from the ERPNext database.
+2024-12-30 15:39:08 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:39:08 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-30 15:39:18 - Internet available. Running fetch process at 30-Dec-24 3:39:18 PM.
+2024-12-30 15:39:18 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:39:20 - Connected to the ERPNext database.
+2024-12-30 15:39:21 - Connected to the SQL Server database.
+2024-12-30 15:39:21 - Disconnected from the SQL database.
+2024-12-30 15:39:21 - Disconnected from the ERPNext database.
+2024-12-30 15:39:28 - Internet available. Running fetch process at 30-Dec-24 3:39:28 PM.
+2024-12-30 15:39:28 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:39:29 - Connected to the ERPNext database.
+2024-12-30 15:39:29 - Connected to the SQL Server database.
+2024-12-30 15:39:29 - Disconnected from the SQL database.
+2024-12-30 15:39:29 - Disconnected from the ERPNext database.
+2024-12-30 15:39:38 - Internet available. Running fetch process at 30-Dec-24 3:39:38 PM.
+2024-12-30 15:39:38 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:39:39 - Connected to the ERPNext database.
+2024-12-30 15:39:39 - Connected to the SQL Server database.
+2024-12-30 15:39:39 - Disconnected from the SQL database.
+2024-12-30 15:39:39 - Disconnected from the ERPNext database.
+2024-12-30 15:39:48 - Internet available. Running fetch process at 30-Dec-24 3:39:48 PM.
+2024-12-30 15:39:48 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:39:49 - Connected to the ERPNext database.
+2024-12-30 15:39:49 - Connected to the SQL Server database.
+2024-12-30 15:39:49 - Disconnected from the SQL database.
+2024-12-30 15:39:49 - Disconnected from the ERPNext database.
+2024-12-30 15:39:58 - Internet available. Running fetch process at 30-Dec-24 3:39:58 PM.
+2024-12-30 15:39:58 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:39:59 - Connected to the ERPNext database.
+2024-12-30 15:39:59 - Connected to the SQL Server database.
+2024-12-30 15:39:59 - Disconnected from the SQL database.
+2024-12-30 15:39:59 - Disconnected from the ERPNext database.
+2024-12-30 15:40:08 - Internet available. Running fetch process at 30-Dec-24 3:40:08 PM.
+2024-12-30 15:40:08 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:40:09 - Connected to the ERPNext database.
+2024-12-30 15:40:09 - Connected to the SQL Server database.
+2024-12-30 15:40:09 - Disconnected from the SQL database.
+2024-12-30 15:40:09 - Disconnected from the ERPNext database.
+2024-12-30 15:40:18 - Internet available. Running fetch process at 30-Dec-24 3:40:18 PM.
+2024-12-30 15:40:18 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:40:19 - Connected to the ERPNext database.
+2024-12-30 15:40:19 - Connected to the SQL Server database.
+2024-12-30 15:40:19 - Disconnected from the SQL database.
+2024-12-30 15:40:19 - Disconnected from the ERPNext database.
+2024-12-30 15:40:28 - Internet available. Running fetch process at 30-Dec-24 3:40:28 PM.
+2024-12-30 15:40:28 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:40:29 - Connected to the ERPNext database.
+2024-12-30 15:40:29 - Connected to the SQL Server database.
+2024-12-30 15:40:29 - Disconnected from the SQL database.
+2024-12-30 15:40:29 - Disconnected from the ERPNext database.
+2024-12-30 15:40:38 - Internet available. Running fetch process at 30-Dec-24 3:40:38 PM.
+2024-12-30 15:40:38 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:40:39 - Connected to the ERPNext database.
+2024-12-30 15:40:39 - Connected to the SQL Server database.
+2024-12-30 15:40:39 - Disconnected from the SQL database.
+2024-12-30 15:40:39 - Disconnected from the ERPNext database.
+2024-12-30 15:40:48 - Internet available. Running fetch process at 30-Dec-24 3:40:48 PM.
+2024-12-30 15:40:48 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:40:49 - Connected to the ERPNext database.
+2024-12-30 15:40:49 - Connected to the SQL Server database.
+2024-12-30 15:40:49 - Disconnected from the SQL database.
+2024-12-30 15:40:49 - Disconnected from the ERPNext database.
+2024-12-30 15:40:58 - Internet available. Running fetch process at 30-Dec-24 3:40:58 PM.
+2024-12-30 15:40:58 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:40:59 - Connected to the ERPNext database.
+2024-12-30 15:40:59 - Connected to the SQL Server database.
+2024-12-30 15:40:59 - Disconnected from the SQL database.
+2024-12-30 15:40:59 - Disconnected from the ERPNext database.
+2024-12-30 15:41:08 - Internet available. Running fetch process at 30-Dec-24 3:41:08 PM.
+2024-12-30 15:41:08 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:41:09 - Connected to the ERPNext database.
+2024-12-30 15:41:09 - Connected to the SQL Server database.
+2024-12-30 15:41:09 - Disconnected from the SQL database.
+2024-12-30 15:41:09 - Disconnected from the ERPNext database.
+2024-12-30 15:41:18 - Internet available. Running fetch process at 30-Dec-24 3:41:18 PM.
+2024-12-30 15:41:18 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:41:19 - Connected to the ERPNext database.
+2024-12-30 15:41:19 - Connected to the SQL Server database.
+2024-12-30 15:41:19 - Disconnected from the SQL database.
+2024-12-30 15:41:19 - Disconnected from the ERPNext database.
+2024-12-30 15:41:28 - Internet available. Running fetch process at 30-Dec-24 3:41:28 PM.
+2024-12-30 15:41:28 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:41:29 - Connected to the ERPNext database.
+2024-12-30 15:41:29 - Connected to the SQL Server database.
+2024-12-30 15:41:29 - Disconnected from the SQL database.
+2024-12-30 15:41:29 - Disconnected from the ERPNext database.
+2024-12-30 15:41:38 - Internet available. Running fetch process at 30-Dec-24 3:41:38 PM.
+2024-12-30 15:41:38 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:41:39 - Connected to the ERPNext database.
+2024-12-30 15:41:39 - Connected to the SQL Server database.
+2024-12-30 15:41:39 - Disconnected from the SQL database.
+2024-12-30 15:41:39 - Disconnected from the ERPNext database.
+2024-12-30 15:41:48 - Internet available. Running fetch process at 30-Dec-24 3:41:48 PM.
+2024-12-30 15:41:48 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:41:49 - Connected to the ERPNext database.
+2024-12-30 15:41:49 - Connected to the SQL Server database.
+2024-12-30 15:41:49 - Disconnected from the SQL database.
+2024-12-30 15:41:49 - Disconnected from the ERPNext database.
+2024-12-30 15:41:58 - Internet available. Running fetch process at 30-Dec-24 3:41:58 PM.
+2024-12-30 15:41:58 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:41:59 - Connected to the ERPNext database.
+2024-12-30 15:41:59 - Connected to the SQL Server database.
+2024-12-30 15:41:59 - Disconnected from the SQL database.
+2024-12-30 15:41:59 - Disconnected from the ERPNext database.
+2024-12-30 15:42:08 - Internet available. Running fetch process at 30-Dec-24 3:42:08 PM.
+2024-12-30 15:42:08 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:42:09 - Connected to the ERPNext database.
+2024-12-30 15:42:09 - Connected to the SQL Server database.
+2024-12-30 15:42:09 - Disconnected from the SQL database.
+2024-12-30 15:42:09 - Disconnected from the ERPNext database.
+2024-12-30 15:42:18 - Internet available. Running fetch process at 30-Dec-24 3:42:18 PM.
+2024-12-30 15:42:18 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:42:19 - Connected to the ERPNext database.
+2024-12-30 15:42:19 - Connected to the SQL Server database.
+2024-12-30 15:42:19 - Disconnected from the SQL database.
+2024-12-30 15:42:19 - Disconnected from the ERPNext database.
+2024-12-30 15:42:28 - Internet available. Running fetch process at 30-Dec-24 3:42:28 PM.
+2024-12-30 15:42:28 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:42:29 - Connected to the ERPNext database.
+2024-12-30 15:42:29 - Connected to the SQL Server database.
+2024-12-30 15:42:29 - Disconnected from the SQL database.
+2024-12-30 15:42:29 - Disconnected from the ERPNext database.
+2024-12-30 15:42:38 - Internet available. Running fetch process at 30-Dec-24 3:42:38 PM.
+2024-12-30 15:42:38 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:42:48 - Internet available. Running fetch process at 30-Dec-24 3:42:48 PM.
+2024-12-30 15:42:48 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:43:12 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:43:12 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-30 15:43:22 - Internet available. Running fetch process at 30-Dec-24 3:43:22 PM.
+2024-12-30 15:43:22 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:43:24 - Connected to the ERPNext database.
+2024-12-30 15:43:24 - Connected to the SQL Server database.
+2024-12-30 15:43:24 - Disconnected from the SQL database.
+2024-12-30 15:43:24 - Disconnected from the ERPNext database.
+2024-12-30 15:43:32 - Internet available. Running fetch process at 30-Dec-24 3:43:32 PM.
+2024-12-30 15:43:32 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:43:32 - Connected to the ERPNext database.
+2024-12-30 15:43:32 - Connected to the SQL Server database.
+2024-12-30 15:43:32 - Disconnected from the SQL database.
+2024-12-30 15:43:32 - Disconnected from the ERPNext database.
+2024-12-30 15:43:42 - Internet available. Running fetch process at 30-Dec-24 3:43:42 PM.
+2024-12-30 15:43:42 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:43:42 - Connected to the ERPNext database.
+2024-12-30 15:43:42 - Connected to the SQL Server database.
+2024-12-30 15:43:42 - Disconnected from the SQL database.
+2024-12-30 15:43:42 - Disconnected from the ERPNext database.
+2024-12-30 15:43:52 - Internet available. Running fetch process at 30-Dec-24 3:43:52 PM.
+2024-12-30 15:43:52 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:43:52 - Connected to the ERPNext database.
+2024-12-30 15:43:52 - Connected to the SQL Server database.
+2024-12-30 15:43:52 - Disconnected from the SQL database.
+2024-12-30 15:43:52 - Disconnected from the ERPNext database.
+2024-12-30 15:44:02 - Internet available. Running fetch process at 30-Dec-24 3:44:02 PM.
+2024-12-30 15:44:02 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:44:02 - Connected to the ERPNext database.
+2024-12-30 15:44:02 - Connected to the SQL Server database.
+2024-12-30 15:44:02 - Disconnected from the SQL database.
+2024-12-30 15:44:02 - Disconnected from the ERPNext database.
+2024-12-30 15:44:12 - Internet available. Running fetch process at 30-Dec-24 3:44:12 PM.
+2024-12-30 15:44:12 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:44:12 - Connected to the ERPNext database.
+2024-12-30 15:44:12 - Connected to the SQL Server database.
+2024-12-30 15:44:12 - Disconnected from the SQL database.
+2024-12-30 15:44:12 - Disconnected from the ERPNext database.
+2024-12-30 15:44:22 - Internet available. Running fetch process at 30-Dec-24 3:44:22 PM.
+2024-12-30 15:44:22 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:44:22 - Connected to the ERPNext database.
+2024-12-30 15:44:22 - Connected to the SQL Server database.
+2024-12-30 15:44:22 - Disconnected from the SQL database.
+2024-12-30 15:44:22 - Disconnected from the ERPNext database.
+2024-12-30 15:44:32 - Internet available. Running fetch process at 30-Dec-24 3:44:32 PM.
+2024-12-30 15:44:32 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:44:32 - Connected to the ERPNext database.
+2024-12-30 15:44:32 - Connected to the SQL Server database.
+2024-12-30 15:44:32 - Disconnected from the SQL database.
+2024-12-30 15:44:32 - Disconnected from the ERPNext database.
+2024-12-30 15:44:42 - Internet available. Running fetch process at 30-Dec-24 3:44:42 PM.
+2024-12-30 15:44:42 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:44:42 - Connected to the ERPNext database.
+2024-12-30 15:44:43 - Connected to the SQL Server database.
+2024-12-30 15:44:43 - Disconnected from the SQL database.
+2024-12-30 15:44:43 - Disconnected from the ERPNext database.
+2024-12-30 15:44:52 - Internet available. Running fetch process at 30-Dec-24 3:44:52 PM.
+2024-12-30 15:44:52 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:44:52 - Connected to the ERPNext database.
+2024-12-30 15:44:52 - Connected to the SQL Server database.
+2024-12-30 15:44:52 - Disconnected from the SQL database.
+2024-12-30 15:44:52 - Disconnected from the ERPNext database.
+2024-12-30 15:45:02 - Internet available. Running fetch process at 30-Dec-24 3:45:02 PM.
+2024-12-30 15:45:02 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:45:02 - Connected to the ERPNext database.
+2024-12-30 15:45:03 - Connected to the SQL Server database.
+2024-12-30 15:45:03 - Disconnected from the SQL database.
+2024-12-30 15:45:03 - Disconnected from the ERPNext database.
+2024-12-30 15:45:12 - Internet available. Running fetch process at 30-Dec-24 3:45:12 PM.
+2024-12-30 15:45:12 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:45:12 - Connected to the ERPNext database.
+2024-12-30 15:45:12 - Connected to the SQL Server database.
+2024-12-30 15:45:12 - Disconnected from the SQL database.
+2024-12-30 15:45:12 - Disconnected from the ERPNext database.
+2024-12-30 15:45:22 - Internet available. Running fetch process at 30-Dec-24 3:45:22 PM.
+2024-12-30 15:45:22 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:45:22 - Connected to the ERPNext database.
+2024-12-30 15:45:22 - Connected to the SQL Server database.
+2024-12-30 15:45:22 - Disconnected from the SQL database.
+2024-12-30 15:45:22 - Disconnected from the ERPNext database.
+2024-12-30 15:45:32 - Internet available. Running fetch process at 30-Dec-24 3:45:32 PM.
+2024-12-30 15:45:32 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:45:32 - Connected to the ERPNext database.
+2024-12-30 15:45:32 - Connected to the SQL Server database.
+2024-12-30 15:45:32 - Disconnected from the SQL database.
+2024-12-30 15:45:32 - Disconnected from the ERPNext database.
+2024-12-30 15:45:42 - Internet available. Running fetch process at 30-Dec-24 3:45:42 PM.
+2024-12-30 15:45:42 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:45:42 - Connected to the ERPNext database.
+2024-12-30 15:45:42 - Connected to the SQL Server database.
+2024-12-30 15:45:42 - Disconnected from the SQL database.
+2024-12-30 15:45:42 - Disconnected from the ERPNext database.
+2024-12-30 15:45:52 - Internet available. Running fetch process at 30-Dec-24 3:45:52 PM.
+2024-12-30 15:45:52 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 15:45:52 - Connected to the ERPNext database.
+2024-12-30 15:45:52 - Connected to the SQL Server database.
+2024-12-30 15:45:52 - Disconnected from the SQL database.
+2024-12-30 15:45:52 - Disconnected from the ERPNext database.
+2024-12-30 16:05:22 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 16:05:22 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-30 16:05:32 - Internet available. Running fetch process at 30-Dec-24 4:05:32 PM.
+2024-12-30 16:05:32 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True

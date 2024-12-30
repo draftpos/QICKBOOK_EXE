@@ -39,6 +39,6 @@ Public Class frm_Login
     End Sub
 
     Private Sub frm_Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        InitializeRefreshTimer()
     End Sub
 End Class

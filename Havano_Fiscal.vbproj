@@ -460,6 +460,7 @@
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="ExportLibrary\Interval_refresh_Library.vb" />
     <Compile Include="ExportLibrary\Module2.vb" />
     <Compile Include="forms2\DReport1.vb">
       <SubType>Component</SubType>

@@ -11,6 +11,7 @@ Public Class frmdgwrecords
         For Each row As DataRow In dt.Rows
             ComboBox1.Items.Add(row("Currency").ToString())
         Next
+        ' InitializeRefreshTimer()
     End Sub
 
     Function LoadData(datap As String, currency As String) As Boolean
@@ -96,7 +97,7 @@ Public Class frmdgwrecords
         Return dt.Rows.Count > 0
     End Function
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged, DateTimePicker2.ValueChanged, DateTimePicker1.ValueChanged
+    Public Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged, DateTimePicker2.ValueChanged, DateTimePicker1.ValueChanged
         LoadData(TextBox1.Text, "")
     End Sub
 
