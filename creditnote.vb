@@ -45,7 +45,7 @@ Public Class creditnote
     
     Public Overrides Property FullResourceName() As String
         Get
-            Return "WindowsApp1.creditnote.rpt"
+            Return "Havano_Fiscal.creditnote.rpt"
         End Get
         Set
             'Do nothing

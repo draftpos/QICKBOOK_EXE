@@ -1,0 +1,95 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Havano_Fiscal
+</name>
+</assembly>
+<members>
+<member name="T:Havano_Fiscal.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Havano_Fiscal.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Havano_Fiscal.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Havano_Fiscal.My.Resources.Resources._1__2_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Havano_Fiscal.My.Resources.Resources._1497__2_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Havano_Fiscal.My.Resources.Resources._2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Havano_Fiscal.My.Resources.Resources._3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Havano_Fiscal.My.Resources.Resources.Button_Delete_icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Havano_Fiscal.My.Resources.Resources.database_server">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Havano_Fiscal.My.Resources.Resources.png_clipart_arrow_button_computer_icons_login_button_internet_pushbutton_thumbnail">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Havano_Fiscal.My.Resources.Resources.png_clipart_arrow_button_computer_icons_login_button_internet_pushbutton_thumbnail1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Havano_Fiscal.My.Resources.Resources.sales">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Havano_Fiscal.My.Resources.Resources.sample_logo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Havano_Fiscal.My.Resources.Resources.sbseg_en_au_oa_retargeting_hero_rw__no_widget">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="M:Havano_Fiscal.Encryption.Boring(System.String)">
+ <summary>
+ moving all characters in string insert then into new index
+ </summary>
+ <param name="st">string to moving characters</param>
+ <returns>moved characters string</returns>
+</member>
+<member name="M:Havano_Fiscal.ERPNextSyncHelper.UpdateIsSynced(System.String,System.String)">
+ <summary>
+ Updates the `is_synced` column in the `tabSales Invoice` table for the specified invoice.
+ </summary>
+ <param name="erpConnectionString">The connection string for the ERPNext MySQL database.</param>
+ <param name="invoiceName">The name of the invoice to update.</param>
+</member>
+</members>
+</doc>

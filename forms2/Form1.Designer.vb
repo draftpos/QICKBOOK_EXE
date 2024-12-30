@@ -59,12 +59,12 @@ Partial Class Form1
         Me.pnlmenu = New System.Windows.Forms.Panel()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.UsersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ShowInvoicesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CustomToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CompanyInfoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SubmissionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PrintInvoicePdfToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.UsersToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ShowInvoicesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.pnlsqlsettings.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.pnl_login.SuspendLayout()
@@ -93,10 +93,11 @@ Partial Class Form1
         Me.pnlsqlsettings.Controls.Add(Me.cmbInstallationType)
         Me.pnlsqlsettings.Controls.Add(Me.Label5)
         Me.pnlsqlsettings.Controls.Add(Me.cmbServerName)
-        Me.pnlsqlsettings.Location = New System.Drawing.Point(592, 5)
+        Me.pnlsqlsettings.Location = New System.Drawing.Point(592, 41)
         Me.pnlsqlsettings.Name = "pnlsqlsettings"
         Me.pnlsqlsettings.Size = New System.Drawing.Size(301, 328)
         Me.pnlsqlsettings.TabIndex = 0
+        Me.pnlsqlsettings.Visible = False
         '
         'btnConnect
         '
@@ -106,7 +107,7 @@ Partial Class Form1
         Me.btnConnect.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnConnect.ForeColor = System.Drawing.Color.Navy
         Me.btnConnect.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnConnect.Location = New System.Drawing.Point(3, 276)
+        Me.btnConnect.Location = New System.Drawing.Point(39, 272)
         Me.btnConnect.Name = "btnConnect"
         Me.btnConnect.Size = New System.Drawing.Size(110, 40)
         Me.btnConnect.TabIndex = 23
@@ -116,7 +117,7 @@ Partial Class Form1
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel2.BackColor = System.Drawing.Color.Black
         Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel2.Controls.Add(Me.Label1)
@@ -162,7 +163,7 @@ Partial Class Form1
         Me.btnDemoDB.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDemoDB.ForeColor = System.Drawing.Color.Navy
         Me.btnDemoDB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDemoDB.Location = New System.Drawing.Point(120, 276)
+        Me.btnDemoDB.Location = New System.Drawing.Point(156, 272)
         Me.btnDemoDB.Name = "btnDemoDB"
         Me.btnDemoDB.Size = New System.Drawing.Size(137, 40)
         Me.btnDemoDB.TabIndex = 8
@@ -173,6 +174,7 @@ Partial Class Form1
         'txtPassword
         '
         Me.txtPassword.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.ForeColor = System.Drawing.Color.Black
         Me.txtPassword.Location = New System.Drawing.Point(39, 237)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -183,6 +185,7 @@ Partial Class Form1
         'txtUserName
         '
         Me.txtUserName.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUserName.ForeColor = System.Drawing.Color.Black
         Me.txtUserName.Location = New System.Drawing.Point(39, 192)
         Me.txtUserName.Name = "txtUserName"
         Me.txtUserName.Size = New System.Drawing.Size(257, 23)
@@ -192,6 +195,7 @@ Partial Class Form1
         '
         Me.cmbAuthentication.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbAuthentication.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbAuthentication.ForeColor = System.Drawing.Color.Black
         Me.cmbAuthentication.FormattingEnabled = True
         Me.cmbAuthentication.Items.AddRange(New Object() {"Windows Authentication", "SQL Server Authentication"})
         Me.cmbAuthentication.Location = New System.Drawing.Point(39, 152)
@@ -203,7 +207,7 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
+        Me.Label3.ForeColor = System.Drawing.Color.Black
         Me.Label3.Location = New System.Drawing.Point(3, 176)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
@@ -215,8 +219,8 @@ Partial Class Form1
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(3, 136)
+        Me.Label7.ForeColor = System.Drawing.Color.Black
+        Me.Label7.Location = New System.Drawing.Point(3, 135)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(126, 18)
@@ -227,7 +231,7 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.ForeColor = System.Drawing.Color.Black
         Me.Label2.Location = New System.Drawing.Point(5, 221)
         Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label2.Name = "Label2"
@@ -239,8 +243,8 @@ Partial Class Form1
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(2, 96)
+        Me.Label6.ForeColor = System.Drawing.Color.Black
+        Me.Label6.Location = New System.Drawing.Point(2, 88)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(144, 18)
@@ -251,9 +255,10 @@ Partial Class Form1
         '
         Me.cmbInstallationType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbInstallationType.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbInstallationType.ForeColor = System.Drawing.Color.Black
         Me.cmbInstallationType.FormattingEnabled = True
         Me.cmbInstallationType.Items.AddRange(New Object() {"Server Installation", "Client Installation"})
-        Me.cmbInstallationType.Location = New System.Drawing.Point(39, 112)
+        Me.cmbInstallationType.Location = New System.Drawing.Point(39, 108)
         Me.cmbInstallationType.Name = "cmbInstallationType"
         Me.cmbInstallationType.Size = New System.Drawing.Size(257, 24)
         Me.cmbInstallationType.TabIndex = 1
@@ -262,8 +267,8 @@ Partial Class Form1
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Tahoma", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(2, 55)
+        Me.Label5.ForeColor = System.Drawing.Color.Black
+        Me.Label5.Location = New System.Drawing.Point(2, 39)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(150, 18)
@@ -273,8 +278,9 @@ Partial Class Form1
         'cmbServerName
         '
         Me.cmbServerName.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbServerName.ForeColor = System.Drawing.Color.Black
         Me.cmbServerName.FormattingEnabled = True
-        Me.cmbServerName.Location = New System.Drawing.Point(39, 71)
+        Me.cmbServerName.Location = New System.Drawing.Point(39, 62)
         Me.cmbServerName.Name = "cmbServerName"
         Me.cmbServerName.Size = New System.Drawing.Size(257, 24)
         Me.cmbServerName.TabIndex = 0
@@ -286,10 +292,11 @@ Partial Class Form1
         Me.pnl_login.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.pnl_login.Controls.Add(Me.Panel4)
         Me.pnl_login.Controls.Add(Me.Panel3)
-        Me.pnl_login.Location = New System.Drawing.Point(628, 2)
+        Me.pnl_login.Location = New System.Drawing.Point(628, 40)
         Me.pnl_login.Name = "pnl_login"
         Me.pnl_login.Size = New System.Drawing.Size(267, 329)
         Me.pnl_login.TabIndex = 1
+        Me.pnl_login.Visible = False
         '
         'Panel4
         '
@@ -326,7 +333,7 @@ Partial Class Form1
         'Button3
         '
         Me.Button3.BackColor = System.Drawing.Color.Transparent
-        Me.Button3.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.database_server
+        Me.Button3.BackgroundImage = Global.Havano_Fiscal.My.Resources.Resources.database_server
         Me.Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button3.FlatAppearance.BorderSize = 0
@@ -360,7 +367,7 @@ Partial Class Form1
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
         Me.Label9.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.ForeColor = System.Drawing.Color.White
+        Me.Label9.ForeColor = System.Drawing.Color.Black
         Me.Label9.Location = New System.Drawing.Point(3, 185)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(87, 19)
@@ -381,7 +388,7 @@ Partial Class Form1
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
         Me.Label8.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.ForeColor = System.Drawing.Color.White
+        Me.Label8.ForeColor = System.Drawing.Color.Black
         Me.Label8.Location = New System.Drawing.Point(0, 137)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(91, 19)
@@ -398,7 +405,7 @@ Partial Class Form1
         '
         'PictureBox1
         '
-        Me.PictureBox1.Image = Global.WindowsApp1.My.Resources.Resources.png_clipart_arrow_button_computer_icons_login_button_internet_pushbutton_thumbnail1
+        Me.PictureBox1.Image = Global.Havano_Fiscal.My.Resources.Resources.png_clipart_arrow_button_computer_icons_login_button_internet_pushbutton_thumbnail1
         Me.PictureBox1.Location = New System.Drawing.Point(0, -25)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(244, 202)
@@ -408,7 +415,7 @@ Partial Class Form1
         '
         'Panel3
         '
-        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Panel3.BackColor = System.Drawing.Color.Black
         Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel3.Controls.Add(Me.Label4)
@@ -456,6 +463,7 @@ Partial Class Form1
         Me.ProgressBar1.Size = New System.Drawing.Size(125, 10)
         Me.ProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee
         Me.ProgressBar1.TabIndex = 2
+        Me.ProgressBar1.Visible = False
         '
         'Timer1
         '
@@ -463,12 +471,11 @@ Partial Class Form1
         '
         'pnlmenu
         '
-        Me.pnlmenu.BackColor = System.Drawing.Color.Transparent
+        Me.pnlmenu.BackColor = System.Drawing.Color.Black
         Me.pnlmenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnlmenu.Controls.Add(Me.Button5)
         Me.pnlmenu.Controls.Add(Me.MenuStrip1)
         Me.pnlmenu.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlmenu.Enabled = False
         Me.pnlmenu.Location = New System.Drawing.Point(0, 0)
         Me.pnlmenu.Name = "pnlmenu"
         Me.pnlmenu.Size = New System.Drawing.Size(899, 37)
@@ -478,13 +485,13 @@ Partial Class Form1
         '
         Me.Button5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Button5.BackColor = System.Drawing.Color.Transparent
-        Me.Button5.BackgroundImage = Global.WindowsApp1.My.Resources.Resources.Button_Delete_icon
+        Me.Button5.BackgroundImage = Global.Havano_Fiscal.My.Resources.Resources.Button_Delete_icon
         Me.Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.Button5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button5.FlatAppearance.BorderSize = 0
         Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ForeColor = System.Drawing.Color.Navy
-        Me.Button5.Location = New System.Drawing.Point(856, -1)
+        Me.Button5.Location = New System.Drawing.Point(776, 35)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(40, 37)
         Me.Button5.TabIndex = 10
@@ -492,72 +499,80 @@ Partial Class Form1
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.BackColor = System.Drawing.Color.Purple
+        Me.MenuStrip1.BackColor = System.Drawing.Color.Black
         Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None
-        Me.MenuStrip1.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CustomToolStripMenuItem, Me.UsersToolStripMenuItem, Me.ShowInvoicesToolStripMenuItem})
+        Me.MenuStrip1.Font = New System.Drawing.Font("Tahoma", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.UsersToolStripMenuItem, Me.ShowInvoicesToolStripMenuItem, Me.CustomToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.MenuStrip1.Size = New System.Drawing.Size(450, 27)
+        Me.MenuStrip1.Size = New System.Drawing.Size(247, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'UsersToolStripMenuItem
+        '
+        Me.UsersToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.UsersToolStripMenuItem.Name = "UsersToolStripMenuItem"
+        Me.UsersToolStripMenuItem.Size = New System.Drawing.Size(82, 20)
+        Me.UsersToolStripMenuItem.Text = "Credit Note"
+        '
+        'ShowInvoicesToolStripMenuItem
+        '
+        Me.ShowInvoicesToolStripMenuItem.ForeColor = System.Drawing.Color.White
+        Me.ShowInvoicesToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.ShowInvoicesToolStripMenuItem.Name = "ShowInvoicesToolStripMenuItem"
+        Me.ShowInvoicesToolStripMenuItem.Size = New System.Drawing.Size(89, 20)
+        Me.ShowInvoicesToolStripMenuItem.Text = "Sale Invoices"
         '
         'CustomToolStripMenuItem
         '
         Me.CustomToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CompanyInfoToolStripMenuItem, Me.SubmissionToolStripMenuItem, Me.PrintInvoicePdfToolStripMenuItem})
         Me.CustomToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.CustomToolStripMenuItem.Name = "CustomToolStripMenuItem"
-        Me.CustomToolStripMenuItem.Size = New System.Drawing.Size(146, 23)
-        Me.CustomToolStripMenuItem.Text = "Customizations"
+        Me.CustomToolStripMenuItem.Size = New System.Drawing.Size(69, 20)
+        Me.CustomToolStripMenuItem.Text = "Company"
         '
         'CompanyInfoToolStripMenuItem
         '
+        Me.CompanyInfoToolStripMenuItem.BackColor = System.Drawing.Color.Black
+        Me.CompanyInfoToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.CompanyInfoToolStripMenuItem.Name = "CompanyInfoToolStripMenuItem"
-        Me.CompanyInfoToolStripMenuItem.Size = New System.Drawing.Size(217, 24)
+        Me.CompanyInfoToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
         Me.CompanyInfoToolStripMenuItem.Text = "Company Info"
         '
         'SubmissionToolStripMenuItem
         '
+        Me.SubmissionToolStripMenuItem.BackColor = System.Drawing.Color.Black
+        Me.SubmissionToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.SubmissionToolStripMenuItem.Name = "SubmissionToolStripMenuItem"
-        Me.SubmissionToolStripMenuItem.Size = New System.Drawing.Size(217, 24)
+        Me.SubmissionToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
         Me.SubmissionToolStripMenuItem.Text = "Print Credit Note"
         '
         'PrintInvoicePdfToolStripMenuItem
         '
+        Me.PrintInvoicePdfToolStripMenuItem.BackColor = System.Drawing.Color.Black
+        Me.PrintInvoicePdfToolStripMenuItem.ForeColor = System.Drawing.Color.White
         Me.PrintInvoicePdfToolStripMenuItem.Name = "PrintInvoicePdfToolStripMenuItem"
-        Me.PrintInvoicePdfToolStripMenuItem.Size = New System.Drawing.Size(217, 24)
+        Me.PrintInvoicePdfToolStripMenuItem.Size = New System.Drawing.Size(166, 22)
         Me.PrintInvoicePdfToolStripMenuItem.Text = "Print Invoice Pdf"
-        '
-        'UsersToolStripMenuItem
-        '
-        Me.UsersToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.UsersToolStripMenuItem.Name = "UsersToolStripMenuItem"
-        Me.UsersToolStripMenuItem.Size = New System.Drawing.Size(160, 23)
-        Me.UsersToolStripMenuItem.Text = "View Credit Note"
-        '
-        'ShowInvoicesToolStripMenuItem
-        '
-        Me.ShowInvoicesToolStripMenuItem.ForeColor = System.Drawing.Color.White
-        Me.ShowInvoicesToolStripMenuItem.Name = "ShowInvoicesToolStripMenuItem"
-        Me.ShowInvoicesToolStripMenuItem.Size = New System.Drawing.Size(137, 23)
-        Me.ShowInvoicesToolStripMenuItem.Text = "Show Invoices"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.BackgroundImage = Global.WindowsApp1.My.Resources.Resources._1__2_
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(899, 484)
-        Me.ControlBox = False
         Me.Controls.Add(Me.ProgressBar1)
-        Me.Controls.Add(Me.pnl_login)
         Me.Controls.Add(Me.pnlmenu)
+        Me.Controls.Add(Me.pnl_login)
         Me.Controls.Add(Me.pnlsqlsettings)
         Me.DoubleBuffered = True
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Havano Fiscal"

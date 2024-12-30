@@ -34,7 +34,7 @@ Partial Class inputdialog
         Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.CustomLineControl1 = New WindowsApp1.CustomLineControl()
+        Me.CustomLineControl1 = New Havano_Fiscal.CustomLineControl()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.pnp1.SuspendLayout()
         Me.pnldate.SuspendLayout()

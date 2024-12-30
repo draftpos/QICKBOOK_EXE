@@ -24,6 +24,7 @@ Partial Class frmdgwrecords
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmdgwrecords))
         Me.Panel1 = New System.Windows.Forms.Panel()
@@ -173,6 +174,14 @@ Partial Class frmdgwrecords
         Me.dgw.MultiSelect = False
         Me.dgw.Name = "dgw"
         Me.dgw.ReadOnly = True
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgw.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.dgw.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
         Me.dgw.RowTemplate.Height = 33
         Me.dgw.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
@@ -376,6 +385,7 @@ Partial Class frmdgwrecords
         Me.MinimizeBox = False
         Me.Name = "frmdgwrecords"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Havano Fiscal"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
