@@ -207,3 +207,259 @@
 2024-12-30 08:49:55 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
 2024-12-30 08:50:35 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
 2024-12-30 08:50:35 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-30 10:08:34 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 10:08:34 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-30 10:10:04 - Internet available. Running fetch process at 12/30/2024 10:10:04 AM.
+2024-12-30 10:10:04 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 10:10:09 - Failed to connect to the ERPNEXT Server database. MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts ---> System.Net.Sockets.SocketException (0x80004005): An established connection was aborted by the software in your host machine 89.250.67.36:3306
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   at MySql.Data.MySqlClient.NativeDriver.<>c.<OpenAsync>b__38_0(Exception ex)
+   at System.AggregateException.Handle(Func`2 predicate)
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<OpenAsync>d__76.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<CreateNewPooledConnectionAsync>d__33.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetPooledConnectionAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<TryToGetDriverAsync>d__36.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetConnectionAsync>d__37.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.<OpenAsync>d__94.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Havano_Fiscal.FetchSalesInvoiceDetails.FetchAndInsertSalesInvoices() in C:\Showlines\QICKBOOK_EXE\Service\FetchSalesInvoiceDetails.vb:line 122
+2024-12-30 10:10:09 - Failed to connect to the ERPNEXT Server database.
+2024-12-30 10:10:09 - An error occurred: Connection must be valid and open.
+2024-12-30 10:10:14 - Internet available. Running fetch process at 12/30/2024 10:10:14 AM.
+2024-12-30 10:10:14 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 10:10:24 - Internet available. Running fetch process at 12/30/2024 10:10:24 AM.
+2024-12-30 10:10:24 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 10:10:29 - Failed to connect to the ERPNEXT Server database. MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts ---> System.Net.Sockets.SocketException (0x80004005): An established connection was aborted by the software in your host machine 89.250.67.36:3306
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   at MySql.Data.MySqlClient.NativeDriver.<>c.<OpenAsync>b__38_0(Exception ex)
+   at System.AggregateException.Handle(Func`2 predicate)
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<OpenAsync>d__76.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<CreateNewPooledConnectionAsync>d__33.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetPooledConnectionAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<TryToGetDriverAsync>d__36.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetConnectionAsync>d__37.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.<OpenAsync>d__94.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Havano_Fiscal.FetchSalesInvoiceDetails.FetchAndInsertSalesInvoices() in C:\Showlines\QICKBOOK_EXE\Service\FetchSalesInvoiceDetails.vb:line 122
+2024-12-30 10:10:29 - Failed to connect to the ERPNEXT Server database.
+2024-12-30 10:10:29 - An error occurred: Connection must be valid and open.
+2024-12-30 10:10:29 - Failed to connect to the ERPNEXT Server database. MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts ---> System.Net.Sockets.SocketException (0x80004005): An established connection was aborted by the software in your host machine 89.250.67.36:3306
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   at MySql.Data.MySqlClient.NativeDriver.<>c.<OpenAsync>b__38_0(Exception ex)
+   at System.AggregateException.Handle(Func`2 predicate)
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<OpenAsync>d__76.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<CreateNewPooledConnectionAsync>d__33.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetPooledConnectionAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<TryToGetDriverAsync>d__36.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetConnectionAsync>d__37.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.<OpenAsync>d__94.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Havano_Fiscal.FetchSalesInvoiceDetails.FetchAndInsertSalesInvoices() in C:\Showlines\QICKBOOK_EXE\Service\FetchSalesInvoiceDetails.vb:line 122
+2024-12-30 10:10:29 - Failed to connect to the ERPNEXT Server database.
+2024-12-30 10:10:29 - An error occurred: Connection must be valid and open.
+2024-12-30 13:18:48 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 13:18:48 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-30 13:18:58 - Internet available. Running fetch process at 12/30/2024 1:18:58 PM.
+2024-12-30 13:18:58 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 13:19:01 - Connected to the ERPNext database.
+2024-12-30 13:19:02 - Connected to the SQL Server database.
+2024-12-30 13:19:02 - Disconnected from the SQL database.
+2024-12-30 13:19:02 - Disconnected from the ERPNext database.
+2024-12-30 13:19:08 - Internet available. Running fetch process at 12/30/2024 1:19:08 PM.
+2024-12-30 13:19:08 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 13:19:09 - Connected to the ERPNext database.
+2024-12-30 13:19:09 - Connected to the SQL Server database.
+2024-12-30 13:19:09 - Disconnected from the SQL database.
+2024-12-30 13:19:09 - Disconnected from the ERPNext database.
+2024-12-30 13:19:18 - Internet available. Running fetch process at 12/30/2024 1:19:18 PM.
+2024-12-30 13:19:18 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 13:19:20 - Connected to the ERPNext database.
+2024-12-30 13:19:23 - Connected to the SQL Server database.
+2024-12-30 13:19:23 - Disconnected from the SQL database.
+2024-12-30 13:19:23 - Disconnected from the ERPNext database.
+2024-12-30 13:19:28 - Internet available. Running fetch process at 12/30/2024 1:19:28 PM.
+2024-12-30 13:19:28 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 13:19:30 - Connected to the ERPNext database.
+2024-12-30 13:19:32 - Connected to the SQL Server database.
+2024-12-30 13:19:32 - Disconnected from the SQL database.
+2024-12-30 13:19:32 - Disconnected from the ERPNext database.
+2024-12-30 13:19:38 - Internet available. Running fetch process at 12/30/2024 1:19:38 PM.
+2024-12-30 13:19:38 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 13:19:39 - Connected to the ERPNext database.
+2024-12-30 13:19:39 - Connected to the SQL Server database.
+2024-12-30 13:19:39 - Disconnected from the SQL database.
+2024-12-30 13:19:39 - Disconnected from the ERPNext database.
+2024-12-30 14:33:13 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 14:33:13 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-30 14:33:23 - Internet available. Running fetch process at 12/30/2024 2:33:23 PM.
+2024-12-30 14:33:23 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 14:33:26 - Connected to the ERPNext database.
+2024-12-30 14:33:26 - Connected to the SQL Server database.
+2024-12-30 14:33:26 - Inserted invoice: ACC-SINV-2024-00049
+2024-12-30 14:33:26 - Entered customer update: APOSTLE MATHEW
+2024-12-30 14:33:31 - Inserted item: COFFE TABLE for invoice: ACC-SINV-2024-00049
+2024-12-30 14:33:31 - Inserted invoice: ACC-SINV-2024-00050
+2024-12-30 14:33:31 - Entered customer update: CDE MNAGAGWA
+2024-12-30 14:33:33 - Internet available. Running fetch process at 12/30/2024 2:33:33 PM.
+2024-12-30 14:33:33 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 14:33:34 - Connected to the ERPNext database.
+2024-12-30 14:33:34 - Connected to the SQL Server database.
+2024-12-30 14:33:34 - Inserted invoice: ACC-SINV-2024-00050
+2024-12-30 14:33:34 - Entered customer update: CDE MNAGAGWA
+2024-12-30 14:33:34 - Inserted item: COFFE TABLE for invoice: ACC-SINV-2024-00050
+2024-12-30 14:33:34 - Inserted item: Tooth Paste for invoice: ACC-SINV-2024-00050
+2024-12-30 14:33:34 - Inserted invoice: ACC-SINV-2024-00051
+2024-12-30 14:33:34 - Entered customer update: CDE MNAGAGWA
+2024-12-30 14:34:35 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 14:34:35 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-30 14:34:46 - Internet available. Running fetch process at 12/30/2024 2:34:46 PM.
+2024-12-30 14:34:46 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 14:34:48 - Connected to the ERPNext database.
+2024-12-30 14:34:49 - Connected to the SQL Server database.
+2024-12-30 14:34:49 - Inserted invoice: ACC-SINV-2024-00051
+2024-12-30 14:34:49 - Entered customer update: CDE MNAGAGWA
+2024-12-30 14:34:51 - Inserted item: Tooth Paste for invoice: ACC-SINV-2024-00051
+2024-12-30 14:34:51 - Inserted item: COFFE TABLE for invoice: ACC-SINV-2024-00051
+2024-12-30 14:34:51 - Disconnected from the SQL database.
+2024-12-30 14:34:51 - Disconnected from the ERPNext database.
+2024-12-30 14:34:56 - Internet available. Running fetch process at 12/30/2024 2:34:56 PM.
+2024-12-30 14:34:56 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 14:34:56 - Connected to the ERPNext database.
+2024-12-30 14:34:56 - Connected to the SQL Server database.
+2024-12-30 14:34:56 - Disconnected from the SQL database.
+2024-12-30 14:34:56 - Disconnected from the ERPNext database.
+2024-12-30 14:35:06 - Internet available. Running fetch process at 12/30/2024 2:35:06 PM.
+2024-12-30 14:35:06 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 14:35:06 - Connected to the ERPNext database.
+2024-12-30 14:35:06 - Connected to the SQL Server database.
+2024-12-30 14:35:06 - Disconnected from the SQL database.
+2024-12-30 14:35:06 - Disconnected from the ERPNext database.
+2024-12-30 14:35:16 - Internet available. Running fetch process at 12/30/2024 2:35:16 PM.
+2024-12-30 14:35:16 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 14:35:16 - Connected to the ERPNext database.
+2024-12-30 14:35:16 - Connected to the SQL Server database.
+2024-12-30 14:35:16 - Disconnected from the SQL database.
+2024-12-30 14:35:16 - Disconnected from the ERPNext database.
+2024-12-30 14:35:26 - Internet available. Running fetch process at 12/30/2024 2:35:26 PM.
+2024-12-30 14:35:26 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 14:35:27 - Connected to the ERPNext database.
+2024-12-30 14:35:28 - Connected to the SQL Server database.
+2024-12-30 14:35:28 - Disconnected from the SQL database.
+2024-12-30 14:35:28 - Disconnected from the ERPNext database.
+2024-12-30 14:35:36 - Internet available. Running fetch process at 12/30/2024 2:35:36 PM.
+2024-12-30 14:35:36 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 14:35:36 - Connected to the ERPNext database.
+2024-12-30 14:35:36 - Connected to the SQL Server database.
+2024-12-30 14:35:36 - Disconnected from the SQL database.
+2024-12-30 14:35:36 - Disconnected from the ERPNext database.
+2024-12-30 14:35:46 - Internet available. Running fetch process at 12/30/2024 2:35:46 PM.
+2024-12-30 14:35:46 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 14:35:46 - Connected to the ERPNext database.
+2024-12-30 14:35:46 - Connected to the SQL Server database.
+2024-12-30 14:35:46 - Disconnected from the SQL database.
+2024-12-30 14:35:46 - Disconnected from the ERPNext database.
+2024-12-30 14:35:56 - Internet available. Running fetch process at 12/30/2024 2:35:56 PM.
+2024-12-30 14:35:56 - SQL database. Data Source=DESKTOP-TKNB1T8;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 14:35:56 - Connected to the ERPNext database.
+2024-12-30 14:35:56 - Connected to the SQL Server database.
+2024-12-30 14:35:56 - Disconnected from the SQL database.
+2024-12-30 14:35:56 - Disconnected from the ERPNext database.
