@@ -43,7 +43,7 @@ Module cruds
                     End If
                 End Using
             Catch ex As Exception
-                MsgBox("An error occurred: " & ex.Message)
+                Debug.WriteLine("An error occurred: " & ex.Message)
             Finally
                 conn.Close()
             End Try

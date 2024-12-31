@@ -1,0 +1,98 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\HZ Monitor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDF7B80-18E8-4657-962F-ECE50AFABC5B}|HZ Monitor\\HZ Monitor.vbproj|C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\HZ Monitor\\hz monitor\\frmtest.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7BDF7B80-18E8-4657-962F-ECE50AFABC5B}|HZ Monitor\\HZ Monitor.vbproj|solutionrelative:hz monitor\\frmtest.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDF7B80-18E8-4657-962F-ECE50AFABC5B}|HZ Monitor\\HZ Monitor.vbproj|C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\HZ Monitor\\hz monitor\\frmtest.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7BDF7B80-18E8-4657-962F-ECE50AFABC5B}|HZ Monitor\\HZ Monitor.vbproj|solutionrelative:hz monitor\\frmtest.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDF7B80-18E8-4657-962F-ECE50AFABC5B}|HZ Monitor\\HZ Monitor.vbproj|C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\HZ Monitor\\hz monitor\\frmmonitor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{7BDF7B80-18E8-4657-962F-ECE50AFABC5B}|HZ Monitor\\HZ Monitor.vbproj|solutionrelative:hz monitor\\frmmonitor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BDF7B80-18E8-4657-962F-ECE50AFABC5B}|HZ Monitor\\HZ Monitor.vbproj|c:\\users\\user\\desktop\\quickbook\\windowsapp1\\qickbook_exe\\hz monitor\\hz monitor\\frmmonitor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{7BDF7B80-18E8-4657-962F-ECE50AFABC5B}|HZ Monitor\\HZ Monitor.vbproj|solutionrelative:hz monitor\\frmmonitor.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmTest.vb",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\HZ Monitor\\HZ Monitor\\FrmTest.vb",
+              "RelativeDocumentMoniker": "HZ Monitor\\FrmTest.vb",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\HZ Monitor\\HZ Monitor\\FrmTest.vb",
+              "RelativeToolTip": "HZ Monitor\\FrmTest.vb",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAewJsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-31T07:45:39.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmTest.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\HZ Monitor\\HZ Monitor\\FrmTest.vb",
+              "RelativeDocumentMoniker": "HZ Monitor\\FrmTest.vb",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\HZ Monitor\\HZ Monitor\\FrmTest.vb [Design]",
+              "RelativeToolTip": "HZ Monitor\\FrmTest.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-31T07:45:39.645Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmMonitor.vb",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\HZ Monitor\\HZ Monitor\\FrmMonitor.vb",
+              "RelativeDocumentMoniker": "HZ Monitor\\FrmMonitor.vb",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\HZ Monitor\\HZ Monitor\\FrmMonitor.vb",
+              "RelativeToolTip": "HZ Monitor\\FrmMonitor.vb",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAwIAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-31T07:45:40.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmMonitor.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\HZ Monitor\\HZ Monitor\\FrmMonitor.vb",
+              "RelativeDocumentMoniker": "HZ Monitor\\FrmMonitor.vb",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\QUICKBOOK\\WindowsApp1\\QICKBOOK_EXE\\HZ Monitor\\HZ Monitor\\FrmMonitor.vb [Design]",
+              "RelativeToolTip": "HZ Monitor\\FrmMonitor.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-12-31T07:45:41.011Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

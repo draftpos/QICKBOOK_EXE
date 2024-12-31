@@ -46,7 +46,7 @@ Module Glob_var
         End Try
     End Function
 
-    Private Function SafeConvertToBoolean(value As Object) As Boolean
+    Public Function SafeConvertToBoolean(value As Object) As Boolean
         If value Is Nothing OrElse IsDBNull(value) Then
             Return False
         End If

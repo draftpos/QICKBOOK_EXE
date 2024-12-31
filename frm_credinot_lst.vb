@@ -7,74 +7,100 @@ Public Class frm_credinot_lst
         DateTimePicker1.Value = Now.Date.ToString("dd/MM/yyyy")
         DateTimePicker2.Value = Now.Date.ToString("dd/MM/yyyy")
         LoadData("")
+        '  InitializeRefreshTimer()
     End Sub
-
-    Function LoadData(datap As String)
+    Function LoadData(datap As String) As Boolean
         dgw.Rows.Clear()
-        Dim sql As String
+
+        ' Define the SQL query
+        Dim sql As String = "
+        SELECT 
+           cm.[TxnId],
+           cm.[CustomerName],
+           cm.[TxnDate],
+           cm.[CustomerListId],
+           cm.[Amount],
+           cm.[CreditNoteNumber],
+           cm.[Subtotal],
+           cm.[SalesTaxPercentage],
+           cm.[SalesTaxTotal],
+           cm.[TotalAmount],
+           cm.[CreditRemaining],
+           cm.[Message],
+           cm.[HavanoZimraStatus],
+           SUM(CASE WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount ELSE 0 END) AS TotalVat,
+           SUM(it.Amount) AS Total,
+           SUM(it.Amount) - SUM(CASE WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount ELSE 0 END) AS Total_Exclusive
+        FROM [CreditMemo] cm
+        INNER JOIN [Item] it ON it.TxnId = cm.TxnId
+        WHERE cm.[TxnDate] >= @StartDate AND cm.[TxnDate] <= @EndDate"
+
+        ' Add conditions based on `datap` input
         If Not String.IsNullOrWhiteSpace(datap) Then
-            sql = "
-        SELECT 
-           [TxnId]
-           ,[CustomerName]
-           ,[TxnDate]
-           ,[CustomerListId]
-           ,[Amount]
-           ,[CreditNoteNumber]
-           ,[Subtotal]
-           ,[SalesTaxPercentage]
-           ,[SalesTaxTotal]
-           ,[TotalAmount]
-           ,[CreditRemaining]
-           ,[Message] 
-        FROM [CreditMemo]
-        WHERE [TxnDate] >= @StartDate AND [TxnDate] <= @EndDate
-          AND ([CreditNoteNumber] = @SearchText OR [TxnId] LIKE '%' + @SearchText + '%')"
-        Else
-            sql = "
-        SELECT 
-           [TxnId]
-           ,[CustomerName]
-           ,[TxnDate]
-           ,[CustomerListId]
-           ,[Amount]
-           ,[CreditNoteNumber]
-           ,[Subtotal]
-           ,[SalesTaxPercentage]
-           ,[SalesTaxTotal]
-           ,[TotalAmount]
-           ,[CreditRemaining]
-           ,[Message] 
-        FROM [CreditMemo]
-        WHERE [TxnDate] >= @StartDate AND [TxnDate] <= @EndDate"
+            sql += " AND (cm.[CreditNoteNumber] = @SearchText OR cm.[TxnId] LIKE '%' + @SearchText + '%')"
         End If
+
+        ' Group the data for aggregate calculations
+        sql += "
+        GROUP BY 
+           cm.[TxnId],
+           cm.[CustomerName],
+           cm.[TxnDate],
+           cm.[CustomerListId],
+           cm.[Amount],
+           cm.[CreditNoteNumber],
+           cm.[Subtotal],
+           cm.[SalesTaxPercentage],
+           cm.[SalesTaxTotal],
+           cm.[TotalAmount],
+           cm.[CreditRemaining],
+           cm.[Message],
+           cm.[HavanoZimraStatus]"
+
+        ' Define SQL parameters
         Dim parameters As New List(Of SqlParameter) From {
         New SqlParameter("@StartDate", DateTimePicker1.Value),
         New SqlParameter("@EndDate", DateTimePicker2.Value)
     }
-        If Not String.IsNullOrWhiteSpace(TextBox1.Text) Then
+        If Not String.IsNullOrWhiteSpace(datap) Then
             parameters.Add(New SqlParameter("@SearchText", datap))
         End If
+
+        ' Execute the query
         Dim dt As DataTable = Crud(sql, parameters)
-        Dim sumtotal, vattotal, totalexcl As Double
-        sumtotal = 0 : vattotal = 0 : totalexcl = 0
+
+        ' Initialize totals
+        Dim sumTotal As Double = 0
+        Dim vatTotal As Double = 0
+        Dim totalExcl As Double = 0
+
+        ' Process the results
         For Each row As DataRow In dt.Rows
-            dgw.Rows.Add(row("CreditNoteNumber"), row("TxnId"), row("CustomerName"), row("TxnDate"), row("SalesTaxTotal"), row("Subtotal"), row("TotalAmount"))
-            sumtotal += Val(row("TotalAmount"))
-            totalexcl += Val(row("Subtotal"))
-            vattotal += Val(row("SalesTaxTotal"))
+            Dim havanoStatus As Boolean = SafeConvertToBoolean(row("HavanoZimraStatus"))
+            Dim statusDesc As String = If(havanoStatus, "Submitted", "Pending")
+
+            ' Add data to DataGridView
+            dgw.Rows.Add(row("CreditNoteNumber"), row("TxnId"), row("CustomerName"), row("TxnDate"),
+                     row("TotalVat"), row("Total_Exclusive"), row("Total"), statusDesc)
+
+            ' Accumulate totals
+            sumTotal += Val(row("Total"))
+            totalExcl += Val(row("Total_Exclusive"))
+            vatTotal += Val(row("TotalVat"))
         Next
-        lbltotalExcl.Text = totalexcl.ToString()
-        lbltotalsum.Text = sumtotal.ToString()
-        lbltotalvat.Text = vattotal.ToString()
-        If dt.Rows.Count = 0 Then
-            Return False
-        Else
-            Return True
-        End If
+
+        ' Update labels
+        lbltotalExcl.Text = totalExcl.ToString("N2")
+        lbltotalsum.Text = sumTotal.ToString("N2")
+        lbltotalvat.Text = vatTotal.ToString("N2")
+
+        ' Return True if data exists, otherwise False
+        Return dt.Rows.Count > 0
     End Function
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged, DateTimePicker2.ValueChanged, DateTimePicker1.ValueChanged
+
+
+    Public Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged, DateTimePicker2.ValueChanged, DateTimePicker1.ValueChanged
         LoadData(TextBox1.Text)
     End Sub
 

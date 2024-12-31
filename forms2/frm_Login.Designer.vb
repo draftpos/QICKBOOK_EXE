@@ -33,28 +33,29 @@ Partial Class frm_Login
         Me.Label8 = New System.Windows.Forms.Label()
         Me.txt_username = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.pnl_login.SuspendLayout()
         Me.Panel4.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'pnl_login
         '
-        Me.pnl_login.BackColor = System.Drawing.Color.Transparent
-        Me.pnl_login.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.pnl_login.BackColor = System.Drawing.Color.White
+        Me.pnl_login.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnl_login.Controls.Add(Me.Panel4)
-        Me.pnl_login.Controls.Add(Me.Panel3)
-        Me.pnl_login.Location = New System.Drawing.Point(4, 0)
+        Me.pnl_login.Controls.Add(Me.Label1)
+        Me.pnl_login.Controls.Add(Me.Label2)
+        Me.pnl_login.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pnl_login.Location = New System.Drawing.Point(0, 0)
         Me.pnl_login.Name = "pnl_login"
-        Me.pnl_login.Size = New System.Drawing.Size(279, 329)
+        Me.pnl_login.Size = New System.Drawing.Size(826, 594)
         Me.pnl_login.TabIndex = 2
         '
         'Panel4
         '
+        Me.Panel4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel4.Controls.Add(Me.Button4)
         Me.Panel4.Controls.Add(Me.Button3)
@@ -64,9 +65,9 @@ Partial Class frm_Login
         Me.Panel4.Controls.Add(Me.Label8)
         Me.Panel4.Controls.Add(Me.txt_username)
         Me.Panel4.Controls.Add(Me.PictureBox1)
-        Me.Panel4.Location = New System.Drawing.Point(17, 41)
+        Me.Panel4.Location = New System.Drawing.Point(249, 63)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(247, 277)
+        Me.Panel4.Size = New System.Drawing.Size(401, 476)
         Me.Panel4.TabIndex = 4
         '
         'Button4
@@ -77,9 +78,9 @@ Partial Class frm_Login
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.Navy
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(-7, 255)
+        Me.Button4.Location = New System.Drawing.Point(167, 210)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(97, 40)
+        Me.Button4.Size = New System.Drawing.Size(97, 10)
         Me.Button4.TabIndex = 26
         Me.Button4.Text = "Reconnect"
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
@@ -95,9 +96,9 @@ Partial Class frm_Login
         Me.Button3.FlatAppearance.BorderSize = 0
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.Color.Red
-        Me.Button3.Location = New System.Drawing.Point(107, 231)
+        Me.Button3.Location = New System.Drawing.Point(155, 388)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(62, 40)
+        Me.Button3.Size = New System.Drawing.Size(78, 54)
         Me.Button3.TabIndex = 25
         Me.Button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         Me.Button3.UseVisualStyleBackColor = False
@@ -110,9 +111,9 @@ Partial Class frm_Login
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.ForeColor = System.Drawing.Color.Navy
         Me.Button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Button2.Location = New System.Drawing.Point(176, 231)
+        Me.Button2.Location = New System.Drawing.Point(239, 388)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(66, 40)
+        Me.Button2.Size = New System.Drawing.Size(82, 54)
         Me.Button2.TabIndex = 24
         Me.Button2.Text = "Login"
         Me.Button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
@@ -122,20 +123,21 @@ Partial Class frm_Login
         '
         Me.Label9.AutoSize = True
         Me.Label9.BackColor = System.Drawing.Color.Transparent
-        Me.Label9.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.ForeColor = System.Drawing.Color.Black
-        Me.Label9.Location = New System.Drawing.Point(3, 185)
+        Me.Label9.Location = New System.Drawing.Point(60, 310)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(87, 19)
+        Me.Label9.Size = New System.Drawing.Size(76, 19)
         Me.Label9.TabIndex = 12
         Me.Label9.Text = "Password"
         '
         'txt_password
         '
-        Me.txt_password.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_password.Location = New System.Drawing.Point(3, 204)
+        Me.txt_password.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_password.ForeColor = System.Drawing.Color.Black
+        Me.txt_password.Location = New System.Drawing.Point(61, 329)
         Me.txt_password.Name = "txt_password"
-        Me.txt_password.Size = New System.Drawing.Size(242, 23)
+        Me.txt_password.Size = New System.Drawing.Size(278, 30)
         Me.txt_password.TabIndex = 11
         Me.txt_password.UseSystemPasswordChar = True
         '
@@ -143,92 +145,83 @@ Partial Class frm_Login
         '
         Me.Label8.AutoSize = True
         Me.Label8.BackColor = System.Drawing.Color.Transparent
-        Me.Label8.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Tahoma", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Black
-        Me.Label8.Location = New System.Drawing.Point(-1, 138)
+        Me.Label8.Location = New System.Drawing.Point(56, 249)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(91, 19)
+        Me.Label8.Size = New System.Drawing.Size(80, 19)
         Me.Label8.TabIndex = 10
         Me.Label8.Text = "Username"
         '
         'txt_username
         '
-        Me.txt_username.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_username.Location = New System.Drawing.Point(3, 160)
+        Me.txt_username.Font = New System.Drawing.Font("Tahoma", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_username.ForeColor = System.Drawing.Color.Black
+        Me.txt_username.Location = New System.Drawing.Point(61, 271)
         Me.txt_username.Name = "txt_username"
-        Me.txt_username.Size = New System.Drawing.Size(242, 23)
+        Me.txt_username.Size = New System.Drawing.Size(278, 30)
         Me.txt_username.TabIndex = 0
         '
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.Havano_Fiscal.My.Resources.Resources.png_clipart_arrow_button_computer_icons_login_button_internet_pushbutton_thumbnail1
-        Me.PictureBox1.Location = New System.Drawing.Point(-1, -32)
+        Me.PictureBox1.Location = New System.Drawing.Point(79, 14)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(244, 202)
+        Me.PictureBox1.Size = New System.Drawing.Size(260, 224)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
-        'Panel3
+        'Label1
         '
-        Me.Panel3.BackColor = System.Drawing.Color.Black
-        Me.Panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel3.Controls.Add(Me.Label4)
-        Me.Panel3.Controls.Add(Me.Button1)
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(275, 36)
-        Me.Panel3.TabIndex = 3
+        Me.Label1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Lucida Sans Typewriter", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(24, 132)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(395, 109)
+        Me.Label1.TabIndex = 10
+        Me.Label1.Text = "HAVANO"
+        Me.Label1.Visible = False
         '
-        'Label4
+        'Label2
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.BackColor = System.Drawing.Color.Transparent
-        Me.Label4.Font = New System.Drawing.Font("Lucida Sans Typewriter", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(-3, 10)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(120, 22)
-        Me.Label4.TabIndex = 0
-        Me.Label4.Text = "USER LOGIN"
-        '
-        'Button1
-        '
-        Me.Button1.BackColor = System.Drawing.Color.Transparent
-        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Button1.FlatAppearance.BorderSize = 0
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.Navy
-        Me.Button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button1.Location = New System.Drawing.Point(185, 0)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(85, 31)
-        Me.Button1.TabIndex = 9
-        Me.Button1.Text = "Close"
-        Me.Button1.UseVisualStyleBackColor = False
-        Me.Button1.Visible = False
+        Me.Label2.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.Font = New System.Drawing.Font("Lucida Sans Typewriter", 72.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(24, 260)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(395, 109)
+        Me.Label2.TabIndex = 27
+        Me.Label2.Text = "FISCAL"
+        Me.Label2.Visible = False
         '
         'frm_Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(282, 327)
+        Me.ClientSize = New System.Drawing.Size(826, 594)
         Me.Controls.Add(Me.pnl_login)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.MinimizeBox = False
         Me.Name = "frm_Login"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Havano Fiscal"
         Me.pnl_login.ResumeLayout(False)
+        Me.pnl_login.PerformLayout()
         Me.Panel4.ResumeLayout(False)
         Me.Panel4.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -242,8 +235,7 @@ Partial Class frm_Login
     Friend WithEvents Label8 As Label
     Friend WithEvents txt_username As TextBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Button1 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
 End Class

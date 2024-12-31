@@ -43,6 +43,7 @@ Partial Class frmdgwrecords
         Me.Column4 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column9 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -161,7 +162,7 @@ Partial Class frmdgwrecords
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgw.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgw.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgw.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column6, Me.Column1, Me.Column2, Me.Column3, Me.Column8, Me.Column4, Me.Column5, Me.Column7})
+        Me.dgw.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column6, Me.Column1, Me.Column2, Me.Column3, Me.Column8, Me.Column4, Me.Column5, Me.Column7, Me.Column9})
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Tahoma", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -240,6 +241,12 @@ Partial Class frmdgwrecords
         Me.Column7.Name = "Column7"
         Me.Column7.ReadOnly = True
         '
+        'Column9
+        '
+        Me.Column9.HeaderText = "Status"
+        Me.Column9.Name = "Column9"
+        Me.Column9.ReadOnly = True
+        '
         'Panel2
         '
         Me.Panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
@@ -309,7 +316,7 @@ Partial Class frmdgwrecords
         Me.GelButton2.Name = "GelButton2"
         Me.GelButton2.Size = New System.Drawing.Size(103, 34)
         Me.GelButton2.TabIndex = 398
-        Me.GelButton2.Text = "Preview Pdf"
+        Me.GelButton2.Text = "Print"
         Me.GelButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.GelButton2.UseVisualStyleBackColor = False
         '
@@ -381,8 +388,6 @@ Partial Class frmdgwrecords
         Me.ClientSize = New System.Drawing.Size(1134, 450)
         Me.Controls.Add(Me.Panel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
         Me.Name = "frmdgwrecords"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Havano Fiscal"
@@ -406,14 +411,6 @@ Partial Class frmdgwrecords
     Friend WithEvents DateTimePicker2 As DateTimePicker
     Friend WithEvents dgw As DataGridView
     Friend WithEvents GelButton2 As GelButtons.GelButton
-    Friend WithEvents Column6 As DataGridViewTextBoxColumn
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewTextBoxColumn
-    Friend WithEvents Column8 As DataGridViewTextBoxColumn
-    Friend WithEvents Column4 As DataGridViewTextBoxColumn
-    Friend WithEvents Column5 As DataGridViewTextBoxColumn
-    Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents GelButton1 As GelButtons.GelButton
     Friend WithEvents lbltotalsum As Label
     Friend WithEvents lbltotalExcl As Label
@@ -423,4 +420,13 @@ Partial Class frmdgwrecords
     Friend WithEvents Label4 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Column6 As DataGridViewTextBoxColumn
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewTextBoxColumn
+    Friend WithEvents Column8 As DataGridViewTextBoxColumn
+    Friend WithEvents Column4 As DataGridViewTextBoxColumn
+    Friend WithEvents Column5 As DataGridViewTextBoxColumn
+    Friend WithEvents Column7 As DataGridViewTextBoxColumn
+    Friend WithEvents Column9 As DataGridViewTextBoxColumn
 End Class

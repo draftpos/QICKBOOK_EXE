@@ -4,6 +4,14 @@ Public Class frm_Login
 
 
     Private Sub frm_Login_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If exitapp() Then
+            End
+            'Application.Exit()
+        Else
+            Dim FRML = New frm_Login
+            FRML.Show()
+            Me.Dispose()
+        End If
 
     End Sub
 
@@ -39,6 +47,18 @@ Public Class frm_Login
     End Sub
 
     Private Sub frm_Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        InitializeRefreshTimer()
+    End Sub
+
+    Private Sub txt_username_TextChanged(sender As Object, e As EventArgs) Handles txt_username.TextChanged
+
+    End Sub
+
+    Private Sub Panel4_Paint(sender As Object, e As PaintEventArgs) Handles Panel4.Paint
+
+    End Sub
+
+    Private Sub frm_Login_FormClosed(sender As Object, e As FormClosedEventArgs)
 
     End Sub
 End Class
