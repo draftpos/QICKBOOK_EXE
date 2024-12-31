@@ -59,7 +59,7 @@ Module FetchSalesInvoiceDetails
         Dim erpPort As String = "3306" ' Default MySQL/MariaDB port
         Dim erpConnectionString As String = $"Server={erpServer};Port={erpPort};Database={erpDatabase};Uid={erpUser};Pwd={erpPassword};"
         Dim sqlConnectionString As String = cs
-        LogMessage(logFilePath, $"SQL database. {cs}")
+        'LogMessage(logFilePath, $"SQL database. {cs}")
 
         ' SQL Server connection details
         ' Dim sqlServer As String = "DESKTOP-TKNB1T8"
@@ -165,6 +165,13 @@ Module FetchSalesInvoiceDetails
                                 Dim custom_customer_phone As String = reader("custom_customer_phone").ToString()
                                 Dim custom_customer_email As String = reader("custom_customer_email").ToString()
                                 Dim currency As String = reader("currency").ToString()
+                                Dim tax_rate As String = reader("item_tax_template").ToString()
+
+                                If tax_rate = "S" Then
+                                    tax_rate = 15.0
+                                ElseIf tax_rate = "E" Then
+                                    tax_rate = 0.0
+                                End If
 
                                 ' Insert invoice details only once per invoice
                                 If invoiceName <> currentInvoice Then
@@ -234,7 +241,7 @@ Module FetchSalesInvoiceDetails
                                     itemCommand.Parameters.AddWithValue("@Rate", Convert.ToDecimal(reader("rate")))
                                     itemCommand.Parameters.AddWithValue("@Amount", Convert.ToDecimal(reader("amount")))
                                     itemCommand.Parameters.AddWithValue("@TxnId", invoiceName)
-                                    itemCommand.Parameters.AddWithValue("@Vat", reader("item_tax_template").ToString()) ' Replace with VAT if available
+                                    itemCommand.Parameters.AddWithValue("@Vat", tax_rate.ToString()) ' Replace with VAT if available
 
                                     itemCommand.ExecuteNonQuery()
                                     Console.WriteLine($"Inserted item: {reader("item_name").ToString()} for invoice: {invoiceName}")
