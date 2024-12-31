@@ -4,13 +4,8 @@ Public Class frm_Login
 
 
     Private Sub frm_Login_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        If exitapp() Then
-            Application.Exit()
-        Else
-            Dim FRML As New frm_Login
-            FRML.Show()
-            Me.Dispose()
-        End If
+
+
     End Sub
 
     Private Async Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -54,5 +49,15 @@ Public Class frm_Login
 
     Private Sub Panel4_Paint(sender As Object, e As PaintEventArgs) Handles Panel4.Paint
 
+    End Sub
+
+    Private Sub frm_Login_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        If exitapp() Then
+            Application.Exit()
+        Else
+            Dim FRML = New frm_Login
+            FRML.Show()
+            Me.Dispose()
+        End If
     End Sub
 End Class

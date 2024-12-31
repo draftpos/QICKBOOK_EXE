@@ -17,52 +17,61 @@ Public Class frmdgwrecords
     Function LoadData(datap As String, currency As String) As Boolean
         dgw.Rows.Clear()
         Dim sql As String
+        sql = "
+        SELECT 
+            i.[id],
+            i.[TxnId],
+            i.[CustomerName],
+            i.[TxnDate],
+            i.[CustomerListId],
+            i.[Amount],
+            i.[AppliedAmount],
+            i.[Subtotal],
+            i.[SalesTaxPercentage],
+            i.[SalesTaxTotal],
+            i.[BalanceRemaining],
+            i.[Currency],
+            i.[ExchangeRate],
+            i.[BalanceRemainingInHomeCurrency],
+            i.[InvoiceNumber],
+            i.[HavanoZimraStatus],
+            SUM(CASE WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount ELSE 0 END) AS TotalVat,
+            SUM(it.Amount) AS Total,
+            SUM(it.Amount) - SUM(CASE WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount ELSE 0 END) AS Total_Exclusive
+        FROM [Invoice] i
+        INNER JOIN [Item] it ON it.TxnId = i.TxnId
+        WHERE i.[TxnDate] >= @StartDate AND i.[TxnDate] <= @EndDate "
+
+        ' Add filters for SearchText if provided
         If Not String.IsNullOrWhiteSpace(datap) Then
-            sql = "
-        SELECT 
-            [id],
-            [TxnId],
-            [CustomerName],
-            [TxnDate],
-            [CustomerListId],
-            [Amount],
-            [AppliedAmount],
-            [Subtotal],
-            [SalesTaxPercentage],
-            [SalesTaxTotal],
-            [BalanceRemaining],
-            [Currency],
-            [ExchangeRate],
-            [BalanceRemainingInHomeCurrency],
-            [InvoiceNumber]
-        FROM [Invoice]
-        WHERE [TxnDate] >= @StartDate AND [TxnDate] <= @EndDate
-          AND ([InvoiceNumber] = @SearchText OR [TxnId] LIKE '%' + @SearchText + '%')"
-        Else
-            sql = "
-        SELECT 
-            [id],
-            [TxnId],
-            [CustomerName],
-            [TxnDate],
-            [CustomerListId],
-            [Amount],
-            [AppliedAmount],
-            [Subtotal],
-            [SalesTaxPercentage],
-            [SalesTaxTotal],
-            [BalanceRemaining],
-            [Currency],
-            [ExchangeRate],
-            [BalanceRemainingInHomeCurrency],
-            [InvoiceNumber]
-        FROM [Invoice]
-        WHERE [TxnDate] >= @StartDate AND [TxnDate] <= @EndDate"
+            sql += " AND (i.[InvoiceNumber] = @SearchText OR i.[TxnId] LIKE '%' + @SearchText + '%') "
         End If
-        ' Add condition for Currency if it is supplied
+
+        ' Add filter for Currency if provided
         If Not String.IsNullOrWhiteSpace(currency) Then
-            sql += " AND [Currency] = @Currency"
+            sql += " AND i.[Currency] = @Currency "
         End If
+
+        ' Group by Invoice fields for aggregate functions
+        sql += "
+        GROUP BY 
+            i.[id],
+            i.[TxnId],
+            i.[CustomerName],
+            i.[TxnDate],
+            i.[CustomerListId],
+            i.[Amount],
+            i.[AppliedAmount],
+            i.[Subtotal],
+            i.[SalesTaxPercentage],
+            i.[SalesTaxTotal],
+            i.[BalanceRemaining],
+            i.[Currency],
+            i.[ExchangeRate],
+            i.[BalanceRemainingInHomeCurrency],
+            i.[InvoiceNumber],
+            i.[HavanoZimraStatus] "
+
         ' Prepare parameters
         Dim parameters As New List(Of SqlParameter) From {
         New SqlParameter("@StartDate", DateTimePicker1.Value),
@@ -71,27 +80,27 @@ Public Class frmdgwrecords
         If Not String.IsNullOrWhiteSpace(datap) Then
             parameters.Add(New SqlParameter("@SearchText", datap))
         End If
-
         If Not String.IsNullOrWhiteSpace(currency) Then
             parameters.Add(New SqlParameter("@Currency", currency))
         End If
 
         ' Execute the query and process the results
         Dim dt As DataTable = Crud(sql, parameters)
-        Dim sumtotal, vattotal, totalexcl As Double
-        sumtotal = 0 : vattotal = 0 : totalexcl = 0
+        Dim sumTotal, vatTotal, totalExcl As Double
+        sumTotal = 0 : vatTotal = 0 : totalExcl = 0
 
         For Each row As DataRow In dt.Rows
-            dgw.Rows.Add(row("InvoiceNumber"), row("TxnId"), row("CustomerName"), row("TxnDate"), row("SalesTaxTotal"), row("Subtotal"), row("BalanceRemaining"),
-                     row("Currency"))
-            sumtotal += Val(row("BalanceRemaining"))
-            totalexcl += Val(row("Subtotal"))
-            vattotal += Val(row("SalesTaxTotal"))
+            Dim statusDesc As String = If(SafeConvertToBoolean(row("HavanoZimraStatus")), "Submitted", "Pending")
+            dgw.Rows.Add(row("InvoiceNumber"), row("TxnId"), row("CustomerName"), row("TxnDate"), row("TotalVat"), row("Total_Exclusive"), row("Total"),
+                     row("Currency"), statusDesc)
+            sumTotal += Val(row("Total"))
+            totalExcl += Val(row("Total_Exclusive"))
+            vatTotal += Val(row("TotalVat"))
         Next
 
-        lbltotalExcl.Text = totalexcl.ToString()
-        lbltotalsum.Text = sumtotal.ToString()
-        lbltotalvat.Text = vattotal.ToString()
+        lbltotalExcl.Text = totalExcl.ToString("N2")
+        lbltotalsum.Text = sumTotal.ToString("N2")
+        lbltotalvat.Text = vatTotal.ToString("N2")
 
         ' Return True if records are found, otherwise False
         Return dt.Rows.Count > 0

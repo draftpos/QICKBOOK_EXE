@@ -20,14 +20,32 @@ SELECT
     i.BalanceRemaining AS TotalAmount,
     i.Currency AS InvoiceCurrency,
     i.TxnId AS Reference,
-i.QRcode,i.DeviceID,i.FiscalDay,i.CustomerRef,i.ReceiptNo,i.Vcode,i.HavanoZimraStatus,
-'Reason' as Reason,
+    i.QRcode, 
+    i.DeviceID, 
+    i.FiscalDay, 
+    i.CustomerRef, 
+    i.ReceiptNo, 
+    i.Vcode, 
+    i.HavanoZimraStatus,
+    'Reason' AS Reason,
     it.Name AS ProductName,
     it.Qty AS Quantity,
     it.Rate AS SalesRate,
     it.Amount AS ItemTotal,
-    it.Vat AS vatstat 
-
+    it.Vat AS VatStatus,
+    CASE 
+        WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount
+        ELSE 0
+    END AS ItemVat,
+    SUM(CASE 
+        WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount
+        ELSE 0
+    END) OVER () AS TotalVat,
+    SUM(it.Amount) OVER () AS Total,
+    SUM(it.Amount) OVER () - SUM(CASE 
+        WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount
+        ELSE 0
+    END) OVER () AS Total_Exclusive
 FROM 
     [dbo].[Invoice] i
 INNER JOIN 
@@ -35,15 +53,15 @@ INNER JOIN
 INNER JOIN 
     [dbo].[Item] it ON i.TxnId = it.TxnId
 WHERE 
-    i.InvoiceNumber = '{InvNo}' 
+    i.InvoiceNumber = @InvNo
     AND it.Qty > 0;
-    "
-        'Try
+"
+
         con = New SqlConnection(cs)
         con.Open()
         Dim ct As String = queryproductand_info
         cmd = New SqlCommand(ct)
-        cmd.Parameters.AddWithValue("@d1", InvNo)
+        cmd.Parameters.AddWithValue("@InvNo", InvNo)
         cmd.Connection = con
         rdr = cmd.ExecuteReader()
         If Not rdr.Read() Then
@@ -64,7 +82,7 @@ WHERE
                    $"WHERE I.InvoiceNumber = '{InvNo}'"
 
         Dim mysqlparameter As New List(Of SqlParameter)()
-        mysqlparameter.Add(New SqlParameter("@d1", InvNo))
+        mysqlparameter.Add(New SqlParameter("@InvNo", InvNo))
         Dim dt As DataTable = Crud(sql, mysqlparameter)
         Dim rpt As New DReport1 'The report you created.
         Dim myConnection As SqlConnection
@@ -84,7 +102,7 @@ WHERE
         Dim cl4 As String = sql
         cmd = New SqlCommand(cl4)
         cmd.Connection = con
-        cmd.Parameters.AddWithValue("@d1", InvNo)
+        cmd.Parameters.AddWithValue("@InvNo", InvNo)
         cmd.CommandTimeout = 0
         rdr = cmd.ExecuteReader()
         'If rdr.Read() Then
@@ -93,7 +111,7 @@ WHERE
         MyCommand.Connection = myConnection
         MyCommand1.Connection = myConnection
         MyCommand.CommandText = queryproductand_info
-        MyCommand.Parameters.AddWithValue("@d1", InvNo)
+        MyCommand.Parameters.AddWithValue("@InvNo", InvNo)
         MyCommand.CommandTimeout = 0
         MyCommand1.CommandText = "SELECT * from Company"
         MyCommand.CommandType = CommandType.Text
@@ -159,7 +177,20 @@ i.Message As Reaon,
     it.Qty AS Quantity,
     it.Rate AS SalesRate,
     it.Amount AS ItemTotal,
- it.Vat AS vatstat 
+ it.Vat AS vatstat ,
+CASE 
+        WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount
+        ELSE 0
+    END AS ItemVat,
+    SUM(CASE 
+        WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount
+        ELSE 0
+    END) OVER () AS TotalVat,
+    SUM(it.Amount) OVER () AS Total,
+    SUM(it.Amount) OVER () - SUM(CASE 
+        WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount
+        ELSE 0
+    END) OVER () AS Total_Exclusive 
   FROM 
     [dbo].[CreditMemo] i
 INNER JOIN 

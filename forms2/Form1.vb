@@ -522,9 +522,13 @@ Public Class Form1
             Await Automatically_BackUp()
             Application.Exit()
         Else
-            Dim FRML As New Form1
+            Dim FRML = New Form1
             FRML.Show()
             Me.Dispose()
         End If
+    End Sub
+
+    Private Sub Form1_GiveFeedback(sender As Object, e As GiveFeedbackEventArgs) Handles Me.GiveFeedback
+
     End Sub
 End Class

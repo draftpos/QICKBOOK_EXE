@@ -27,7 +27,11 @@
               <xs:element name="Quantity" type="xs:float" minOccurs="0" />
               <xs:element name="SalesRate" type="xs:decimal" minOccurs="0" />
               <xs:element name="ItemTotal" type="xs:decimal" minOccurs="0" />
-              <xs:element name="vatstat" type="xs:string" minOccurs="0" />
+              <xs:element name="VatStatus" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemVat" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalVat" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="Total_Exclusive" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

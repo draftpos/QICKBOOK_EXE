@@ -607,3 +607,2031 @@
 2024-12-30 20:44:15 - Connected to the SQL Server database.
 2024-12-30 20:44:15 - Disconnected from the SQL database.
 2024-12-30 20:44:15 - Disconnected from the ERPNext database.
+2024-12-30 23:42:17 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:42:17 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-30 23:42:27 - Internet available. Running fetch process at 30-Dec-24 11:42:27 PM.
+2024-12-30 23:42:27 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:42:31 - Connected to the ERPNext database.
+2024-12-30 23:42:32 - Connected to the SQL Server database.
+2024-12-30 23:42:32 - Disconnected from the SQL database.
+2024-12-30 23:42:32 - Disconnected from the ERPNext database.
+2024-12-30 23:42:37 - Internet available. Running fetch process at 30-Dec-24 11:42:37 PM.
+2024-12-30 23:42:37 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:42:38 - Connected to the ERPNext database.
+2024-12-30 23:42:38 - Connected to the SQL Server database.
+2024-12-30 23:42:38 - Disconnected from the SQL database.
+2024-12-30 23:42:38 - Disconnected from the ERPNext database.
+2024-12-30 23:42:47 - Internet available. Running fetch process at 30-Dec-24 11:42:47 PM.
+2024-12-30 23:42:47 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:42:48 - Connected to the ERPNext database.
+2024-12-30 23:42:48 - Connected to the SQL Server database.
+2024-12-30 23:42:48 - Disconnected from the SQL database.
+2024-12-30 23:42:48 - Disconnected from the ERPNext database.
+2024-12-30 23:42:57 - Internet available. Running fetch process at 30-Dec-24 11:42:57 PM.
+2024-12-30 23:42:57 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:42:58 - Connected to the ERPNext database.
+2024-12-30 23:42:58 - Connected to the SQL Server database.
+2024-12-30 23:42:58 - Disconnected from the SQL database.
+2024-12-30 23:42:58 - Disconnected from the ERPNext database.
+2024-12-30 23:43:07 - Internet available. Running fetch process at 30-Dec-24 11:43:07 PM.
+2024-12-30 23:43:07 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:43:17 - Internet available. Running fetch process at 30-Dec-24 11:43:17 PM.
+2024-12-30 23:43:17 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:43:27 - Internet available. Running fetch process at 30-Dec-24 11:43:27 PM.
+2024-12-30 23:43:27 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:43:32 - Failed to connect to the ERPNEXT Server database. MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding ---> System.TimeoutException: The operation has timed out.
+   at MySql.Data.Common.StreamCreator.<GetTcpStreamAsync>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.Common.StreamCreator.<GetStreamAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<OpenAsync>d__76.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<CreateNewPooledConnectionAsync>d__33.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetPooledConnectionAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<TryToGetDriverAsync>d__36.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetConnectionAsync>d__37.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.<OpenAsync>d__94.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Havano_Fiscal.FetchSalesInvoiceDetails.FetchAndInsertSalesInvoices() in C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\Service\FetchSalesInvoiceDetails.vb:line 122
+2024-12-30 23:43:32 - Failed to connect to the ERPNEXT Server database.
+2024-12-30 23:43:32 - An error occurred: Connection must be valid and open.
+2024-12-30 23:43:37 - Internet available. Running fetch process at 30-Dec-24 11:43:37 PM.
+2024-12-30 23:43:37 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:43:38 - Failed to connect to the ERPNEXT Server database. MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding ---> System.TimeoutException: The operation has timed out.
+   at MySql.Data.Common.StreamCreator.<GetTcpStreamAsync>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.Common.StreamCreator.<GetStreamAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<OpenAsync>d__76.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<CreateNewPooledConnectionAsync>d__33.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetPooledConnectionAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<TryToGetDriverAsync>d__36.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetConnectionAsync>d__37.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.<OpenAsync>d__94.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Havano_Fiscal.FetchSalesInvoiceDetails.FetchAndInsertSalesInvoices() in C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\Service\FetchSalesInvoiceDetails.vb:line 122
+2024-12-30 23:43:38 - Failed to connect to the ERPNEXT Server database.
+2024-12-30 23:43:38 - An error occurred: Connection must be valid and open.
+2024-12-30 23:43:42 - Failed to connect to the ERPNEXT Server database. MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding ---> System.TimeoutException: The operation has timed out.
+   at MySql.Data.Common.StreamCreator.<GetTcpStreamAsync>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.Common.StreamCreator.<GetStreamAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<OpenAsync>d__76.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<CreateNewPooledConnectionAsync>d__33.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetPooledConnectionAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<TryToGetDriverAsync>d__36.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetConnectionAsync>d__37.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.<OpenAsync>d__94.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Havano_Fiscal.FetchSalesInvoiceDetails.FetchAndInsertSalesInvoices() in C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\Service\FetchSalesInvoiceDetails.vb:line 122
+2024-12-30 23:43:42 - Failed to connect to the ERPNEXT Server database.
+2024-12-30 23:43:42 - An error occurred: Connection must be valid and open.
+2024-12-30 23:43:47 - Internet available. Running fetch process at 30-Dec-24 11:43:47 PM.
+2024-12-30 23:43:47 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:43:53 - Failed to connect to the ERPNEXT Server database. MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding ---> System.TimeoutException: The operation has timed out.
+   at MySql.Data.Common.StreamCreator.<GetTcpStreamAsync>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.Common.StreamCreator.<GetStreamAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<OpenAsync>d__76.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<CreateNewPooledConnectionAsync>d__33.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetPooledConnectionAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<TryToGetDriverAsync>d__36.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetConnectionAsync>d__37.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.<OpenAsync>d__94.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Havano_Fiscal.FetchSalesInvoiceDetails.FetchAndInsertSalesInvoices() in C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\Service\FetchSalesInvoiceDetails.vb:line 122
+2024-12-30 23:43:53 - Failed to connect to the ERPNEXT Server database.
+2024-12-30 23:43:53 - An error occurred: Connection must be valid and open.
+2024-12-30 23:43:57 - Failed to connect to the ERPNEXT Server database. MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts ---> System.Net.Sockets.SocketException (0x80004005): An established connection was aborted by the software in your host machine 89.250.67.36:3306
+   at System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   at MySql.Data.MySqlClient.NativeDriver.<>c.<OpenAsync>b__38_0(Exception ex)
+   at System.AggregateException.Handle(Func`2 predicate)
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<OpenAsync>d__76.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<CreateNewPooledConnectionAsync>d__33.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetPooledConnectionAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<TryToGetDriverAsync>d__36.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetConnectionAsync>d__37.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.<OpenAsync>d__94.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Havano_Fiscal.FetchSalesInvoiceDetails.FetchAndInsertSalesInvoices() in C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\Service\FetchSalesInvoiceDetails.vb:line 122
+2024-12-30 23:43:57 - Failed to connect to the ERPNEXT Server database.
+2024-12-30 23:43:57 - An error occurred: Connection must be valid and open.
+2024-12-30 23:44:07 - Internet available. Running fetch process at 30-Dec-24 11:44:07 PM.
+2024-12-30 23:44:07 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:44:10 - Connected to the ERPNext database.
+2024-12-30 23:44:10 - Connected to the SQL Server database.
+2024-12-30 23:44:10 - Disconnected from the SQL database.
+2024-12-30 23:44:10 - Disconnected from the ERPNext database.
+2024-12-30 23:44:17 - Internet available. Running fetch process at 30-Dec-24 11:44:17 PM.
+2024-12-30 23:44:17 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:44:18 - Connected to the ERPNext database.
+2024-12-30 23:44:19 - Connected to the SQL Server database.
+2024-12-30 23:44:19 - Disconnected from the SQL database.
+2024-12-30 23:44:19 - Disconnected from the ERPNext database.
+2024-12-30 23:44:27 - Internet available. Running fetch process at 30-Dec-24 11:44:27 PM.
+2024-12-30 23:44:27 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:44:28 - Connected to the ERPNext database.
+2024-12-30 23:44:28 - Connected to the SQL Server database.
+2024-12-30 23:44:28 - Disconnected from the SQL database.
+2024-12-30 23:44:28 - Disconnected from the ERPNext database.
+2024-12-30 23:44:37 - Internet available. Running fetch process at 30-Dec-24 11:44:37 PM.
+2024-12-30 23:44:37 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:44:38 - Connected to the ERPNext database.
+2024-12-30 23:44:38 - Connected to the SQL Server database.
+2024-12-30 23:44:38 - Disconnected from the SQL database.
+2024-12-30 23:44:38 - Disconnected from the ERPNext database.
+2024-12-30 23:44:47 - Internet available. Running fetch process at 30-Dec-24 11:44:47 PM.
+2024-12-30 23:44:47 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:44:48 - Connected to the ERPNext database.
+2024-12-30 23:45:04 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:45:04 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-30 23:45:14 - Internet available. Running fetch process at 30-Dec-24 11:45:14 PM.
+2024-12-30 23:45:14 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:45:18 - Connected to the ERPNext database.
+2024-12-30 23:45:19 - Connected to the SQL Server database.
+2024-12-30 23:45:19 - Disconnected from the SQL database.
+2024-12-30 23:45:19 - Disconnected from the ERPNext database.
+2024-12-30 23:45:24 - Internet available. Running fetch process at 30-Dec-24 11:45:24 PM.
+2024-12-30 23:45:24 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:45:25 - Connected to the ERPNext database.
+2024-12-30 23:45:25 - Connected to the SQL Server database.
+2024-12-30 23:45:25 - Disconnected from the SQL database.
+2024-12-30 23:45:25 - Disconnected from the ERPNext database.
+2024-12-30 23:45:34 - Internet available. Running fetch process at 30-Dec-24 11:45:34 PM.
+2024-12-30 23:45:34 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:45:35 - Connected to the ERPNext database.
+2024-12-30 23:45:35 - Connected to the SQL Server database.
+2024-12-30 23:45:35 - Disconnected from the SQL database.
+2024-12-30 23:45:35 - Disconnected from the ERPNext database.
+2024-12-30 23:45:44 - Internet available. Running fetch process at 30-Dec-24 11:45:44 PM.
+2024-12-30 23:45:44 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:45:45 - Connected to the ERPNext database.
+2024-12-30 23:45:45 - Connected to the SQL Server database.
+2024-12-30 23:45:45 - Disconnected from the SQL database.
+2024-12-30 23:45:45 - Disconnected from the ERPNext database.
+2024-12-30 23:45:54 - Internet available. Running fetch process at 30-Dec-24 11:45:54 PM.
+2024-12-30 23:45:54 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:45:55 - Connected to the ERPNext database.
+2024-12-30 23:45:55 - Connected to the SQL Server database.
+2024-12-30 23:45:55 - Disconnected from the SQL database.
+2024-12-30 23:45:55 - Disconnected from the ERPNext database.
+2024-12-30 23:46:04 - Internet available. Running fetch process at 30-Dec-24 11:46:04 PM.
+2024-12-30 23:46:04 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:46:05 - Connected to the ERPNext database.
+2024-12-30 23:46:05 - Connected to the SQL Server database.
+2024-12-30 23:46:05 - Disconnected from the SQL database.
+2024-12-30 23:46:05 - Disconnected from the ERPNext database.
+2024-12-30 23:46:14 - Internet available. Running fetch process at 30-Dec-24 11:46:14 PM.
+2024-12-30 23:46:14 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:46:15 - Connected to the ERPNext database.
+2024-12-30 23:46:15 - Connected to the SQL Server database.
+2024-12-30 23:46:15 - Disconnected from the SQL database.
+2024-12-30 23:46:15 - Disconnected from the ERPNext database.
+2024-12-30 23:46:24 - Internet available. Running fetch process at 30-Dec-24 11:46:24 PM.
+2024-12-30 23:46:24 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:46:25 - Connected to the ERPNext database.
+2024-12-30 23:46:26 - Connected to the SQL Server database.
+2024-12-30 23:46:26 - Disconnected from the SQL database.
+2024-12-30 23:46:26 - Disconnected from the ERPNext database.
+2024-12-30 23:46:34 - Internet available. Running fetch process at 30-Dec-24 11:46:34 PM.
+2024-12-30 23:46:34 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:46:35 - Connected to the ERPNext database.
+2024-12-30 23:46:35 - Connected to the SQL Server database.
+2024-12-30 23:46:35 - Disconnected from the SQL database.
+2024-12-30 23:46:35 - Disconnected from the ERPNext database.
+2024-12-30 23:46:44 - Internet available. Running fetch process at 30-Dec-24 11:46:44 PM.
+2024-12-30 23:46:44 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:46:45 - Connected to the ERPNext database.
+2024-12-30 23:46:45 - Connected to the SQL Server database.
+2024-12-30 23:46:45 - Disconnected from the SQL database.
+2024-12-30 23:46:45 - Disconnected from the ERPNext database.
+2024-12-30 23:46:54 - Internet available. Running fetch process at 30-Dec-24 11:46:54 PM.
+2024-12-30 23:46:54 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:46:55 - Connected to the ERPNext database.
+2024-12-30 23:46:55 - Connected to the SQL Server database.
+2024-12-30 23:46:55 - Disconnected from the SQL database.
+2024-12-30 23:46:55 - Disconnected from the ERPNext database.
+2024-12-30 23:47:04 - Internet available. Running fetch process at 30-Dec-24 11:47:04 PM.
+2024-12-30 23:47:04 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:47:05 - Connected to the ERPNext database.
+2024-12-30 23:47:05 - Connected to the SQL Server database.
+2024-12-30 23:47:05 - Disconnected from the SQL database.
+2024-12-30 23:47:05 - Disconnected from the ERPNext database.
+2024-12-30 23:47:14 - Internet available. Running fetch process at 30-Dec-24 11:47:14 PM.
+2024-12-30 23:47:14 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:47:15 - Connected to the ERPNext database.
+2024-12-30 23:47:15 - Connected to the SQL Server database.
+2024-12-30 23:47:15 - Disconnected from the SQL database.
+2024-12-30 23:47:15 - Disconnected from the ERPNext database.
+2024-12-30 23:47:24 - Internet available. Running fetch process at 30-Dec-24 11:47:24 PM.
+2024-12-30 23:47:24 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:47:25 - Connected to the ERPNext database.
+2024-12-30 23:47:25 - Connected to the SQL Server database.
+2024-12-30 23:47:25 - Disconnected from the SQL database.
+2024-12-30 23:47:25 - Disconnected from the ERPNext database.
+2024-12-30 23:47:34 - Internet available. Running fetch process at 30-Dec-24 11:47:34 PM.
+2024-12-30 23:47:34 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:47:35 - Connected to the ERPNext database.
+2024-12-30 23:47:36 - Connected to the SQL Server database.
+2024-12-30 23:47:36 - Disconnected from the SQL database.
+2024-12-30 23:47:36 - Disconnected from the ERPNext database.
+2024-12-30 23:47:44 - Internet available. Running fetch process at 30-Dec-24 11:47:44 PM.
+2024-12-30 23:47:44 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:47:45 - Connected to the ERPNext database.
+2024-12-30 23:47:45 - Connected to the SQL Server database.
+2024-12-30 23:47:45 - Disconnected from the SQL database.
+2024-12-30 23:47:45 - Disconnected from the ERPNext database.
+2024-12-30 23:47:54 - Internet available. Running fetch process at 30-Dec-24 11:47:54 PM.
+2024-12-30 23:47:54 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:47:55 - Connected to the ERPNext database.
+2024-12-30 23:47:56 - Connected to the SQL Server database.
+2024-12-30 23:47:56 - Disconnected from the SQL database.
+2024-12-30 23:47:56 - Disconnected from the ERPNext database.
+2024-12-30 23:48:04 - Internet available. Running fetch process at 30-Dec-24 11:48:04 PM.
+2024-12-30 23:48:04 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:48:05 - Connected to the ERPNext database.
+2024-12-30 23:48:06 - Connected to the SQL Server database.
+2024-12-30 23:48:06 - Disconnected from the SQL database.
+2024-12-30 23:48:06 - Disconnected from the ERPNext database.
+2024-12-30 23:48:14 - Internet available. Running fetch process at 30-Dec-24 11:48:14 PM.
+2024-12-30 23:48:14 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:48:15 - Connected to the ERPNext database.
+2024-12-30 23:48:15 - Connected to the SQL Server database.
+2024-12-30 23:48:15 - Disconnected from the SQL database.
+2024-12-30 23:48:15 - Disconnected from the ERPNext database.
+2024-12-30 23:48:24 - Internet available. Running fetch process at 30-Dec-24 11:48:24 PM.
+2024-12-30 23:48:24 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:48:25 - Connected to the ERPNext database.
+2024-12-30 23:48:25 - Connected to the SQL Server database.
+2024-12-30 23:48:25 - Disconnected from the SQL database.
+2024-12-30 23:48:25 - Disconnected from the ERPNext database.
+2024-12-30 23:48:34 - Internet available. Running fetch process at 30-Dec-24 11:48:34 PM.
+2024-12-30 23:48:34 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:48:35 - Connected to the ERPNext database.
+2024-12-30 23:48:36 - Connected to the SQL Server database.
+2024-12-30 23:48:36 - Disconnected from the SQL database.
+2024-12-30 23:48:36 - Disconnected from the ERPNext database.
+2024-12-30 23:48:45 - Internet available. Running fetch process at 30-Dec-24 11:48:45 PM.
+2024-12-30 23:48:45 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:48:46 - Connected to the ERPNext database.
+2024-12-30 23:48:46 - Connected to the SQL Server database.
+2024-12-30 23:48:46 - Disconnected from the SQL database.
+2024-12-30 23:48:46 - Disconnected from the ERPNext database.
+2024-12-30 23:48:54 - Internet available. Running fetch process at 30-Dec-24 11:48:54 PM.
+2024-12-30 23:48:54 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:48:55 - Connected to the ERPNext database.
+2024-12-30 23:48:56 - Connected to the SQL Server database.
+2024-12-30 23:48:56 - Disconnected from the SQL database.
+2024-12-30 23:48:56 - Disconnected from the ERPNext database.
+2024-12-30 23:49:04 - Internet available. Running fetch process at 30-Dec-24 11:49:04 PM.
+2024-12-30 23:49:04 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:49:05 - Connected to the ERPNext database.
+2024-12-30 23:49:06 - Connected to the SQL Server database.
+2024-12-30 23:49:06 - Disconnected from the SQL database.
+2024-12-30 23:49:06 - Disconnected from the ERPNext database.
+2024-12-30 23:49:14 - Internet available. Running fetch process at 30-Dec-24 11:49:14 PM.
+2024-12-30 23:49:14 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:49:15 - Connected to the ERPNext database.
+2024-12-30 23:49:16 - Connected to the SQL Server database.
+2024-12-30 23:49:16 - Disconnected from the SQL database.
+2024-12-30 23:49:16 - Disconnected from the ERPNext database.
+2024-12-30 23:49:24 - Internet available. Running fetch process at 30-Dec-24 11:49:24 PM.
+2024-12-30 23:49:24 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:49:25 - Connected to the ERPNext database.
+2024-12-30 23:49:26 - Connected to the SQL Server database.
+2024-12-30 23:49:26 - Disconnected from the SQL database.
+2024-12-30 23:49:26 - Disconnected from the ERPNext database.
+2024-12-30 23:49:34 - Internet available. Running fetch process at 30-Dec-24 11:49:34 PM.
+2024-12-30 23:49:34 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:49:35 - Connected to the ERPNext database.
+2024-12-30 23:49:36 - Connected to the SQL Server database.
+2024-12-30 23:49:36 - Disconnected from the SQL database.
+2024-12-30 23:49:36 - Disconnected from the ERPNext database.
+2024-12-30 23:49:44 - Internet available. Running fetch process at 30-Dec-24 11:49:44 PM.
+2024-12-30 23:49:44 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:49:45 - Connected to the ERPNext database.
+2024-12-30 23:49:46 - Connected to the SQL Server database.
+2024-12-30 23:49:46 - Disconnected from the SQL database.
+2024-12-30 23:49:46 - Disconnected from the ERPNext database.
+2024-12-30 23:49:54 - Internet available. Running fetch process at 30-Dec-24 11:49:54 PM.
+2024-12-30 23:49:54 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:49:55 - Connected to the ERPNext database.
+2024-12-30 23:49:56 - Connected to the SQL Server database.
+2024-12-30 23:49:56 - Disconnected from the SQL database.
+2024-12-30 23:49:56 - Disconnected from the ERPNext database.
+2024-12-30 23:50:04 - Internet available. Running fetch process at 30-Dec-24 11:50:04 PM.
+2024-12-30 23:50:04 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:50:05 - Connected to the ERPNext database.
+2024-12-30 23:50:06 - Connected to the SQL Server database.
+2024-12-30 23:50:06 - Disconnected from the SQL database.
+2024-12-30 23:50:06 - Disconnected from the ERPNext database.
+2024-12-30 23:50:14 - Internet available. Running fetch process at 30-Dec-24 11:50:14 PM.
+2024-12-30 23:50:14 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:50:15 - Connected to the ERPNext database.
+2024-12-30 23:50:16 - Connected to the SQL Server database.
+2024-12-30 23:50:16 - Disconnected from the SQL database.
+2024-12-30 23:50:16 - Disconnected from the ERPNext database.
+2024-12-30 23:50:24 - Internet available. Running fetch process at 30-Dec-24 11:50:24 PM.
+2024-12-30 23:50:24 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:50:25 - Connected to the ERPNext database.
+2024-12-30 23:50:26 - Connected to the SQL Server database.
+2024-12-30 23:50:26 - Disconnected from the SQL database.
+2024-12-30 23:50:26 - Disconnected from the ERPNext database.
+2024-12-30 23:50:34 - Internet available. Running fetch process at 30-Dec-24 11:50:34 PM.
+2024-12-30 23:50:34 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:50:35 - Connected to the ERPNext database.
+2024-12-30 23:50:36 - Connected to the SQL Server database.
+2024-12-30 23:50:36 - Disconnected from the SQL database.
+2024-12-30 23:50:36 - Disconnected from the ERPNext database.
+2024-12-30 23:50:44 - Internet available. Running fetch process at 30-Dec-24 11:50:44 PM.
+2024-12-30 23:50:44 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:50:45 - Connected to the ERPNext database.
+2024-12-30 23:50:46 - Connected to the SQL Server database.
+2024-12-30 23:50:46 - Disconnected from the SQL database.
+2024-12-30 23:50:46 - Disconnected from the ERPNext database.
+2024-12-30 23:50:54 - Internet available. Running fetch process at 30-Dec-24 11:50:54 PM.
+2024-12-30 23:50:54 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:50:55 - Connected to the ERPNext database.
+2024-12-30 23:50:56 - Connected to the SQL Server database.
+2024-12-30 23:50:56 - Disconnected from the SQL database.
+2024-12-30 23:50:56 - Disconnected from the ERPNext database.
+2024-12-30 23:51:04 - Internet available. Running fetch process at 30-Dec-24 11:51:04 PM.
+2024-12-30 23:51:04 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:51:05 - Connected to the ERPNext database.
+2024-12-30 23:51:06 - Connected to the SQL Server database.
+2024-12-30 23:51:06 - Disconnected from the SQL database.
+2024-12-30 23:51:06 - Disconnected from the ERPNext database.
+2024-12-30 23:51:14 - Internet available. Running fetch process at 30-Dec-24 11:51:14 PM.
+2024-12-30 23:51:14 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:51:15 - Connected to the ERPNext database.
+2024-12-30 23:51:16 - Connected to the SQL Server database.
+2024-12-30 23:51:16 - Disconnected from the SQL database.
+2024-12-30 23:51:16 - Disconnected from the ERPNext database.
+2024-12-30 23:51:24 - Internet available. Running fetch process at 30-Dec-24 11:51:24 PM.
+2024-12-30 23:51:24 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:51:25 - Connected to the ERPNext database.
+2024-12-30 23:51:26 - Connected to the SQL Server database.
+2024-12-30 23:51:26 - Disconnected from the SQL database.
+2024-12-30 23:51:26 - Disconnected from the ERPNext database.
+2024-12-30 23:51:34 - Internet available. Running fetch process at 30-Dec-24 11:51:34 PM.
+2024-12-30 23:51:34 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:51:36 - Connected to the ERPNext database.
+2024-12-30 23:51:36 - Connected to the SQL Server database.
+2024-12-30 23:51:36 - Disconnected from the SQL database.
+2024-12-30 23:51:36 - Disconnected from the ERPNext database.
+2024-12-30 23:51:44 - Internet available. Running fetch process at 30-Dec-24 11:51:44 PM.
+2024-12-30 23:51:44 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:51:45 - Connected to the ERPNext database.
+2024-12-30 23:51:46 - Connected to the SQL Server database.
+2024-12-30 23:51:46 - Disconnected from the SQL database.
+2024-12-30 23:51:46 - Disconnected from the ERPNext database.
+2024-12-30 23:51:54 - Internet available. Running fetch process at 30-Dec-24 11:51:54 PM.
+2024-12-30 23:51:54 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:51:55 - Connected to the ERPNext database.
+2024-12-30 23:51:56 - Connected to the SQL Server database.
+2024-12-30 23:51:56 - Disconnected from the SQL database.
+2024-12-30 23:51:56 - Disconnected from the ERPNext database.
+2024-12-30 23:52:04 - Internet available. Running fetch process at 30-Dec-24 11:52:04 PM.
+2024-12-30 23:52:04 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:52:05 - Connected to the ERPNext database.
+2024-12-30 23:52:06 - Connected to the SQL Server database.
+2024-12-30 23:52:06 - Disconnected from the SQL database.
+2024-12-30 23:52:06 - Disconnected from the ERPNext database.
+2024-12-30 23:52:14 - Internet available. Running fetch process at 30-Dec-24 11:52:14 PM.
+2024-12-30 23:52:14 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:52:15 - Connected to the ERPNext database.
+2024-12-30 23:52:16 - Connected to the SQL Server database.
+2024-12-30 23:52:16 - Disconnected from the SQL database.
+2024-12-30 23:52:16 - Disconnected from the ERPNext database.
+2024-12-30 23:52:24 - Internet available. Running fetch process at 30-Dec-24 11:52:24 PM.
+2024-12-30 23:52:24 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:52:25 - Connected to the ERPNext database.
+2024-12-30 23:52:26 - Connected to the SQL Server database.
+2024-12-30 23:52:26 - Disconnected from the SQL database.
+2024-12-30 23:52:26 - Disconnected from the ERPNext database.
+2024-12-30 23:52:34 - Internet available. Running fetch process at 30-Dec-24 11:52:34 PM.
+2024-12-30 23:52:34 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:52:35 - Connected to the ERPNext database.
+2024-12-30 23:52:36 - Connected to the SQL Server database.
+2024-12-30 23:52:36 - Disconnected from the SQL database.
+2024-12-30 23:52:36 - Disconnected from the ERPNext database.
+2024-12-30 23:52:44 - Internet available. Running fetch process at 30-Dec-24 11:52:44 PM.
+2024-12-30 23:52:44 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:52:45 - Connected to the ERPNext database.
+2024-12-30 23:52:46 - Connected to the SQL Server database.
+2024-12-30 23:52:46 - Disconnected from the SQL database.
+2024-12-30 23:52:46 - Disconnected from the ERPNext database.
+2024-12-30 23:52:54 - Internet available. Running fetch process at 30-Dec-24 11:52:54 PM.
+2024-12-30 23:52:54 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:52:55 - Connected to the ERPNext database.
+2024-12-30 23:52:56 - Connected to the SQL Server database.
+2024-12-30 23:52:56 - Disconnected from the SQL database.
+2024-12-30 23:52:56 - Disconnected from the ERPNext database.
+2024-12-30 23:53:04 - Internet available. Running fetch process at 30-Dec-24 11:53:04 PM.
+2024-12-30 23:53:04 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:53:05 - Connected to the ERPNext database.
+2024-12-30 23:53:06 - Connected to the SQL Server database.
+2024-12-30 23:53:06 - Disconnected from the SQL database.
+2024-12-30 23:53:06 - Disconnected from the ERPNext database.
+2024-12-30 23:53:14 - Internet available. Running fetch process at 30-Dec-24 11:53:14 PM.
+2024-12-30 23:53:14 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:53:15 - Connected to the ERPNext database.
+2024-12-30 23:53:16 - Connected to the SQL Server database.
+2024-12-30 23:53:16 - Disconnected from the SQL database.
+2024-12-30 23:53:16 - Disconnected from the ERPNext database.
+2024-12-30 23:53:24 - Internet available. Running fetch process at 30-Dec-24 11:53:24 PM.
+2024-12-30 23:53:24 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:53:25 - Connected to the ERPNext database.
+2024-12-30 23:53:26 - Connected to the SQL Server database.
+2024-12-30 23:53:26 - Disconnected from the SQL database.
+2024-12-30 23:53:26 - Disconnected from the ERPNext database.
+2024-12-30 23:53:34 - Internet available. Running fetch process at 30-Dec-24 11:53:34 PM.
+2024-12-30 23:53:34 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:53:35 - Connected to the ERPNext database.
+2024-12-30 23:53:36 - Connected to the SQL Server database.
+2024-12-30 23:53:36 - Disconnected from the SQL database.
+2024-12-30 23:53:36 - Disconnected from the ERPNext database.
+2024-12-30 23:53:44 - Internet available. Running fetch process at 30-Dec-24 11:53:44 PM.
+2024-12-30 23:53:44 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:53:45 - Connected to the ERPNext database.
+2024-12-30 23:53:46 - Connected to the SQL Server database.
+2024-12-30 23:53:46 - Disconnected from the SQL database.
+2024-12-30 23:53:46 - Disconnected from the ERPNext database.
+2024-12-30 23:53:54 - Internet available. Running fetch process at 30-Dec-24 11:53:54 PM.
+2024-12-30 23:53:54 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:53:55 - Connected to the ERPNext database.
+2024-12-30 23:53:56 - Connected to the SQL Server database.
+2024-12-30 23:53:56 - Disconnected from the SQL database.
+2024-12-30 23:53:56 - Disconnected from the ERPNext database.
+2024-12-30 23:54:04 - Internet available. Running fetch process at 30-Dec-24 11:54:04 PM.
+2024-12-30 23:54:04 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:54:05 - Connected to the ERPNext database.
+2024-12-30 23:54:06 - Connected to the SQL Server database.
+2024-12-30 23:54:06 - Disconnected from the SQL database.
+2024-12-30 23:54:06 - Disconnected from the ERPNext database.
+2024-12-30 23:54:58 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:54:58 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-30 23:55:08 - Internet available. Running fetch process at 30-Dec-24 11:55:08 PM.
+2024-12-30 23:55:08 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:55:13 - Connected to the ERPNext database.
+2024-12-30 23:55:14 - Connected to the SQL Server database.
+2024-12-30 23:55:14 - Disconnected from the SQL database.
+2024-12-30 23:55:14 - Disconnected from the ERPNext database.
+2024-12-30 23:55:18 - Internet available. Running fetch process at 30-Dec-24 11:55:18 PM.
+2024-12-30 23:55:18 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:55:19 - Connected to the ERPNext database.
+2024-12-30 23:55:19 - Connected to the SQL Server database.
+2024-12-30 23:55:19 - Disconnected from the SQL database.
+2024-12-30 23:55:19 - Disconnected from the ERPNext database.
+2024-12-30 23:55:28 - Internet available. Running fetch process at 30-Dec-24 11:55:28 PM.
+2024-12-30 23:55:28 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:55:29 - Connected to the ERPNext database.
+2024-12-30 23:55:29 - Connected to the SQL Server database.
+2024-12-30 23:55:29 - Disconnected from the SQL database.
+2024-12-30 23:55:29 - Disconnected from the ERPNext database.
+2024-12-30 23:55:38 - Internet available. Running fetch process at 30-Dec-24 11:55:38 PM.
+2024-12-30 23:55:38 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:55:39 - Connected to the ERPNext database.
+2024-12-30 23:55:40 - Connected to the SQL Server database.
+2024-12-30 23:55:40 - Disconnected from the SQL database.
+2024-12-30 23:55:40 - Disconnected from the ERPNext database.
+2024-12-30 23:55:48 - Internet available. Running fetch process at 30-Dec-24 11:55:48 PM.
+2024-12-30 23:55:48 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:55:49 - Connected to the ERPNext database.
+2024-12-30 23:55:50 - Connected to the SQL Server database.
+2024-12-30 23:55:50 - Disconnected from the SQL database.
+2024-12-30 23:55:50 - Disconnected from the ERPNext database.
+2024-12-30 23:56:54 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:56:54 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-30 23:57:04 - Internet available. Running fetch process at 30-Dec-24 11:57:04 PM.
+2024-12-30 23:57:04 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:57:09 - Connected to the ERPNext database.
+2024-12-30 23:57:09 - Connected to the SQL Server database.
+2024-12-30 23:57:09 - Disconnected from the SQL database.
+2024-12-30 23:57:09 - Disconnected from the ERPNext database.
+2024-12-30 23:57:14 - Internet available. Running fetch process at 30-Dec-24 11:57:14 PM.
+2024-12-30 23:57:14 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:57:15 - Connected to the ERPNext database.
+2024-12-30 23:57:15 - Connected to the SQL Server database.
+2024-12-30 23:57:15 - Disconnected from the SQL database.
+2024-12-30 23:57:15 - Disconnected from the ERPNext database.
+2024-12-30 23:57:24 - Internet available. Running fetch process at 30-Dec-24 11:57:24 PM.
+2024-12-30 23:57:24 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:57:25 - Connected to the ERPNext database.
+2024-12-30 23:57:25 - Connected to the SQL Server database.
+2024-12-30 23:57:25 - Disconnected from the SQL database.
+2024-12-30 23:57:25 - Disconnected from the ERPNext database.
+2024-12-30 23:57:34 - Internet available. Running fetch process at 30-Dec-24 11:57:34 PM.
+2024-12-30 23:57:34 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:57:35 - Connected to the ERPNext database.
+2024-12-30 23:57:36 - Connected to the SQL Server database.
+2024-12-30 23:57:36 - Disconnected from the SQL database.
+2024-12-30 23:57:36 - Disconnected from the ERPNext database.
+2024-12-30 23:57:44 - Internet available. Running fetch process at 30-Dec-24 11:57:44 PM.
+2024-12-30 23:57:44 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:57:45 - Connected to the ERPNext database.
+2024-12-30 23:57:45 - Connected to the SQL Server database.
+2024-12-30 23:57:45 - Disconnected from the SQL database.
+2024-12-30 23:57:45 - Disconnected from the ERPNext database.
+2024-12-30 23:57:54 - Internet available. Running fetch process at 30-Dec-24 11:57:54 PM.
+2024-12-30 23:57:54 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:57:55 - Connected to the ERPNext database.
+2024-12-30 23:57:55 - Connected to the SQL Server database.
+2024-12-30 23:57:55 - Disconnected from the SQL database.
+2024-12-30 23:57:55 - Disconnected from the ERPNext database.
+2024-12-30 23:58:04 - Internet available. Running fetch process at 30-Dec-24 11:58:04 PM.
+2024-12-30 23:58:04 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:58:05 - Connected to the ERPNext database.
+2024-12-30 23:58:05 - Connected to the SQL Server database.
+2024-12-30 23:58:05 - Disconnected from the SQL database.
+2024-12-30 23:58:05 - Disconnected from the ERPNext database.
+2024-12-30 23:58:14 - Internet available. Running fetch process at 30-Dec-24 11:58:14 PM.
+2024-12-30 23:58:14 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:58:15 - Connected to the ERPNext database.
+2024-12-30 23:58:15 - Connected to the SQL Server database.
+2024-12-30 23:58:15 - Disconnected from the SQL database.
+2024-12-30 23:58:15 - Disconnected from the ERPNext database.
+2024-12-30 23:58:24 - Internet available. Running fetch process at 30-Dec-24 11:58:24 PM.
+2024-12-30 23:58:24 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:58:25 - Connected to the ERPNext database.
+2024-12-30 23:58:26 - Connected to the SQL Server database.
+2024-12-30 23:58:26 - Disconnected from the SQL database.
+2024-12-30 23:58:26 - Disconnected from the ERPNext database.
+2024-12-30 23:58:34 - Internet available. Running fetch process at 30-Dec-24 11:58:34 PM.
+2024-12-30 23:58:34 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-30 23:58:35 - Connected to the ERPNext database.
+2024-12-30 23:58:36 - Connected to the SQL Server database.
+2024-12-30 23:58:36 - Disconnected from the SQL database.
+2024-12-30 23:58:36 - Disconnected from the ERPNext database.
+2024-12-31 00:29:35 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:29:35 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-31 00:29:45 - Internet available. Running fetch process at 31-Dec-24 12:29:45 AM.
+2024-12-31 00:29:45 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:29:50 - Connected to the ERPNext database.
+2024-12-31 00:29:51 - Connected to the SQL Server database.
+2024-12-31 00:29:51 - Disconnected from the SQL database.
+2024-12-31 00:29:51 - Disconnected from the ERPNext database.
+2024-12-31 00:29:55 - Internet available. Running fetch process at 31-Dec-24 12:29:55 AM.
+2024-12-31 00:29:55 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:29:56 - Connected to the ERPNext database.
+2024-12-31 00:29:56 - Connected to the SQL Server database.
+2024-12-31 00:29:56 - Disconnected from the SQL database.
+2024-12-31 00:29:56 - Disconnected from the ERPNext database.
+2024-12-31 00:31:17 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:31:17 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-31 00:33:01 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:33:01 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-31 00:33:11 - Internet available. Running fetch process at 31-Dec-24 12:33:11 AM.
+2024-12-31 00:33:11 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:33:16 - Connected to the ERPNext database.
+2024-12-31 00:33:17 - Connected to the SQL Server database.
+2024-12-31 00:33:17 - Disconnected from the SQL database.
+2024-12-31 00:33:17 - Disconnected from the ERPNext database.
+2024-12-31 00:33:21 - Internet available. Running fetch process at 31-Dec-24 12:33:21 AM.
+2024-12-31 00:33:21 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:37:56 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:37:56 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-31 00:38:06 - Internet available. Running fetch process at 31-Dec-24 12:38:06 AM.
+2024-12-31 00:38:06 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:38:10 - Connected to the ERPNext database.
+2024-12-31 00:38:11 - Connected to the SQL Server database.
+2024-12-31 00:38:11 - Disconnected from the SQL database.
+2024-12-31 00:38:11 - Disconnected from the ERPNext database.
+2024-12-31 00:38:16 - Internet available. Running fetch process at 31-Dec-24 12:38:16 AM.
+2024-12-31 00:38:16 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:38:17 - Connected to the ERPNext database.
+2024-12-31 00:38:17 - Connected to the SQL Server database.
+2024-12-31 00:38:17 - Disconnected from the SQL database.
+2024-12-31 00:38:17 - Disconnected from the ERPNext database.
+2024-12-31 00:38:26 - Internet available. Running fetch process at 31-Dec-24 12:38:26 AM.
+2024-12-31 00:38:26 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:40:19 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:40:19 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-31 00:40:29 - Internet available. Running fetch process at 31-Dec-24 12:40:29 AM.
+2024-12-31 00:40:29 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:40:34 - Connected to the ERPNext database.
+2024-12-31 00:40:34 - Connected to the SQL Server database.
+2024-12-31 00:40:35 - Disconnected from the SQL database.
+2024-12-31 00:40:35 - Disconnected from the ERPNext database.
+2024-12-31 00:40:39 - Internet available. Running fetch process at 31-Dec-24 12:40:39 AM.
+2024-12-31 00:40:39 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:40:39 - Connected to the ERPNext database.
+2024-12-31 00:40:40 - Connected to the SQL Server database.
+2024-12-31 00:40:40 - Disconnected from the SQL database.
+2024-12-31 00:40:40 - Disconnected from the ERPNext database.
+2024-12-31 00:42:44 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:42:44 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-31 00:42:54 - Internet available. Running fetch process at 31-Dec-24 12:42:54 AM.
+2024-12-31 00:42:54 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:42:59 - Connected to the ERPNext database.
+2024-12-31 00:43:00 - Connected to the SQL Server database.
+2024-12-31 00:43:00 - Disconnected from the SQL database.
+2024-12-31 00:43:00 - Disconnected from the ERPNext database.
+2024-12-31 00:43:04 - Internet available. Running fetch process at 31-Dec-24 12:43:04 AM.
+2024-12-31 00:43:04 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:43:05 - Connected to the ERPNext database.
+2024-12-31 00:43:05 - Connected to the SQL Server database.
+2024-12-31 00:43:05 - Disconnected from the SQL database.
+2024-12-31 00:43:05 - Disconnected from the ERPNext database.
+2024-12-31 00:43:14 - Internet available. Running fetch process at 31-Dec-24 12:43:14 AM.
+2024-12-31 00:43:14 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:43:15 - Connected to the ERPNext database.
+2024-12-31 00:43:16 - Connected to the SQL Server database.
+2024-12-31 00:43:16 - Disconnected from the SQL database.
+2024-12-31 00:43:16 - Disconnected from the ERPNext database.
+2024-12-31 00:43:25 - Internet available. Running fetch process at 31-Dec-24 12:43:25 AM.
+2024-12-31 00:43:25 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:43:26 - Connected to the ERPNext database.
+2024-12-31 00:43:26 - Connected to the SQL Server database.
+2024-12-31 00:43:26 - Disconnected from the SQL database.
+2024-12-31 00:43:26 - Disconnected from the ERPNext database.
+2024-12-31 00:43:34 - Internet available. Running fetch process at 31-Dec-24 12:43:34 AM.
+2024-12-31 00:43:34 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:43:35 - Connected to the ERPNext database.
+2024-12-31 00:43:36 - Connected to the SQL Server database.
+2024-12-31 00:43:36 - Disconnected from the SQL database.
+2024-12-31 00:43:36 - Disconnected from the ERPNext database.
+2024-12-31 00:43:44 - Internet available. Running fetch process at 31-Dec-24 12:43:44 AM.
+2024-12-31 00:43:44 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:43:46 - Connected to the ERPNext database.
+2024-12-31 00:43:46 - Connected to the SQL Server database.
+2024-12-31 00:43:46 - Disconnected from the SQL database.
+2024-12-31 00:43:46 - Disconnected from the ERPNext database.
+2024-12-31 00:43:55 - Internet available. Running fetch process at 31-Dec-24 12:43:55 AM.
+2024-12-31 00:43:55 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:43:55 - Connected to the ERPNext database.
+2024-12-31 00:43:55 - Connected to the SQL Server database.
+2024-12-31 00:43:55 - Disconnected from the SQL database.
+2024-12-31 00:43:55 - Disconnected from the ERPNext database.
+2024-12-31 00:44:05 - Internet available. Running fetch process at 31-Dec-24 12:44:05 AM.
+2024-12-31 00:44:05 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:44:06 - Connected to the ERPNext database.
+2024-12-31 00:44:06 - Connected to the SQL Server database.
+2024-12-31 00:44:06 - Disconnected from the SQL database.
+2024-12-31 00:44:06 - Disconnected from the ERPNext database.
+2024-12-31 00:44:15 - Internet available. Running fetch process at 31-Dec-24 12:44:15 AM.
+2024-12-31 00:44:15 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:44:15 - Connected to the ERPNext database.
+2024-12-31 00:44:16 - Connected to the SQL Server database.
+2024-12-31 00:44:16 - Disconnected from the SQL database.
+2024-12-31 00:44:16 - Disconnected from the ERPNext database.
+2024-12-31 00:44:25 - Internet available. Running fetch process at 31-Dec-24 12:44:25 AM.
+2024-12-31 00:44:25 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:44:26 - Connected to the ERPNext database.
+2024-12-31 00:44:26 - Connected to the SQL Server database.
+2024-12-31 00:44:26 - Disconnected from the SQL database.
+2024-12-31 00:44:26 - Disconnected from the ERPNext database.
+2024-12-31 00:44:35 - Internet available. Running fetch process at 31-Dec-24 12:44:35 AM.
+2024-12-31 00:44:35 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:44:35 - Connected to the ERPNext database.
+2024-12-31 00:44:36 - Connected to the SQL Server database.
+2024-12-31 00:44:36 - Disconnected from the SQL database.
+2024-12-31 00:44:36 - Disconnected from the ERPNext database.
+2024-12-31 00:44:45 - Internet available. Running fetch process at 31-Dec-24 12:44:45 AM.
+2024-12-31 00:44:45 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:44:46 - Connected to the ERPNext database.
+2024-12-31 00:44:46 - Connected to the SQL Server database.
+2024-12-31 00:44:46 - Disconnected from the SQL database.
+2024-12-31 00:44:46 - Disconnected from the ERPNext database.
+2024-12-31 00:44:55 - Internet available. Running fetch process at 31-Dec-24 12:44:55 AM.
+2024-12-31 00:44:55 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:44:55 - Connected to the ERPNext database.
+2024-12-31 00:44:56 - Connected to the SQL Server database.
+2024-12-31 00:44:56 - Disconnected from the SQL database.
+2024-12-31 00:44:56 - Disconnected from the ERPNext database.
+2024-12-31 00:45:05 - Internet available. Running fetch process at 31-Dec-24 12:45:05 AM.
+2024-12-31 00:45:05 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:45:05 - Connected to the ERPNext database.
+2024-12-31 00:45:06 - Connected to the SQL Server database.
+2024-12-31 00:45:06 - Disconnected from the SQL database.
+2024-12-31 00:45:06 - Disconnected from the ERPNext database.
+2024-12-31 00:45:15 - Internet available. Running fetch process at 31-Dec-24 12:45:15 AM.
+2024-12-31 00:45:15 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:45:16 - Connected to the ERPNext database.
+2024-12-31 00:45:16 - Connected to the SQL Server database.
+2024-12-31 00:45:16 - Disconnected from the SQL database.
+2024-12-31 00:45:16 - Disconnected from the ERPNext database.
+2024-12-31 00:45:25 - Internet available. Running fetch process at 31-Dec-24 12:45:25 AM.
+2024-12-31 00:45:25 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:45:25 - Connected to the ERPNext database.
+2024-12-31 00:45:26 - Connected to the SQL Server database.
+2024-12-31 00:45:26 - Disconnected from the SQL database.
+2024-12-31 00:45:26 - Disconnected from the ERPNext database.
+2024-12-31 00:45:35 - Internet available. Running fetch process at 31-Dec-24 12:45:35 AM.
+2024-12-31 00:45:35 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:45:35 - Connected to the ERPNext database.
+2024-12-31 00:45:36 - Connected to the SQL Server database.
+2024-12-31 00:45:36 - Disconnected from the SQL database.
+2024-12-31 00:45:36 - Disconnected from the ERPNext database.
+2024-12-31 00:45:45 - Internet available. Running fetch process at 31-Dec-24 12:45:45 AM.
+2024-12-31 00:45:45 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:45:46 - Connected to the ERPNext database.
+2024-12-31 00:45:46 - Connected to the SQL Server database.
+2024-12-31 00:45:46 - Disconnected from the SQL database.
+2024-12-31 00:45:46 - Disconnected from the ERPNext database.
+2024-12-31 00:45:55 - Internet available. Running fetch process at 31-Dec-24 12:45:55 AM.
+2024-12-31 00:45:55 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:45:56 - Connected to the ERPNext database.
+2024-12-31 00:45:56 - Connected to the SQL Server database.
+2024-12-31 00:45:56 - Disconnected from the SQL database.
+2024-12-31 00:45:56 - Disconnected from the ERPNext database.
+2024-12-31 00:46:05 - Internet available. Running fetch process at 31-Dec-24 12:46:05 AM.
+2024-12-31 00:46:05 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:46:06 - Connected to the ERPNext database.
+2024-12-31 00:46:06 - Connected to the SQL Server database.
+2024-12-31 00:46:06 - Disconnected from the SQL database.
+2024-12-31 00:46:06 - Disconnected from the ERPNext database.
+2024-12-31 00:46:15 - Internet available. Running fetch process at 31-Dec-24 12:46:15 AM.
+2024-12-31 00:46:15 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:46:16 - Connected to the ERPNext database.
+2024-12-31 00:46:16 - Connected to the SQL Server database.
+2024-12-31 00:46:16 - Disconnected from the SQL database.
+2024-12-31 00:46:16 - Disconnected from the ERPNext database.
+2024-12-31 00:46:25 - Internet available. Running fetch process at 31-Dec-24 12:46:25 AM.
+2024-12-31 00:46:25 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:46:25 - Connected to the ERPNext database.
+2024-12-31 00:46:26 - Connected to the SQL Server database.
+2024-12-31 00:46:26 - Disconnected from the SQL database.
+2024-12-31 00:46:26 - Disconnected from the ERPNext database.
+2024-12-31 00:46:35 - Internet available. Running fetch process at 31-Dec-24 12:46:35 AM.
+2024-12-31 00:46:35 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:46:35 - Connected to the ERPNext database.
+2024-12-31 00:46:36 - Connected to the SQL Server database.
+2024-12-31 00:46:36 - Disconnected from the SQL database.
+2024-12-31 00:46:36 - Disconnected from the ERPNext database.
+2024-12-31 00:46:45 - Internet available. Running fetch process at 31-Dec-24 12:46:45 AM.
+2024-12-31 00:46:45 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:46:46 - Connected to the ERPNext database.
+2024-12-31 00:46:46 - Connected to the SQL Server database.
+2024-12-31 00:46:46 - Disconnected from the SQL database.
+2024-12-31 00:46:46 - Disconnected from the ERPNext database.
+2024-12-31 00:46:55 - Internet available. Running fetch process at 31-Dec-24 12:46:55 AM.
+2024-12-31 00:46:55 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:46:56 - Connected to the ERPNext database.
+2024-12-31 00:46:56 - Connected to the SQL Server database.
+2024-12-31 00:46:56 - Disconnected from the SQL database.
+2024-12-31 00:46:56 - Disconnected from the ERPNext database.
+2024-12-31 00:47:05 - Internet available. Running fetch process at 31-Dec-24 12:47:05 AM.
+2024-12-31 00:47:05 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:47:06 - Connected to the ERPNext database.
+2024-12-31 00:47:06 - Connected to the SQL Server database.
+2024-12-31 00:47:06 - Disconnected from the SQL database.
+2024-12-31 00:47:06 - Disconnected from the ERPNext database.
+2024-12-31 00:47:15 - Internet available. Running fetch process at 31-Dec-24 12:47:15 AM.
+2024-12-31 00:47:15 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:47:16 - Connected to the ERPNext database.
+2024-12-31 00:47:16 - Connected to the SQL Server database.
+2024-12-31 00:47:16 - Disconnected from the SQL database.
+2024-12-31 00:47:16 - Disconnected from the ERPNext database.
+2024-12-31 00:47:25 - Internet available. Running fetch process at 31-Dec-24 12:47:25 AM.
+2024-12-31 00:47:25 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:47:26 - Connected to the ERPNext database.
+2024-12-31 00:47:26 - Connected to the SQL Server database.
+2024-12-31 00:47:26 - Disconnected from the SQL database.
+2024-12-31 00:47:26 - Disconnected from the ERPNext database.
+2024-12-31 00:47:35 - Internet available. Running fetch process at 31-Dec-24 12:47:35 AM.
+2024-12-31 00:47:35 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:47:36 - Connected to the ERPNext database.
+2024-12-31 00:47:36 - Connected to the SQL Server database.
+2024-12-31 00:47:36 - Disconnected from the SQL database.
+2024-12-31 00:47:36 - Disconnected from the ERPNext database.
+2024-12-31 00:47:45 - Internet available. Running fetch process at 31-Dec-24 12:47:45 AM.
+2024-12-31 00:47:45 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:47:46 - Connected to the ERPNext database.
+2024-12-31 00:47:46 - Connected to the SQL Server database.
+2024-12-31 00:47:46 - Disconnected from the SQL database.
+2024-12-31 00:47:46 - Disconnected from the ERPNext database.
+2024-12-31 00:47:55 - Internet available. Running fetch process at 31-Dec-24 12:47:55 AM.
+2024-12-31 00:47:55 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:47:56 - Connected to the ERPNext database.
+2024-12-31 00:47:56 - Connected to the SQL Server database.
+2024-12-31 00:47:56 - Disconnected from the SQL database.
+2024-12-31 00:47:56 - Disconnected from the ERPNext database.
+2024-12-31 00:48:05 - Internet available. Running fetch process at 31-Dec-24 12:48:05 AM.
+2024-12-31 00:48:05 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:48:06 - Connected to the ERPNext database.
+2024-12-31 00:48:06 - Connected to the SQL Server database.
+2024-12-31 00:48:06 - Disconnected from the SQL database.
+2024-12-31 00:48:06 - Disconnected from the ERPNext database.
+2024-12-31 00:48:15 - Internet available. Running fetch process at 31-Dec-24 12:48:15 AM.
+2024-12-31 00:48:15 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:48:16 - Connected to the ERPNext database.
+2024-12-31 00:48:16 - Connected to the SQL Server database.
+2024-12-31 00:48:16 - Disconnected from the SQL database.
+2024-12-31 00:48:16 - Disconnected from the ERPNext database.
+2024-12-31 00:48:25 - Internet available. Running fetch process at 31-Dec-24 12:48:25 AM.
+2024-12-31 00:48:25 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:48:26 - Connected to the ERPNext database.
+2024-12-31 00:48:26 - Connected to the SQL Server database.
+2024-12-31 00:48:26 - Disconnected from the SQL database.
+2024-12-31 00:48:26 - Disconnected from the ERPNext database.
+2024-12-31 00:48:35 - Internet available. Running fetch process at 31-Dec-24 12:48:35 AM.
+2024-12-31 00:48:35 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:48:36 - Connected to the ERPNext database.
+2024-12-31 00:48:36 - Connected to the SQL Server database.
+2024-12-31 00:48:36 - Disconnected from the SQL database.
+2024-12-31 00:48:36 - Disconnected from the ERPNext database.
+2024-12-31 00:48:45 - Internet available. Running fetch process at 31-Dec-24 12:48:45 AM.
+2024-12-31 00:48:45 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:48:46 - Connected to the ERPNext database.
+2024-12-31 00:48:46 - Connected to the SQL Server database.
+2024-12-31 00:48:46 - Disconnected from the SQL database.
+2024-12-31 00:48:46 - Disconnected from the ERPNext database.
+2024-12-31 00:48:55 - Internet available. Running fetch process at 31-Dec-24 12:48:55 AM.
+2024-12-31 00:48:55 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:48:56 - Connected to the ERPNext database.
+2024-12-31 00:48:56 - Connected to the SQL Server database.
+2024-12-31 00:48:56 - Disconnected from the SQL database.
+2024-12-31 00:48:56 - Disconnected from the ERPNext database.
+2024-12-31 00:49:05 - Internet available. Running fetch process at 31-Dec-24 12:49:05 AM.
+2024-12-31 00:49:05 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:49:07 - Connected to the ERPNext database.
+2024-12-31 00:49:07 - Connected to the SQL Server database.
+2024-12-31 00:49:07 - Disconnected from the SQL database.
+2024-12-31 00:49:07 - Disconnected from the ERPNext database.
+2024-12-31 00:49:15 - Internet available. Running fetch process at 31-Dec-24 12:49:15 AM.
+2024-12-31 00:49:15 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:49:16 - Connected to the ERPNext database.
+2024-12-31 00:49:16 - Connected to the SQL Server database.
+2024-12-31 00:49:16 - Disconnected from the SQL database.
+2024-12-31 00:49:16 - Disconnected from the ERPNext database.
+2024-12-31 00:49:25 - Internet available. Running fetch process at 31-Dec-24 12:49:25 AM.
+2024-12-31 00:49:25 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:49:26 - Connected to the ERPNext database.
+2024-12-31 00:49:26 - Connected to the SQL Server database.
+2024-12-31 00:49:26 - Disconnected from the SQL database.
+2024-12-31 00:49:26 - Disconnected from the ERPNext database.
+2024-12-31 00:49:35 - Internet available. Running fetch process at 31-Dec-24 12:49:35 AM.
+2024-12-31 00:49:35 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:49:36 - Connected to the ERPNext database.
+2024-12-31 00:49:36 - Connected to the SQL Server database.
+2024-12-31 00:49:36 - Disconnected from the SQL database.
+2024-12-31 00:49:36 - Disconnected from the ERPNext database.
+2024-12-31 00:49:45 - Internet available. Running fetch process at 31-Dec-24 12:49:45 AM.
+2024-12-31 00:49:45 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:49:46 - Connected to the ERPNext database.
+2024-12-31 00:49:46 - Connected to the SQL Server database.
+2024-12-31 00:49:46 - Disconnected from the SQL database.
+2024-12-31 00:49:46 - Disconnected from the ERPNext database.
+2024-12-31 00:49:55 - Internet available. Running fetch process at 31-Dec-24 12:49:55 AM.
+2024-12-31 00:49:55 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:49:56 - Connected to the ERPNext database.
+2024-12-31 00:49:56 - Connected to the SQL Server database.
+2024-12-31 00:49:56 - Disconnected from the SQL database.
+2024-12-31 00:49:56 - Disconnected from the ERPNext database.
+2024-12-31 00:50:05 - Internet available. Running fetch process at 31-Dec-24 12:50:05 AM.
+2024-12-31 00:50:05 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:50:06 - Connected to the ERPNext database.
+2024-12-31 00:50:06 - Connected to the SQL Server database.
+2024-12-31 00:50:06 - Disconnected from the SQL database.
+2024-12-31 00:50:06 - Disconnected from the ERPNext database.
+2024-12-31 00:50:15 - Internet available. Running fetch process at 31-Dec-24 12:50:15 AM.
+2024-12-31 00:50:15 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:50:16 - Connected to the ERPNext database.
+2024-12-31 00:50:16 - Connected to the SQL Server database.
+2024-12-31 00:50:16 - Disconnected from the SQL database.
+2024-12-31 00:50:16 - Disconnected from the ERPNext database.
+2024-12-31 00:50:25 - Internet available. Running fetch process at 31-Dec-24 12:50:25 AM.
+2024-12-31 00:50:25 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:50:26 - Connected to the ERPNext database.
+2024-12-31 00:50:26 - Connected to the SQL Server database.
+2024-12-31 00:50:26 - Disconnected from the SQL database.
+2024-12-31 00:50:26 - Disconnected from the ERPNext database.
+2024-12-31 00:50:35 - Internet available. Running fetch process at 31-Dec-24 12:50:35 AM.
+2024-12-31 00:50:35 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:50:36 - Connected to the ERPNext database.
+2024-12-31 00:50:36 - Connected to the SQL Server database.
+2024-12-31 00:50:36 - Disconnected from the SQL database.
+2024-12-31 00:50:36 - Disconnected from the ERPNext database.
+2024-12-31 00:50:45 - Internet available. Running fetch process at 31-Dec-24 12:50:45 AM.
+2024-12-31 00:50:45 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:50:46 - Connected to the ERPNext database.
+2024-12-31 00:50:46 - Connected to the SQL Server database.
+2024-12-31 00:50:46 - Disconnected from the SQL database.
+2024-12-31 00:50:46 - Disconnected from the ERPNext database.
+2024-12-31 00:50:55 - Internet available. Running fetch process at 31-Dec-24 12:50:55 AM.
+2024-12-31 00:50:55 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:50:56 - Connected to the ERPNext database.
+2024-12-31 00:50:56 - Connected to the SQL Server database.
+2024-12-31 00:50:56 - Disconnected from the SQL database.
+2024-12-31 00:50:56 - Disconnected from the ERPNext database.
+2024-12-31 00:51:05 - Internet available. Running fetch process at 31-Dec-24 12:51:05 AM.
+2024-12-31 00:51:05 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:51:06 - Connected to the ERPNext database.
+2024-12-31 00:51:06 - Connected to the SQL Server database.
+2024-12-31 00:51:06 - Disconnected from the SQL database.
+2024-12-31 00:51:06 - Disconnected from the ERPNext database.
+2024-12-31 00:51:15 - Internet available. Running fetch process at 31-Dec-24 12:51:15 AM.
+2024-12-31 00:51:15 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:51:16 - Connected to the ERPNext database.
+2024-12-31 00:51:16 - Connected to the SQL Server database.
+2024-12-31 00:51:16 - Disconnected from the SQL database.
+2024-12-31 00:51:16 - Disconnected from the ERPNext database.
+2024-12-31 00:51:25 - Internet available. Running fetch process at 31-Dec-24 12:51:25 AM.
+2024-12-31 00:51:25 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:51:26 - Connected to the ERPNext database.
+2024-12-31 00:51:26 - Connected to the SQL Server database.
+2024-12-31 00:51:26 - Disconnected from the SQL database.
+2024-12-31 00:51:26 - Disconnected from the ERPNext database.
+2024-12-31 00:51:35 - Internet available. Running fetch process at 31-Dec-24 12:51:35 AM.
+2024-12-31 00:51:35 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:51:53 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:51:53 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-31 00:52:03 - Internet available. Running fetch process at 31-Dec-24 12:52:03 AM.
+2024-12-31 00:52:03 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:52:08 - Connected to the ERPNext database.
+2024-12-31 00:52:09 - Connected to the SQL Server database.
+2024-12-31 00:52:09 - Disconnected from the SQL database.
+2024-12-31 00:52:09 - Disconnected from the ERPNext database.
+2024-12-31 00:52:13 - Internet available. Running fetch process at 31-Dec-24 12:52:13 AM.
+2024-12-31 00:52:13 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:52:14 - Connected to the ERPNext database.
+2024-12-31 00:52:14 - Connected to the SQL Server database.
+2024-12-31 00:52:14 - Disconnected from the SQL database.
+2024-12-31 00:52:14 - Disconnected from the ERPNext database.
+2024-12-31 00:52:23 - Internet available. Running fetch process at 31-Dec-24 12:52:23 AM.
+2024-12-31 00:52:23 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:52:24 - Connected to the ERPNext database.
+2024-12-31 00:52:24 - Connected to the SQL Server database.
+2024-12-31 00:52:24 - Disconnected from the SQL database.
+2024-12-31 00:52:24 - Disconnected from the ERPNext database.
+2024-12-31 00:52:33 - Internet available. Running fetch process at 31-Dec-24 12:52:33 AM.
+2024-12-31 00:52:33 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:52:34 - Connected to the ERPNext database.
+2024-12-31 00:52:34 - Connected to the SQL Server database.
+2024-12-31 00:52:34 - Disconnected from the SQL database.
+2024-12-31 00:52:34 - Disconnected from the ERPNext database.
+2024-12-31 00:52:43 - Internet available. Running fetch process at 31-Dec-24 12:52:43 AM.
+2024-12-31 00:52:43 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:52:44 - Connected to the ERPNext database.
+2024-12-31 00:52:44 - Connected to the SQL Server database.
+2024-12-31 00:52:44 - Disconnected from the SQL database.
+2024-12-31 00:52:44 - Disconnected from the ERPNext database.
+2024-12-31 00:52:53 - Internet available. Running fetch process at 31-Dec-24 12:52:53 AM.
+2024-12-31 00:52:53 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:52:54 - Connected to the ERPNext database.
+2024-12-31 00:52:55 - Connected to the SQL Server database.
+2024-12-31 00:52:55 - Disconnected from the SQL database.
+2024-12-31 00:52:55 - Disconnected from the ERPNext database.
+2024-12-31 00:53:03 - Internet available. Running fetch process at 31-Dec-24 12:53:03 AM.
+2024-12-31 00:53:03 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:53:04 - Connected to the ERPNext database.
+2024-12-31 00:53:04 - Connected to the SQL Server database.
+2024-12-31 00:53:04 - Disconnected from the SQL database.
+2024-12-31 00:53:04 - Disconnected from the ERPNext database.
+2024-12-31 00:53:13 - Internet available. Running fetch process at 31-Dec-24 12:53:13 AM.
+2024-12-31 00:53:13 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:53:14 - Connected to the ERPNext database.
+2024-12-31 00:53:15 - Connected to the SQL Server database.
+2024-12-31 00:53:15 - Disconnected from the SQL database.
+2024-12-31 00:53:15 - Disconnected from the ERPNext database.
+2024-12-31 00:53:23 - Internet available. Running fetch process at 31-Dec-24 12:53:23 AM.
+2024-12-31 00:53:23 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:53:24 - Connected to the ERPNext database.
+2024-12-31 00:53:24 - Connected to the SQL Server database.
+2024-12-31 00:53:24 - Disconnected from the SQL database.
+2024-12-31 00:53:24 - Disconnected from the ERPNext database.
+2024-12-31 00:53:33 - Internet available. Running fetch process at 31-Dec-24 12:53:33 AM.
+2024-12-31 00:53:33 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:53:34 - Connected to the ERPNext database.
+2024-12-31 00:53:35 - Connected to the SQL Server database.
+2024-12-31 00:53:35 - Disconnected from the SQL database.
+2024-12-31 00:53:35 - Disconnected from the ERPNext database.
+2024-12-31 00:53:43 - Internet available. Running fetch process at 31-Dec-24 12:53:43 AM.
+2024-12-31 00:53:43 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:53:44 - Connected to the ERPNext database.
+2024-12-31 00:53:45 - Connected to the SQL Server database.
+2024-12-31 00:53:45 - Disconnected from the SQL database.
+2024-12-31 00:53:45 - Disconnected from the ERPNext database.
+2024-12-31 00:53:53 - Internet available. Running fetch process at 31-Dec-24 12:53:53 AM.
+2024-12-31 00:53:53 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:53:54 - Connected to the ERPNext database.
+2024-12-31 00:53:54 - Connected to the SQL Server database.
+2024-12-31 00:53:54 - Disconnected from the SQL database.
+2024-12-31 00:53:54 - Disconnected from the ERPNext database.
+2024-12-31 00:54:03 - Internet available. Running fetch process at 31-Dec-24 12:54:03 AM.
+2024-12-31 00:54:03 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:54:04 - Connected to the ERPNext database.
+2024-12-31 00:54:05 - Connected to the SQL Server database.
+2024-12-31 00:54:05 - Disconnected from the SQL database.
+2024-12-31 00:54:05 - Disconnected from the ERPNext database.
+2024-12-31 00:54:13 - Internet available. Running fetch process at 31-Dec-24 12:54:13 AM.
+2024-12-31 00:54:13 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:54:14 - Connected to the ERPNext database.
+2024-12-31 00:54:15 - Connected to the SQL Server database.
+2024-12-31 00:54:15 - Disconnected from the SQL database.
+2024-12-31 00:54:15 - Disconnected from the ERPNext database.
+2024-12-31 00:54:23 - Internet available. Running fetch process at 31-Dec-24 12:54:23 AM.
+2024-12-31 00:54:23 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:54:24 - Connected to the ERPNext database.
+2024-12-31 00:54:25 - Connected to the SQL Server database.
+2024-12-31 00:54:25 - Disconnected from the SQL database.
+2024-12-31 00:54:25 - Disconnected from the ERPNext database.
+2024-12-31 00:54:33 - Internet available. Running fetch process at 31-Dec-24 12:54:33 AM.
+2024-12-31 00:54:33 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:54:34 - Connected to the ERPNext database.
+2024-12-31 00:54:35 - Connected to the SQL Server database.
+2024-12-31 00:54:35 - Disconnected from the SQL database.
+2024-12-31 00:54:35 - Disconnected from the ERPNext database.
+2024-12-31 00:54:43 - Internet available. Running fetch process at 31-Dec-24 12:54:43 AM.
+2024-12-31 00:54:43 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:54:44 - Connected to the ERPNext database.
+2024-12-31 00:54:45 - Connected to the SQL Server database.
+2024-12-31 00:54:45 - Disconnected from the SQL database.
+2024-12-31 00:54:45 - Disconnected from the ERPNext database.
+2024-12-31 00:54:53 - Internet available. Running fetch process at 31-Dec-24 12:54:53 AM.
+2024-12-31 00:54:53 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:54:55 - Connected to the ERPNext database.
+2024-12-31 00:54:59 - Connected to the SQL Server database.
+2024-12-31 00:54:59 - Disconnected from the SQL database.
+2024-12-31 00:54:59 - Disconnected from the ERPNext database.
+2024-12-31 00:55:03 - Internet available. Running fetch process at 31-Dec-24 12:55:03 AM.
+2024-12-31 00:55:03 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:55:13 - Internet available. Running fetch process at 31-Dec-24 12:55:13 AM.
+2024-12-31 00:55:13 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:55:17 - Connected to the ERPNext database.
+2024-12-31 00:55:23 - Internet available. Running fetch process at 31-Dec-24 12:55:23 AM.
+2024-12-31 00:55:23 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:55:24 - Connected to the SQL Server database.
+2024-12-31 00:55:24 - Disconnected from the SQL database.
+2024-12-31 00:55:24 - Disconnected from the ERPNext database.
+2024-12-31 00:55:32 - Failed to connect to the ERPNEXT Server database. MySql.Data.MySqlClient.MySqlException (0x80004005): Fatal error encountered during command execution ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Fatal error encountered attempting to read the resultset ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed ---> System.IO.IOException: Unable to read data from the transport connection: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MySql.Data.MySqlClient.TimedStream.<ReadAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.<ReadFullyAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlStream.<LoadPacketAsync>d__32.MoveNext()
+   at MySql.Data.MySqlClient.MySqlStream.<LoadPacketAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlStream.<ReadPacketAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.NativeDriver.<GetResultAsync>d__45.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<GetResultAsync>d__85.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<NextResultAsync>d__84.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlDataReader.<NextResultAsync>d__97.MoveNext()
+   at MySql.Data.MySqlClient.MySqlDataReader.<NextResultAsync>d__97.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlCommand.<ExecuteReaderAsync>d__111.MoveNext()
+   at MySql.Data.MySqlClient.MySqlCommand.<ExecuteReaderAsync>d__111.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at MySql.Data.MySqlClient.MySqlCommand.<ExecuteReaderAsync>d__111.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<LoadServerPropertiesAsync>d__79.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<ConfigureAsync>d__78.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.<OpenAsync>d__94.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Havano_Fiscal.FetchSalesInvoiceDetails.FetchAndInsertSalesInvoices() in C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\Service\FetchSalesInvoiceDetails.vb:line 122
+2024-12-31 00:55:32 - Failed to connect to the ERPNEXT Server database.
+2024-12-31 00:55:32 - An error occurred: Connection must be valid and open.
+2024-12-31 00:55:33 - Internet available. Running fetch process at 31-Dec-24 12:55:33 AM.
+2024-12-31 00:55:33 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:55:38 - Failed to connect to the ERPNEXT Server database. MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding ---> System.TimeoutException: The operation has timed out.
+   at MySql.Data.Common.StreamCreator.<GetTcpStreamAsync>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.Common.StreamCreator.<GetStreamAsync>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<OpenAsync>d__76.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<CreateNewPooledConnectionAsync>d__33.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetPooledConnectionAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<TryToGetDriverAsync>d__36.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetConnectionAsync>d__37.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.<OpenAsync>d__94.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Havano_Fiscal.FetchSalesInvoiceDetails.FetchAndInsertSalesInvoices() in C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\Service\FetchSalesInvoiceDetails.vb:line 122
+2024-12-31 00:55:38 - Failed to connect to the ERPNEXT Server database.
+2024-12-31 00:55:38 - An error occurred: Connection must be valid and open.
+2024-12-31 00:55:43 - Internet available. Running fetch process at 31-Dec-24 12:55:43 AM.
+2024-12-31 00:55:43 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:55:53 - Internet available. Running fetch process at 31-Dec-24 12:55:53 AM.
+2024-12-31 00:55:53 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:56:03 - Internet available. Running fetch process at 31-Dec-24 12:56:03 AM.
+2024-12-31 00:56:03 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:56:07 - Failed to connect to the ERPNEXT Server database. MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host '89.250.67.36' for user 'frapperemote' using method 'mysql_native_password' failed with message: Reading from the stream has failed ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MySql.Data.MySqlClient.TimedStream.<ReadAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.<ReadFullyAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlStream.<LoadPacketAsync>d__32.MoveNext()
+   at MySql.Data.MySqlClient.MySqlStream.<LoadPacketAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlStream.<ReadPacketAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.NativeDriver.<ReadPacketAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.<ReadPacketAsync>d__23.MoveNext()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(MySqlException ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.<ReadPacketAsync>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.<AuthenticateAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.NativeDriver.<AuthenticateAsync>d__40.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<OpenAsync>d__76.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<CreateNewPooledConnectionAsync>d__33.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetPooledConnectionAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<TryToGetDriverAsync>d__36.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetConnectionAsync>d__37.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.<OpenAsync>d__94.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Havano_Fiscal.FetchSalesInvoiceDetails.FetchAndInsertSalesInvoices() in C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\Service\FetchSalesInvoiceDetails.vb:line 122
+2024-12-31 00:56:07 - Failed to connect to the ERPNEXT Server database.
+2024-12-31 00:56:07 - An error occurred: Connection must be valid and open.
+2024-12-31 00:56:11 - Failed to connect to the ERPNEXT Server database. MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host '89.250.67.36' for user 'frapperemote' using method 'mysql_native_password' failed with message: Reading from the stream has failed ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MySql.Data.MySqlClient.TimedStream.<ReadAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.<ReadFullyAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlStream.<LoadPacketAsync>d__32.MoveNext()
+   at MySql.Data.MySqlClient.MySqlStream.<LoadPacketAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlStream.<ReadPacketAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.NativeDriver.<ReadPacketAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.<ReadPacketAsync>d__23.MoveNext()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(MySqlException ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.<ReadPacketAsync>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.<AuthenticateAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.NativeDriver.<AuthenticateAsync>d__40.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<OpenAsync>d__76.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<CreateNewPooledConnectionAsync>d__33.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetPooledConnectionAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<TryToGetDriverAsync>d__36.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetConnectionAsync>d__37.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.<OpenAsync>d__94.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Havano_Fiscal.FetchSalesInvoiceDetails.FetchAndInsertSalesInvoices() in C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\Service\FetchSalesInvoiceDetails.vb:line 122
+2024-12-31 00:56:11 - Failed to connect to the ERPNEXT Server database.
+2024-12-31 00:56:11 - An error occurred: Connection must be valid and open.
+2024-12-31 00:56:13 - Internet available. Running fetch process at 31-Dec-24 12:56:13 AM.
+2024-12-31 00:56:13 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:56:18 - Failed to connect to the ERPNEXT Server database. MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host '89.250.67.36' for user 'frapperemote' using method 'mysql_native_password' failed with message: Reading from the stream has failed ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed ---> System.IO.IOException: Unable to read data from the transport connection: An existing connection was forcibly closed by the remote host. ---> System.Net.Sockets.SocketException: An existing connection was forcibly closed by the remote host
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MySql.Data.MySqlClient.TimedStream.<ReadAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.<ReadFullyAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlStream.<LoadPacketAsync>d__32.MoveNext()
+   at MySql.Data.MySqlClient.MySqlStream.<LoadPacketAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlStream.<ReadPacketAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.NativeDriver.<ReadPacketAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.<ReadPacketAsync>d__23.MoveNext()
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(MySqlException ex)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.<ReadPacketAsync>d__23.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.<AuthenticateAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.NativeDriver.<AuthenticateAsync>d__40.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable.ConfiguredTaskAwaiter.GetResult()
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at MySql.Data.MySqlClient.NativeDriver.<OpenAsync>d__38.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<OpenAsync>d__76.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at MySql.Data.MySqlClient.Driver.<CreateAsync>d__74.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<CreateNewPooledConnectionAsync>d__33.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetPooledConnectionAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<TryToGetDriverAsync>d__36.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlPool.<GetConnectionAsync>d__37.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.<OpenAsync>d__94.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Havano_Fiscal.FetchSalesInvoiceDetails.FetchAndInsertSalesInvoices() in C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\Service\FetchSalesInvoiceDetails.vb:line 122
+2024-12-31 00:56:18 - Failed to connect to the ERPNEXT Server database.
+2024-12-31 00:56:18 - An error occurred: Connection must be valid and open.
+2024-12-31 00:56:23 - Internet available. Running fetch process at 31-Dec-24 12:56:23 AM.
+2024-12-31 00:56:23 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:56:33 - Failed to connect to the ERPNEXT Server database. MySql.Data.MySqlClient.MySqlException (0x80004005): Fatal error encountered during command execution ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Fatal error encountered attempting to read the resultset ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed ---> System.IO.IOException: Unable to read data from the transport connection: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MySql.Data.MySqlClient.TimedStream.<ReadAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.<ReadFullyAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlStream.<LoadPacketAsync>d__32.MoveNext()
+   at MySql.Data.MySqlClient.MySqlStream.<LoadPacketAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlStream.<ReadPacketAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.NativeDriver.<GetResultAsync>d__45.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<GetResultAsync>d__85.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<NextResultAsync>d__84.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlDataReader.<NextResultAsync>d__97.MoveNext()
+   at MySql.Data.MySqlClient.MySqlDataReader.<NextResultAsync>d__97.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlCommand.<ExecuteReaderAsync>d__111.MoveNext()
+   at MySql.Data.MySqlClient.MySqlCommand.<ExecuteReaderAsync>d__111.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at MySql.Data.MySqlClient.MySqlCommand.<ExecuteReaderAsync>d__111.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<LoadCharacterSetsAsync>d__81.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<ConfigureAsync>d__78.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.<OpenAsync>d__94.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Havano_Fiscal.FetchSalesInvoiceDetails.FetchAndInsertSalesInvoices() in C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\Service\FetchSalesInvoiceDetails.vb:line 122
+2024-12-31 00:56:33 - Failed to connect to the ERPNEXT Server database.
+2024-12-31 00:56:33 - An error occurred: Connection must be valid and open.
+2024-12-31 00:56:33 - Internet available. Running fetch process at 31-Dec-24 12:56:33 AM.
+2024-12-31 00:56:33 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:56:38 - Failed to connect to the ERPNEXT Server database. MySql.Data.MySqlClient.MySqlException (0x80004005): Fatal error encountered during command execution ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Fatal error encountered attempting to read the resultset ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed ---> System.IO.IOException: Unable to read data from the transport connection: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MySql.Data.MySqlClient.TimedStream.<ReadAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.<ReadFullyAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlStream.<LoadPacketAsync>d__32.MoveNext()
+   at MySql.Data.MySqlClient.MySqlStream.<LoadPacketAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlStream.<ReadPacketAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.NativeDriver.<GetResultAsync>d__45.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<GetResultAsync>d__85.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<NextResultAsync>d__84.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlDataReader.<NextResultAsync>d__97.MoveNext()
+   at MySql.Data.MySqlClient.MySqlDataReader.<NextResultAsync>d__97.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlCommand.<ExecuteReaderAsync>d__111.MoveNext()
+   at MySql.Data.MySqlClient.MySqlCommand.<ExecuteReaderAsync>d__111.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at MySql.Data.MySqlClient.MySqlCommand.<ExecuteReaderAsync>d__111.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlCommand.<ExecuteNonQueryAsync>d__100.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.Driver.<ConfigureAsync>d__78.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.<OpenAsync>d__94.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Havano_Fiscal.FetchSalesInvoiceDetails.FetchAndInsertSalesInvoices() in C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\Service\FetchSalesInvoiceDetails.vb:line 122
+2024-12-31 00:56:38 - Failed to connect to the ERPNEXT Server database.
+2024-12-31 00:56:38 - An error occurred: Connection must be valid and open.
+2024-12-31 00:56:43 - Internet available. Running fetch process at 31-Dec-24 12:56:43 AM.
+2024-12-31 00:56:43 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:56:44 - Failed to connect to the ERPNEXT Server database. MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the stream has failed ---> System.IO.IOException: Unable to read data from the transport connection: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   at MySql.Data.MySqlClient.TimedStream.<ReadAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.TimedStream.Read(Byte[] buffer, Int32 offset, Int32 count)
+   at MySql.Data.MySqlClient.MySqlStream.<ReadFullyAsync>d__31.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlStream.<LoadPacketAsync>d__32.MoveNext()
+   at MySql.Data.MySqlClient.MySqlStream.<LoadPacketAsync>d__32.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlStream.<ReadPacketAsync>d__30.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.NativeDriver.<ReadOkAsync>d__35.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at MySql.Data.MySqlClient.NativeDriver.<ReadOkAsync>d__35.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.NativeDriver.<SetDatabaseAsync>d__36.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.Driver.<SetDatabaseAsync>d__95.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.<ChangeDatabaseAsync>d__88.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.<OpenAsync>d__94.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MySql.Data.MySqlClient.MySqlConnection.Open()
+   at Havano_Fiscal.FetchSalesInvoiceDetails.FetchAndInsertSalesInvoices() in C:\Users\USER\Desktop\QUICKBOOK\WindowsApp1\QICKBOOK_EXE\Service\FetchSalesInvoiceDetails.vb:line 122
+2024-12-31 00:56:44 - Connected to the ERPNext database.
+2024-12-31 00:57:03 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 00:57:03 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-31 01:00:54 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:00:54 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-31 01:01:04 - Internet available. Running fetch process at 31-Dec-24 1:01:04 AM.
+2024-12-31 01:01:04 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:01:08 - Connected to the ERPNext database.
+2024-12-31 01:01:09 - Connected to the SQL Server database.
+2024-12-31 01:01:09 - Disconnected from the SQL database.
+2024-12-31 01:01:09 - Disconnected from the ERPNext database.
+2024-12-31 01:01:14 - Internet available. Running fetch process at 31-Dec-24 1:01:14 AM.
+2024-12-31 01:01:14 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:01:15 - Connected to the ERPNext database.
+2024-12-31 01:01:16 - Connected to the SQL Server database.
+2024-12-31 01:01:16 - Disconnected from the SQL database.
+2024-12-31 01:01:16 - Disconnected from the ERPNext database.
+2024-12-31 01:01:24 - Internet available. Running fetch process at 31-Dec-24 1:01:24 AM.
+2024-12-31 01:01:24 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:01:25 - Connected to the ERPNext database.
+2024-12-31 01:01:26 - Connected to the SQL Server database.
+2024-12-31 01:01:26 - Disconnected from the SQL database.
+2024-12-31 01:01:26 - Disconnected from the ERPNext database.
+2024-12-31 01:01:34 - Internet available. Running fetch process at 31-Dec-24 1:01:34 AM.
+2024-12-31 01:01:34 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:01:35 - Connected to the ERPNext database.
+2024-12-31 01:01:36 - Connected to the SQL Server database.
+2024-12-31 01:01:36 - Disconnected from the SQL database.
+2024-12-31 01:01:36 - Disconnected from the ERPNext database.
+2024-12-31 01:01:44 - Internet available. Running fetch process at 31-Dec-24 1:01:44 AM.
+2024-12-31 01:01:44 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:01:45 - Connected to the ERPNext database.
+2024-12-31 01:01:46 - Connected to the SQL Server database.
+2024-12-31 01:01:46 - Disconnected from the SQL database.
+2024-12-31 01:01:46 - Disconnected from the ERPNext database.
+2024-12-31 01:01:54 - Internet available. Running fetch process at 31-Dec-24 1:01:54 AM.
+2024-12-31 01:01:54 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:01:55 - Connected to the ERPNext database.
+2024-12-31 01:01:56 - Connected to the SQL Server database.
+2024-12-31 01:01:56 - Disconnected from the SQL database.
+2024-12-31 01:01:56 - Disconnected from the ERPNext database.
+2024-12-31 01:02:04 - Internet available. Running fetch process at 31-Dec-24 1:02:04 AM.
+2024-12-31 01:02:04 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:02:05 - Connected to the ERPNext database.
+2024-12-31 01:02:06 - Connected to the SQL Server database.
+2024-12-31 01:02:06 - Disconnected from the SQL database.
+2024-12-31 01:02:06 - Disconnected from the ERPNext database.
+2024-12-31 01:02:14 - Internet available. Running fetch process at 31-Dec-24 1:02:14 AM.
+2024-12-31 01:02:14 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:02:15 - Connected to the ERPNext database.
+2024-12-31 01:02:16 - Connected to the SQL Server database.
+2024-12-31 01:02:16 - Disconnected from the SQL database.
+2024-12-31 01:02:16 - Disconnected from the ERPNext database.
+2024-12-31 01:02:24 - Internet available. Running fetch process at 31-Dec-24 1:02:24 AM.
+2024-12-31 01:02:24 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:02:25 - Connected to the ERPNext database.
+2024-12-31 01:02:25 - Connected to the SQL Server database.
+2024-12-31 01:02:25 - Disconnected from the SQL database.
+2024-12-31 01:02:25 - Disconnected from the ERPNext database.
+2024-12-31 01:02:35 - Internet available. Running fetch process at 31-Dec-24 1:02:35 AM.
+2024-12-31 01:02:35 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:02:35 - Connected to the ERPNext database.
+2024-12-31 01:02:36 - Connected to the SQL Server database.
+2024-12-31 01:02:36 - Disconnected from the SQL database.
+2024-12-31 01:02:36 - Disconnected from the ERPNext database.
+2024-12-31 01:02:45 - Internet available. Running fetch process at 31-Dec-24 1:02:45 AM.
+2024-12-31 01:02:45 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:02:45 - Connected to the ERPNext database.
+2024-12-31 01:02:46 - Connected to the SQL Server database.
+2024-12-31 01:02:46 - Disconnected from the SQL database.
+2024-12-31 01:02:46 - Disconnected from the ERPNext database.
+2024-12-31 01:02:55 - Internet available. Running fetch process at 31-Dec-24 1:02:55 AM.
+2024-12-31 01:02:55 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:02:55 - Connected to the ERPNext database.
+2024-12-31 01:02:56 - Connected to the SQL Server database.
+2024-12-31 01:02:56 - Disconnected from the SQL database.
+2024-12-31 01:02:56 - Disconnected from the ERPNext database.
+2024-12-31 01:03:05 - Internet available. Running fetch process at 31-Dec-24 1:03:05 AM.
+2024-12-31 01:03:05 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:03:06 - Connected to the ERPNext database.
+2024-12-31 01:03:06 - Connected to the SQL Server database.
+2024-12-31 01:03:06 - Disconnected from the SQL database.
+2024-12-31 01:03:06 - Disconnected from the ERPNext database.
+2024-12-31 01:03:15 - Internet available. Running fetch process at 31-Dec-24 1:03:15 AM.
+2024-12-31 01:03:15 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:03:15 - Connected to the ERPNext database.
+2024-12-31 01:03:16 - Connected to the SQL Server database.
+2024-12-31 01:03:16 - Disconnected from the SQL database.
+2024-12-31 01:03:16 - Disconnected from the ERPNext database.
+2024-12-31 01:03:25 - Internet available. Running fetch process at 31-Dec-24 1:03:25 AM.
+2024-12-31 01:03:25 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:03:25 - Connected to the ERPNext database.
+2024-12-31 01:03:26 - Connected to the SQL Server database.
+2024-12-31 01:03:26 - Disconnected from the SQL database.
+2024-12-31 01:03:26 - Disconnected from the ERPNext database.
+2024-12-31 01:03:35 - Internet available. Running fetch process at 31-Dec-24 1:03:35 AM.
+2024-12-31 01:03:35 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:03:35 - Connected to the ERPNext database.
+2024-12-31 01:03:36 - Connected to the SQL Server database.
+2024-12-31 01:03:36 - Disconnected from the SQL database.
+2024-12-31 01:03:36 - Disconnected from the ERPNext database.
+2024-12-31 01:03:45 - Internet available. Running fetch process at 31-Dec-24 1:03:45 AM.
+2024-12-31 01:03:45 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:03:45 - Connected to the ERPNext database.
+2024-12-31 01:03:46 - Connected to the SQL Server database.
+2024-12-31 01:03:46 - Disconnected from the SQL database.
+2024-12-31 01:03:46 - Disconnected from the ERPNext database.
+2024-12-31 01:03:55 - Internet available. Running fetch process at 31-Dec-24 1:03:55 AM.
+2024-12-31 01:03:55 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:03:55 - Connected to the ERPNext database.
+2024-12-31 01:03:56 - Connected to the SQL Server database.
+2024-12-31 01:03:56 - Disconnected from the SQL database.
+2024-12-31 01:03:56 - Disconnected from the ERPNext database.
+2024-12-31 01:04:05 - Internet available. Running fetch process at 31-Dec-24 1:04:05 AM.
+2024-12-31 01:04:05 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:04:05 - Connected to the ERPNext database.
+2024-12-31 01:04:06 - Connected to the SQL Server database.
+2024-12-31 01:04:06 - Disconnected from the SQL database.
+2024-12-31 01:04:06 - Disconnected from the ERPNext database.
+2024-12-31 01:04:15 - Internet available. Running fetch process at 31-Dec-24 1:04:15 AM.
+2024-12-31 01:04:15 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:04:15 - Connected to the ERPNext database.
+2024-12-31 01:04:16 - Connected to the SQL Server database.
+2024-12-31 01:04:16 - Disconnected from the SQL database.
+2024-12-31 01:04:16 - Disconnected from the ERPNext database.
+2024-12-31 01:04:25 - Internet available. Running fetch process at 31-Dec-24 1:04:25 AM.
+2024-12-31 01:04:25 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:04:25 - Connected to the ERPNext database.
+2024-12-31 01:04:26 - Connected to the SQL Server database.
+2024-12-31 01:04:26 - Disconnected from the SQL database.
+2024-12-31 01:04:26 - Disconnected from the ERPNext database.
+2024-12-31 01:04:35 - Internet available. Running fetch process at 31-Dec-24 1:04:35 AM.
+2024-12-31 01:04:35 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:04:35 - Connected to the ERPNext database.
+2024-12-31 01:04:36 - Connected to the SQL Server database.
+2024-12-31 01:04:36 - Disconnected from the SQL database.
+2024-12-31 01:04:36 - Disconnected from the ERPNext database.
+2024-12-31 01:04:45 - Internet available. Running fetch process at 31-Dec-24 1:04:45 AM.
+2024-12-31 01:04:45 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:04:45 - Connected to the ERPNext database.
+2024-12-31 01:04:46 - Connected to the SQL Server database.
+2024-12-31 01:04:46 - Disconnected from the SQL database.
+2024-12-31 01:04:46 - Disconnected from the ERPNext database.
+2024-12-31 01:04:55 - Internet available. Running fetch process at 31-Dec-24 1:04:55 AM.
+2024-12-31 01:04:55 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:04:56 - Connected to the ERPNext database.
+2024-12-31 01:04:56 - Connected to the SQL Server database.
+2024-12-31 01:04:56 - Disconnected from the SQL database.
+2024-12-31 01:04:56 - Disconnected from the ERPNext database.
+2024-12-31 01:05:05 - Internet available. Running fetch process at 31-Dec-24 1:05:05 AM.
+2024-12-31 01:05:05 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:05:06 - Connected to the ERPNext database.
+2024-12-31 01:05:06 - Connected to the SQL Server database.
+2024-12-31 01:05:06 - Disconnected from the SQL database.
+2024-12-31 01:05:06 - Disconnected from the ERPNext database.
+2024-12-31 01:05:15 - Internet available. Running fetch process at 31-Dec-24 1:05:15 AM.
+2024-12-31 01:05:15 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:05:15 - Connected to the ERPNext database.
+2024-12-31 01:05:16 - Connected to the SQL Server database.
+2024-12-31 01:05:16 - Disconnected from the SQL database.
+2024-12-31 01:05:16 - Disconnected from the ERPNext database.
+2024-12-31 01:05:25 - Internet available. Running fetch process at 31-Dec-24 1:05:25 AM.
+2024-12-31 01:05:25 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:05:26 - Connected to the ERPNext database.
+2024-12-31 01:05:26 - Connected to the SQL Server database.
+2024-12-31 01:05:26 - Disconnected from the SQL database.
+2024-12-31 01:05:26 - Disconnected from the ERPNext database.
+2024-12-31 01:05:35 - Internet available. Running fetch process at 31-Dec-24 1:05:35 AM.
+2024-12-31 01:05:35 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:05:36 - Connected to the ERPNext database.
+2024-12-31 01:05:36 - Connected to the SQL Server database.
+2024-12-31 01:05:36 - Disconnected from the SQL database.
+2024-12-31 01:05:36 - Disconnected from the ERPNext database.
+2024-12-31 01:05:45 - Internet available. Running fetch process at 31-Dec-24 1:05:45 AM.
+2024-12-31 01:05:45 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:05:46 - Connected to the ERPNext database.
+2024-12-31 01:06:08 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:06:08 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-31 01:06:18 - Internet available. Running fetch process at 31-Dec-24 1:06:18 AM.
+2024-12-31 01:06:18 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:06:22 - Connected to the ERPNext database.
+2024-12-31 01:06:23 - Connected to the SQL Server database.
+2024-12-31 01:06:23 - Disconnected from the SQL database.
+2024-12-31 01:06:23 - Disconnected from the ERPNext database.
+2024-12-31 01:06:28 - Internet available. Running fetch process at 31-Dec-24 1:06:28 AM.
+2024-12-31 01:06:28 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:06:29 - Connected to the ERPNext database.
+2024-12-31 01:06:30 - Connected to the SQL Server database.
+2024-12-31 01:06:30 - Disconnected from the SQL database.
+2024-12-31 01:06:30 - Disconnected from the ERPNext database.
+2024-12-31 01:06:38 - Internet available. Running fetch process at 31-Dec-24 1:06:38 AM.
+2024-12-31 01:06:38 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:06:39 - Connected to the ERPNext database.
+2024-12-31 01:06:40 - Connected to the SQL Server database.
+2024-12-31 01:06:40 - Disconnected from the SQL database.
+2024-12-31 01:06:40 - Disconnected from the ERPNext database.
+2024-12-31 01:06:48 - Internet available. Running fetch process at 31-Dec-24 1:06:48 AM.
+2024-12-31 01:06:48 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:10:35 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:10:35 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-31 01:10:45 - Internet available. Running fetch process at 31-Dec-24 1:10:45 AM.
+2024-12-31 01:10:45 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:10:49 - Connected to the ERPNext database.
+2024-12-31 01:10:49 - Connected to the SQL Server database.
+2024-12-31 01:10:49 - Disconnected from the SQL database.
+2024-12-31 01:10:49 - Disconnected from the ERPNext database.
+2024-12-31 01:10:55 - Internet available. Running fetch process at 31-Dec-24 1:10:55 AM.
+2024-12-31 01:10:55 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:10:56 - Connected to the ERPNext database.
+2024-12-31 01:10:56 - Connected to the SQL Server database.
+2024-12-31 01:10:56 - Disconnected from the SQL database.
+2024-12-31 01:10:56 - Disconnected from the ERPNext database.
+2024-12-31 01:11:05 - Internet available. Running fetch process at 31-Dec-24 1:11:05 AM.
+2024-12-31 01:11:05 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:11:06 - Connected to the ERPNext database.
+2024-12-31 01:11:06 - Connected to the SQL Server database.
+2024-12-31 01:11:06 - Disconnected from the SQL database.
+2024-12-31 01:11:06 - Disconnected from the ERPNext database.
+2024-12-31 01:11:15 - Internet available. Running fetch process at 31-Dec-24 1:11:15 AM.
+2024-12-31 01:11:15 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:11:16 - Connected to the ERPNext database.
+2024-12-31 01:11:16 - Connected to the SQL Server database.
+2024-12-31 01:11:16 - Disconnected from the SQL database.
+2024-12-31 01:11:16 - Disconnected from the ERPNext database.
+2024-12-31 01:11:25 - Internet available. Running fetch process at 31-Dec-24 1:11:25 AM.
+2024-12-31 01:11:25 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 01:11:26 - Connected to the ERPNext database.
+2024-12-31 01:11:26 - Connected to the SQL Server database.
+2024-12-31 01:11:26 - Disconnected from the SQL database.
+2024-12-31 01:11:26 - Disconnected from the ERPNext database.
