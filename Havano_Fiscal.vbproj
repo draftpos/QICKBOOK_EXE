@@ -52,6 +52,9 @@
   <PropertyGroup>
     <ApplicationIcon>logo-removebg-preview.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Azure.Core, Version=1.38.0.0, Culture=neutral, PublicKeyToken=92742159e12e44c8, processorArchitecture=MSIL">
       <HintPath>packages\Azure.Core.1.38.0\lib\net472\Azure.Core.dll</HintPath>
@@ -458,6 +461,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="creditnote.vb">
       <DependentUpon>creditnote.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -622,6 +626,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>

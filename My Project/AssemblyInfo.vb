@@ -11,7 +11,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyTitle("WindowsApp1")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("WindowsApp1")>
+<Assembly: AssemblyProduct("Havano_Fiscal_vs1.0")>
 <Assembly: AssemblyCopyright("Copyright ©  2024")>
 <Assembly: AssemblyTrademark("")>
 
