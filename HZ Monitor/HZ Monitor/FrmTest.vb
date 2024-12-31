@@ -56,13 +56,13 @@ Public Class FrmTest
     Private Sub btnAddItem_Click(sender As Object, e As EventArgs) Handles btnAddItem.Click
 
         ' Define the data to insert
-        Dim listId As String = "LIST12346"
-        Dim name As String = "Millo"
-        Dim qty As Single = 2
+        Dim listId As String = "LIST12345"
+        Dim name As String = "MILO"
+        Dim qty As Single = 1
         Dim rate As Decimal = 25
         Dim amount As Decimal = qty * rate
         Dim txnId As String = "TXN12347"
-        Dim vat As String = "0"
+        Dim vat As String = "15"
 
         ' SQL Insert statement
         Dim query As String = "INSERT INTO Item (ListId, Name, Qty, Rate, Amount, TxnId, Vat) " &

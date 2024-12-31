@@ -127,6 +127,7 @@ Public Class FrmMonitor
             Exit Sub
         End If
         Me.WindowState = FormWindowState.Minimized
+        tmr_start.Enabled = True
         'FrmTest.ShowDialog()
     End Sub
     Private Async Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
@@ -255,7 +256,7 @@ Public Class FrmMonitor
 
         xmlstr = xmlstr + itm_list + "</ITEMS>"
         item_xml = xmlstr
-        'MsgBox(xmlstr)
+        'Console.WriteLine(xmlstr)
     End Sub
 
     Public Async Function SendTax() As Tasks.Task
@@ -267,10 +268,7 @@ Public Class FrmMonitor
         End If
         item_xml = item_xml.Replace("&", "and")
         GetCompanyDetails()
-        'InvoiceAmount *= CurrRate
-        'Clipboard.SetText(item_xml)
-        'MsgBox(item_xml)
-        'MsgBox(Currency)
+
         Dim hm As New HavanoZimralib
         Dim res As String
         For Each id In TxnID_Lst
@@ -279,7 +277,7 @@ Public Class FrmMonitor
                 GetCreditNoteDetails(OriginalInvoiceNo)
             End If
             res = Await hm.SendInvoice(AddCustomer2Zimra, TrnxType, Currency, CusCompanyName, InvoiceNo, CustomerName, TradeName, CustomerVATNumber, CustomerAddress, CustomerTelephoneNumber, CustomerTIN, CustomerProvince, CustomerStreet, CustomerHouseNo, CustomerCity, CustomerEmail, InvoiceAmount, InvoiceTaxAmount, "Customer Return", OriginalInvoiceNo, InvoiceRecieptNo, item_xml)
-            Console.WriteLine(res)
+            'Console.WriteLine(res)
             Dim jsonObject As JObject = JObject.Parse(res)
             message = jsonObject("Message").ToString()
             Try
@@ -295,6 +293,7 @@ Public Class FrmMonitor
                 lblStatus.Text = "HavanoZimra Status: " & message
                 'MessageBox.Show(Me, "HavanoZimra Status: " & message, "HavanoPOS", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try
+            Thread.Sleep(5000)
         Next
         tmr_start.Start()
     End Function
@@ -323,17 +322,24 @@ Public Class FrmMonitor
         If table = "Invoice" Then
             TrnxType = "0"
             cmd = New SqlCommand("select Currency,Subtotal,InvoiceNumber from Invoice Where TxnId='" & Trnxid & "'", con)
+            rdr = cmd.ExecuteReader()
+            If rdr.Read() Then
+                Currency = rdr(0).ToString
+                InvoiceAmount = rdr(1).ToString
+                InvoiceNo = rdr(2).ToString
+            End If
         Else
             TrnxType = "1"
             cmd = New SqlCommand("select Currency,TotalAmount,CreditNoteNumber, TxnId from CreditMemo Where CreditNoteNumber='" & Trnxid & "'", con)
+            rdr = cmd.ExecuteReader()
+            If rdr.Read() Then
+                Currency = rdr(0).ToString
+                InvoiceAmount = rdr(1).ToString
+                InvoiceNo = rdr(2).ToString
+                OriginalInvoiceNo = rdr(3).ToString
+            End If
         End If
-        rdr = cmd.ExecuteReader()
-        If rdr.Read() Then
-            Currency = rdr(0).ToString
-            InvoiceAmount = rdr(1).ToString
-            InvoiceNo = rdr(2).ToString
-            OriginalInvoiceNo = rdr(3).ToString
-        End If
+
         con.Close()
     End Sub
     Public Sub GetCreditNoteDetails(ByVal Trnxid As String)
@@ -393,30 +399,48 @@ Public Class FrmMonitor
 
     End Sub
     Sub UpdateQRCode(ByVal code_data As String, ByVal ID As String, ByVal table As String)
+        'Console.WriteLine(table & " ==== " & ID)
         GetQRCode(code_data)
         Dim con2 As SqlConnection = New SqlConnection(cs)
         con2.Open()
         Dim queryb As String = ""
         If table = "Invoice" Then
             queryb = "UPDATE Invoice SET  QrCode=@d1,DeviceID=@d2,FiscalDay=@d3,ReceiptNo=@d4,Vcode=@d5,HavanoZimraStatus=@d6 WHERE TxnId='" & ID & "'"
+            Dim command0 As New SqlCommand(queryb, con2)
+            command0.Parameters.AddWithValue("@d2", DeviceID)
+            command0.Parameters.AddWithValue("@d3", FiscalDay)
+            command0.Parameters.AddWithValue("@d4", receiptGlobalNo)
+            command0.Parameters.AddWithValue("@d5", VerificationCode)
+            command0.Parameters.AddWithValue("@d6", True)
+
+            Dim ms As New MemoryStream()
+            Dim bmpImage As New Bitmap(PictureBox1.Image)
+            bmpImage.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg)
+            Dim data As Byte() = ms.GetBuffer()
+            Dim p As New SqlParameter("@d1", SqlDbType.Image)
+            p.Value = data
+            command0.Parameters.Add(p)
+
+            command0.ExecuteNonQuery()
         Else
             queryb = "UPDATE CreditMemo SET  QrCode=@d1,DeviceID=@d2,FiscalDay=@d3,Vcode=@d4,HavanoZimraStatus=@d5 WHERE CreditNoteNumber='" & ID & "'"
+            Dim command0 As New SqlCommand(queryb, con2)
+            command0.Parameters.AddWithValue("@d2", DeviceID)
+            command0.Parameters.AddWithValue("@d3", FiscalDay)
+            command0.Parameters.AddWithValue("@d4", VerificationCode)
+            command0.Parameters.AddWithValue("@d5", True)
+
+            Dim ms As New MemoryStream()
+            Dim bmpImage As New Bitmap(PictureBox1.Image)
+            bmpImage.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg)
+            Dim data As Byte() = ms.GetBuffer()
+            Dim p As New SqlParameter("@d1", SqlDbType.Image)
+            p.Value = data
+            command0.Parameters.Add(p)
+
+            command0.ExecuteNonQuery()
         End If
-        Dim command0 As New SqlCommand(queryb, con2)
-        command0.Parameters.AddWithValue("@d2", DeviceID)
-        command0.Parameters.AddWithValue("@d3", FiscalDay)
-        command0.Parameters.AddWithValue("@d4", VerificationCode)
-        command0.Parameters.AddWithValue("@d5", True)
 
-        Dim ms As New MemoryStream()
-        Dim bmpImage As New Bitmap(PictureBox1.Image)
-        bmpImage.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg)
-        Dim data As Byte() = ms.GetBuffer()
-        Dim p As New SqlParameter("@d1", SqlDbType.Image)
-        p.Value = data
-        command0.Parameters.Add(p)
-
-        command0.ExecuteNonQuery()
         con2.Close()
 
     End Sub
@@ -439,6 +463,7 @@ Public Class FrmMonitor
                 Console.WriteLine(id)
                 GetItemXML(id)
                 SendTax()
+                Exit Sub
             Next
         End If
 
@@ -451,6 +476,7 @@ Public Class FrmMonitor
                 Console.WriteLine(id)
                 GetItemXML(id)
                 SendTax()
+                Exit Sub
             Next
         End If
 
