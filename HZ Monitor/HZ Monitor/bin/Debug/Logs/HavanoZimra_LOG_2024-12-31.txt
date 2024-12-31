@@ -56,3 +56,7 @@
 2024-12-31 12:39:23.7346|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22OQJI:00000001"}
 2024-12-31 12:39:26.3416|INFO|HavanoZimra.HavanoZimralib|Status Request sent
 2024-12-31 12:39:26.3416|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22OQK9:00000001"}
+2024-12-31 14:47:56.3816|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2024-12-31 14:47:57.5476|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
