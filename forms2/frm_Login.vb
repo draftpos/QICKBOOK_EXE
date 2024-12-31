@@ -12,7 +12,6 @@ Public Class frm_Login
             FRML.Show()
             Me.Dispose()
         End If
-
     End Sub
 
     Private Async Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -39,7 +38,7 @@ Public Class frm_Login
         Me.Dispose()
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click, Button4.Click
         frmSqlsever.Dispose()
         System.IO.File.Delete(filePathsqlsetting)
         frmSqlsever.Show()
@@ -50,15 +49,20 @@ Public Class frm_Login
         InitializeRefreshTimer()
     End Sub
 
-    Private Sub txt_username_TextChanged(sender As Object, e As EventArgs) Handles txt_username.TextChanged
 
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If exitapp() Then
+            Me.Dispose()
+            End
+        End If
     End Sub
 
-    Private Sub Panel4_Paint(sender As Object, e As PaintEventArgs) Handles Panel4.Paint
-
-    End Sub
-
-    Private Sub frm_Login_FormClosed(sender As Object, e As FormClosedEventArgs)
-
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
+        If CheckBox1.Checked Then
+            txt_password.UseSystemPasswordChar = False
+        Else
+            txt_password.UseSystemPasswordChar = True
+        End If
     End Sub
 End Class
