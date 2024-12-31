@@ -94,21 +94,21 @@ Public Class FrmMonitor
         contextMenu.Items.Add("Restore", Nothing, AddressOf RestoreApp)
         contextMenu.Items.Add("Exit", Nothing, AddressOf ExitApp)
         MyNotifyIcon.ContextMenuStrip = contextMenu
-
-        Dim hm As New HavanoZimralib
-        Dim IsInternetOkay As Boolean = Await hm.IsInternetAvailable
-        If IsInternetOkay Then
-            Dim res As String = Await hm.CheckGlobalNumber()
-            Dim jsonObject As JObject = JObject.Parse(res)
-            Dim message = jsonObject("Message").ToString()
-            If message <> "Good" Then
-                MessageBox.Show(Me, message, "HavanoPOS", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
-                Exit Sub
+        Try
+            Dim hm As New HavanoZimralib
+            Dim IsInternetOkay As Boolean = Await hm.IsInternetAvailable
+            If IsInternetOkay Then
+                Dim res As String = Await hm.CheckGlobalNumber()
+                Dim jsonObject As JObject = JObject.Parse(res)
+                Dim message = jsonObject("Message").ToString()
+                If message <> "Good" Then
+                    MessageBox.Show(Me, message, "HavanoPOS", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                    Exit Sub
+                End If
             End If
-        End If
 
-        My.Settings.HavanoZimraDevice = hm.GetDeviceSerialNumber()
-        My.Settings.VerificationServer = hm.VerificationServer()
+            My.Settings.HavanoZimraDevice = hm.GetDeviceSerialNumber()
+            My.Settings.VerificationServer = hm.VerificationServer()
             My.Settings.Save()
 
             Dim resMsg As String = Await hm.SendPrivateRequest(HavanoZimralib.ReqType.Status, HttpMethod.Get)
@@ -116,17 +116,29 @@ Public Class FrmMonitor
 
             If resMsg = "FiscalDayClosed" Then
                 resMsg = "Fiscal Day is Closed, Please Open fiscal day"
-            MessageBox.Show(Me, resMsg, "HavanoPOS", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Me.Show()
-            Exit Sub
-        End If
+                lblStatus.Text = "Fiscal Day is Closed"
+                MessageBox.Show(Me, resMsg, "HavanoPOS", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Me.Show()
+                Exit Sub
+            Else
+                lblStatus.Text = "Fiscal Day is Opened"
+
+            End If
+
+
 
             If maxdayHrs < 0 Then
-            MessageBox.Show(Me, "Invalid Date found in the configuration file", "HavanoPOS", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Me.Show()
-            Exit Sub
-        End If
-        Me.WindowState = FormWindowState.Minimized
+                MessageBox.Show(Me, "Invalid Date found in the configuration file", "HavanoPOS", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Me.Show()
+                Exit Sub
+            End If
+
+            Me.WindowState = FormWindowState.Minimized
+        Catch ex As Exception
+            Me.WindowState = FormWindowState.Normal
+            lblStatus.Text = "Fiscal Day status unknown"
+        End Try
+
         tmr_start.Enabled = True
         'FrmTest.ShowDialog()
     End Sub
