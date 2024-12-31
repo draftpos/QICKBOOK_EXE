@@ -1,0 +1,62 @@
+2024-12-31 12:02:16.9486|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:02:16.9846|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":894,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22O8KH:00000001"}
+2024-12-31 12:04:46.9723|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:04:47.0083|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":894,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22O9TU:00000001"}
+2024-12-31 12:04:49.5860|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:04:49.5860|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":894,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22O9VA:00000001"}
+2024-12-31 12:10:28.0827|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:10:28.1117|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":894,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22OCRP:00000001"}
+2024-12-31 12:10:28.5771|INFO|HavanoZimra.HavanoZimralib|Receipt Submitted
+2024-12-31 12:10:28.5771|INFO|HavanoZimra.HavanoZimralib|Invoice Successfully Sent
+2024-12-31 12:10:31.1614|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:10:31.1614|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":895,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22OCTH:00000001"}
+2024-12-31 12:17:12.9518|INFO|HavanoZimra.HavanoZimralib|Receipt Submitted
+2024-12-31 12:17:13.0138|INFO|HavanoZimra.HavanoZimralib|Invoice Successfully Sent
+2024-12-31 12:17:19.6208|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:17:19.6208|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":896,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22OGAG:00000001"}
+2024-12-31 12:17:24.0917|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:17:24.0917|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":896,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22OGBA:00000001"}
+2024-12-31 12:20:01.8822|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:20:01.9902|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":896,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22OHJ2:00000001"}
+2024-12-31 12:20:07.2199|INFO|HavanoZimra.HavanoZimralib|Receipt Submitted
+2024-12-31 12:20:07.2199|INFO|HavanoZimra.HavanoZimralib|Invoice Successfully Sent
+2024-12-31 12:20:14.7214|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:20:14.7214|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":897,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22OHLR:00000001"}
+2024-12-31 12:21:51.4970|INFO|HavanoZimra.HavanoZimralib|Receipt Submitted
+2024-12-31 12:21:51.5270|INFO|HavanoZimra.HavanoZimralib|Invoice Successfully Sent
+2024-12-31 12:21:53.6608|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:21:53.6608|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":898,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22OI9E:00000001"}
+2024-12-31 12:29:09.9991|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:29:10.0461|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":898,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22OLLS:00000001"}
+2024-12-31 12:29:11.7458|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:29:11.7458|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":898,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22OLO2:00000001"}
+2024-12-31 12:29:21.4929|INFO|HavanoZimra.HavanoZimralib|Receipt Submitted
+2024-12-31 12:29:21.4929|INFO|HavanoZimra.HavanoZimralib|Invoice Successfully Sent
+2024-12-31 12:32:02.0671|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:32:02.1051|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":899,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22ON6D:00000001"}
+2024-12-31 12:32:05.8025|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:32:05.8025|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":899,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22ON70:00000001"}
+2024-12-31 12:32:14.9403|INFO|HavanoZimra.HavanoZimralib|Receipt Submitted
+2024-12-31 12:32:14.9403|INFO|HavanoZimra.HavanoZimralib|Invoice Successfully Sent
+2024-12-31 12:33:51.5068|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:33:51.5418|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":900,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22OO06:00000001"}
+2024-12-31 12:33:54.2818|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:33:54.2818|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":900,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22OO1F:00000001"}
+2024-12-31 12:34:06.6494|INFO|HavanoZimra.HavanoZimralib|Receipt Submitted
+2024-12-31 12:34:06.6494|INFO|HavanoZimra.HavanoZimralib|Invoice Successfully Sent
+2024-12-31 12:37:44.4444|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:37:44.4774|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":901,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22OPQD:00000001"}
+2024-12-31 12:37:46.0294|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:37:46.0294|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":901,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22OPR3:00000001"}
+2024-12-31 12:37:55.1818|INFO|HavanoZimra.HavanoZimralib|Receipt Submitted
+2024-12-31 12:37:55.1818|INFO|HavanoZimra.HavanoZimralib|Invoice Successfully Sent
+2024-12-31 12:38:12.5198|INFO|HavanoZimra.HavanoZimralib|Receipt Submitted
+2024-12-31 12:38:12.5198|INFO|HavanoZimra.HavanoZimralib|Invoice Successfully Sent
+2024-12-31 12:39:23.6836|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:39:23.7346|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22OQJI:00000001"}
+2024-12-31 12:39:26.3416|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2024-12-31 12:39:26.3416|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH22OQK9:00000001"}
+2024-12-31 14:47:56.3816|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2024-12-31 14:47:57.5476|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+

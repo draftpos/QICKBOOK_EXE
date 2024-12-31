@@ -1,23 +1,23 @@
-C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ Monitor.vbproj.AssemblyReference.cache
-C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ_Monitor.FrmMonitor.resources
-C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ_Monitor.Resources.resources
-C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ Monitor.vbproj.GenerateResource.cache
-C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ Monitor.vbproj.CoreCompileInputs.cache
 C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\HZ Monitor.exe.config
 C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\HZ Monitor.exe
 C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\HZ Monitor.pdb
 C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\HZ Monitor.xml
+C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\HavanoZimra.dll
+C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\NLog.dll
+C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\BouncyCastle.Crypto.xml
+C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\NLog.xml
+C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ Monitor.vbproj.AssemblyReference.cache
+C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ Monitor.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ_Monitor.FrmMonitor.resources
+C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ_Monitor.FrmTest.resources
+C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ_Monitor.Resources.resources
+C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ Monitor.vbproj.GenerateResource.cache
+C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ Monitor.vbproj.CoreCompileInputs.cache
+C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ Monitor.vbproj.CopyComplete
 C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ Monitor.exe
 C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ Monitor.xml
 C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ Monitor.pdb
-C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\HavanoZimra.dll
-C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\NLog.dll
-C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\NLog.xml
-C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ Monitor.vbproj.SuggestedBindingRedirects.cache
-C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ Monitor.vbproj.CopyComplete
-C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\obj\Debug\HZ_Monitor.FrmTest.resources
-C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\MessagingToolkit.QRCode.dll
-C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\BouncyCastle.Crypto.dll
-C:\Users\Donsol\Desktop\QICKBOOK_EXE\HZ Monitor\HZ Monitor\bin\Debug\BouncyCastle.Crypto.xml

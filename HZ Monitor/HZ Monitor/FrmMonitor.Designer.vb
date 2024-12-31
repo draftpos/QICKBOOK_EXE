@@ -25,26 +25,26 @@ Partial Class FrmMonitor
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMonitor))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnMini = New System.Windows.Forms.PictureBox()
+        Me.btnImgExit = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblStatus = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Pic_logo = New System.Windows.Forms.PictureBox()
         Me.lblnotify = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.tmr_start = New System.Windows.Forms.Timer(Me.components)
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Pic_logo = New System.Windows.Forms.PictureBox()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.btnStart = New System.Windows.Forms.Button()
-        Me.btnMini = New System.Windows.Forms.PictureBox()
-        Me.btnImgExit = New System.Windows.Forms.PictureBox()
+        Me.tmr_start = New System.Windows.Forms.Timer(Me.components)
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MyNotifyIcon = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.Panel1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Pic_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnMini, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.btnImgExit, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.Pic_logo, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -58,6 +58,28 @@ Partial Class FrmMonitor
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(522, 29)
         Me.Panel1.TabIndex = 3
+        '
+        'btnMini
+        '
+        Me.btnMini.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnMini.Image = Global.HZ_Monitor.My.Resources.Resources.minimize_2
+        Me.btnMini.Location = New System.Drawing.Point(468, 0)
+        Me.btnMini.Name = "btnMini"
+        Me.btnMini.Size = New System.Drawing.Size(26, 27)
+        Me.btnMini.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnMini.TabIndex = 3
+        Me.btnMini.TabStop = False
+        '
+        'btnImgExit
+        '
+        Me.btnImgExit.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnImgExit.Image = Global.HZ_Monitor.My.Resources.Resources.close
+        Me.btnImgExit.Location = New System.Drawing.Point(494, 0)
+        Me.btnImgExit.Name = "btnImgExit"
+        Me.btnImgExit.Size = New System.Drawing.Size(26, 27)
+        Me.btnImgExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.btnImgExit.TabIndex = 2
+        Me.btnImgExit.TabStop = False
         '
         'Label1
         '
@@ -91,6 +113,17 @@ Partial Class FrmMonitor
         Me.GroupBox2.TabIndex = 8
         Me.GroupBox2.TabStop = False
         '
+        'Pic_logo
+        '
+        Me.Pic_logo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Pic_logo.Image = Global.HZ_Monitor.My.Resources.Resources.send_icon
+        Me.Pic_logo.Location = New System.Drawing.Point(12, 22)
+        Me.Pic_logo.Name = "Pic_logo"
+        Me.Pic_logo.Size = New System.Drawing.Size(62, 61)
+        Me.Pic_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Pic_logo.TabIndex = 4
+        Me.Pic_logo.TabStop = False
+        '
         'lblnotify
         '
         Me.lblnotify.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
@@ -111,30 +144,6 @@ Partial Class FrmMonitor
         Me.GroupBox1.Size = New System.Drawing.Size(481, 65)
         Me.GroupBox1.TabIndex = 9
         Me.GroupBox1.TabStop = False
-        '
-        'tmr_start
-        '
-        Me.tmr_start.Enabled = True
-        Me.tmr_start.Interval = 2000
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(537, 58)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(179, 175)
-        Me.PictureBox1.TabIndex = 11
-        Me.PictureBox1.TabStop = False
-        '
-        'Pic_logo
-        '
-        Me.Pic_logo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Pic_logo.Image = Global.HZ_Monitor.My.Resources.Resources.send_icon
-        Me.Pic_logo.Location = New System.Drawing.Point(12, 22)
-        Me.Pic_logo.Name = "Pic_logo"
-        Me.Pic_logo.Size = New System.Drawing.Size(62, 61)
-        Me.Pic_logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Pic_logo.TabIndex = 4
-        Me.Pic_logo.TabStop = False
         '
         'btnClose
         '
@@ -164,27 +173,17 @@ Partial Class FrmMonitor
         Me.btnStart.Text = "Start Fiscal Day"
         Me.btnStart.UseVisualStyleBackColor = True
         '
-        'btnMini
+        'tmr_start
         '
-        Me.btnMini.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btnMini.Image = Global.HZ_Monitor.My.Resources.Resources.minimize_2
-        Me.btnMini.Location = New System.Drawing.Point(468, 0)
-        Me.btnMini.Name = "btnMini"
-        Me.btnMini.Size = New System.Drawing.Size(26, 27)
-        Me.btnMini.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnMini.TabIndex = 3
-        Me.btnMini.TabStop = False
+        Me.tmr_start.Interval = 5000
         '
-        'btnImgExit
+        'PictureBox1
         '
-        Me.btnImgExit.Dock = System.Windows.Forms.DockStyle.Right
-        Me.btnImgExit.Image = Global.HZ_Monitor.My.Resources.Resources.close
-        Me.btnImgExit.Location = New System.Drawing.Point(494, 0)
-        Me.btnImgExit.Name = "btnImgExit"
-        Me.btnImgExit.Size = New System.Drawing.Size(26, 27)
-        Me.btnImgExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.btnImgExit.TabIndex = 2
-        Me.btnImgExit.TabStop = False
+        Me.PictureBox1.Location = New System.Drawing.Point(537, 58)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(179, 175)
+        Me.PictureBox1.TabIndex = 11
+        Me.PictureBox1.TabStop = False
         '
         'MyNotifyIcon
         '
@@ -210,12 +209,12 @@ Partial Class FrmMonitor
         Me.Text = "HavanoZimra Monitor"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox1.ResumeLayout(False)
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Pic_logo, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnMini, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.btnImgExit, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        CType(Me.Pic_logo, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
