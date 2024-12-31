@@ -238,32 +238,37 @@ Public Class FrmMonitor
         Dim rcount As Integer = 0
         Dim TotaltaxAmount As Decimal = 0
         Dim TotalAmount As Decimal = 0
-        con = New SqlConnection(cs)
-        con.Open()
-        cmd = con.CreateCommand()
-        cmd = New SqlCommand("select Name,Qty,Rate,Amount,Vat from Item WHERE TxnId='" + trnxid + "'", con)
-        rdr = cmd.ExecuteReader()
-        While rdr.Read()
-            rcount = rcount + 1
-            Dim tax As Decimal = Convert.ToDecimal(rdr(4).ToString)
-            Dim taxRate As Decimal = Convert.ToDecimal(tax) / 100
-            Dim tax_amount As Decimal = (Convert.ToDecimal(rdr(3).ToString) * taxRate) / (1 + taxRate)
+        Try
+            con = New SqlConnection(cs)
+            con.Open()
+            cmd = con.CreateCommand()
+            cmd = New SqlCommand("select Name,Qty,Rate,Amount,Vat from Item WHERE TxnId='" + trnxid + "'", con)
+            rdr = cmd.ExecuteReader()
+            While rdr.Read()
+                rcount = rcount + 1
+                Dim tax As Decimal = Convert.ToDecimal(rdr(4).ToString)
+                Dim taxRate As Decimal = Convert.ToDecimal(tax) / 100
+                Dim tax_amount As Decimal = (Convert.ToDecimal(rdr(3).ToString) * taxRate) / (1 + taxRate)
 
-            Dim itm As String = String.Format(
-                    "<ITEM>" &
-                    "<HH>{0}</HH>" &
-                    "<ITEMCODE>{1}</ITEMCODE>" &
-                    "<ITEMNAME>{2}</ITEMNAME>" &
-                    "<QTY>{3}</QTY>" &
-                    "<PRICE>{4}</PRICE>" &
-                    "<TOTAL>{5}</TOTAL>" &
-                    "<VAT>{6}</VAT>" &
-                    "<VATR>{7}</VATR>" &
-                    "</ITEM>", rcount, GenerateRandomItemID, rdr(0).ToString, rdr(1).ToString, rdr(2).ToString, rdr(3).ToString, tax_amount.ToString("N2"), taxRate.ToString("N2"))
+                Dim itm As String = String.Format(
+                        "<ITEM>" &
+                        "<HH>{0}</HH>" &
+                        "<ITEMCODE>{1}</ITEMCODE>" &
+                        "<ITEMNAME>{2}</ITEMNAME>" &
+                        "<QTY>{3}</QTY>" &
+                        "<PRICE>{4}</PRICE>" &
+                        "<TOTAL>{5}</TOTAL>" &
+                        "<VAT>{6}</VAT>" &
+                        "<VATR>{7}</VATR>" &
+                        "</ITEM>", rcount, GenerateRandomItemID, rdr(0).ToString, rdr(1).ToString, rdr(2).ToString, rdr(3).ToString, tax_amount.ToString("N2"), taxRate.ToString("N2"))
 
-            full_item = String.Join("", itm)
-            itm_list = itm_list + full_item
-        End While
+                full_item = String.Join("", itm)
+                itm_list = itm_list + full_item
+            End While
+        Catch ex As Exception
+            lblStatus.Text = "Failed: Some Item Informations are not Valid"
+        End Try
+
         con.Close()
 
         xmlstr = xmlstr + itm_list + "</ITEMS>"
