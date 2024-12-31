@@ -518,17 +518,22 @@ Public Class Form1
 
 
     Private Async Sub Form1_FormClosed(sender As Object, e As FormClosedEventArgs)
+
+    End Sub
+
+    Private Sub Form1_GiveFeedback(sender As Object, e As GiveFeedbackEventArgs)
+
+    End Sub
+
+    Private Async Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         If exitapp() Then
             Await Automatically_BackUp()
-            Application.Exit()
+            End
+            '  Application.Exit()
         Else
             Dim FRML = New Form1
             FRML.Show()
             Me.Dispose()
         End If
-    End Sub
-
-    Private Sub Form1_GiveFeedback(sender As Object, e As GiveFeedbackEventArgs) Handles Me.GiveFeedback
-
     End Sub
 End Class

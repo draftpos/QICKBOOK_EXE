@@ -69,7 +69,7 @@ Partial Class frm_credinot_lst
         Me.GelButton2.Name = "GelButton2"
         Me.GelButton2.Size = New System.Drawing.Size(103, 34)
         Me.GelButton2.TabIndex = 398
-        Me.GelButton2.Text = "Preview Pdf"
+        Me.GelButton2.Text = "Print"
         Me.GelButton2.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.GelButton2.UseVisualStyleBackColor = False
         '

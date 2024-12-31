@@ -4,7 +4,14 @@ Public Class frm_Login
 
 
     Private Sub frm_Login_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-
+        If exitapp() Then
+            End
+            'Application.Exit()
+        Else
+            Dim FRML = New frm_Login
+            FRML.Show()
+            Me.Dispose()
+        End If
 
     End Sub
 
@@ -51,13 +58,7 @@ Public Class frm_Login
 
     End Sub
 
-    Private Sub frm_Login_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        If exitapp() Then
-            Application.Exit()
-        Else
-            Dim FRML = New frm_Login
-            FRML.Show()
-            Me.Dispose()
-        End If
+    Private Sub frm_Login_FormClosed(sender As Object, e As FormClosedEventArgs)
+
     End Sub
 End Class
