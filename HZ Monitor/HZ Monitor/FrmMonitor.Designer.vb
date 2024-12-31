@@ -85,7 +85,7 @@ Partial Class FrmMonitor
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.25!)
-        Me.Label1.ForeColor = System.Drawing.Color.Black
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(1, 5)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(144, 17)
@@ -95,12 +95,12 @@ Partial Class FrmMonitor
         'lblStatus
         '
         Me.lblStatus.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblStatus.ForeColor = System.Drawing.Color.OrangeRed
+        Me.lblStatus.ForeColor = System.Drawing.Color.PaleGreen
         Me.lblStatus.Location = New System.Drawing.Point(22, 115)
         Me.lblStatus.Name = "lblStatus"
         Me.lblStatus.Size = New System.Drawing.Size(481, 24)
         Me.lblStatus.TabIndex = 10
-        Me.lblStatus.Text = "Fiscal Day is Opened"
+        Me.lblStatus.Text = "Fiscal Day Status Unknown"
         Me.lblStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'GroupBox2
@@ -127,7 +127,7 @@ Partial Class FrmMonitor
         'lblnotify
         '
         Me.lblnotify.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.0!)
-        Me.lblnotify.ForeColor = System.Drawing.Color.Black
+        Me.lblnotify.ForeColor = System.Drawing.Color.White
         Me.lblnotify.Location = New System.Drawing.Point(80, 27)
         Me.lblnotify.Name = "lblnotify"
         Me.lblnotify.Size = New System.Drawing.Size(393, 51)
@@ -147,9 +147,10 @@ Partial Class FrmMonitor
         '
         'btnClose
         '
-        Me.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnClose.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.btnClose.ForeColor = System.Drawing.Color.White
         Me.btnClose.Image = Global.HZ_Monitor.My.Resources.Resources.close_color_sm
         Me.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnClose.Location = New System.Drawing.Point(304, 18)
@@ -161,9 +162,10 @@ Partial Class FrmMonitor
         '
         'btnStart
         '
-        Me.btnStart.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnStart.FlatAppearance.BorderColor = System.Drawing.Color.White
         Me.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!)
+        Me.btnStart.ForeColor = System.Drawing.Color.White
         Me.btnStart.Image = Global.HZ_Monitor.My.Resources.Resources.start_sm
         Me.btnStart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnStart.Location = New System.Drawing.Point(6, 18)
@@ -195,7 +197,7 @@ Partial Class FrmMonitor
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.Purple
         Me.ClientSize = New System.Drawing.Size(522, 271)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.lblStatus)

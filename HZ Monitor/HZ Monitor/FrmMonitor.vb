@@ -94,21 +94,21 @@ Public Class FrmMonitor
         contextMenu.Items.Add("Restore", Nothing, AddressOf RestoreApp)
         contextMenu.Items.Add("Exit", Nothing, AddressOf ExitApp)
         MyNotifyIcon.ContextMenuStrip = contextMenu
-
-        Dim hm As New HavanoZimralib
-        Dim IsInternetOkay As Boolean = Await hm.IsInternetAvailable
-        If IsInternetOkay Then
-            Dim res As String = Await hm.CheckGlobalNumber()
-            Dim jsonObject As JObject = JObject.Parse(res)
-            Dim message = jsonObject("Message").ToString()
-            If message <> "Good" Then
-                MessageBox.Show(Me, message, "HavanoPOS", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
-                Exit Sub
+        Try
+            Dim hm As New HavanoZimralib
+            Dim IsInternetOkay As Boolean = Await hm.IsInternetAvailable
+            If IsInternetOkay Then
+                Dim res As String = Await hm.CheckGlobalNumber()
+                Dim jsonObject As JObject = JObject.Parse(res)
+                Dim message = jsonObject("Message").ToString()
+                If message <> "Good" Then
+                    MessageBox.Show(Me, message, "HavanoPOS", MessageBoxButtons.OK, MessageBoxIcon.Exclamation)
+                    Exit Sub
+                End If
             End If
-        End If
 
-        My.Settings.HavanoZimraDevice = hm.GetDeviceSerialNumber()
-        My.Settings.VerificationServer = hm.VerificationServer()
+            My.Settings.HavanoZimraDevice = hm.GetDeviceSerialNumber()
+            My.Settings.VerificationServer = hm.VerificationServer()
             My.Settings.Save()
 
             Dim resMsg As String = Await hm.SendPrivateRequest(HavanoZimralib.ReqType.Status, HttpMethod.Get)
@@ -116,17 +116,29 @@ Public Class FrmMonitor
 
             If resMsg = "FiscalDayClosed" Then
                 resMsg = "Fiscal Day is Closed, Please Open fiscal day"
-            MessageBox.Show(Me, resMsg, "HavanoPOS", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Me.Show()
-            Exit Sub
-        End If
+                lblStatus.Text = "Fiscal Day is Closed"
+                MessageBox.Show(Me, resMsg, "HavanoPOS", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Me.Show()
+                Exit Sub
+            Else
+                lblStatus.Text = "Fiscal Day is Opened"
+
+            End If
+
+
 
             If maxdayHrs < 0 Then
-            MessageBox.Show(Me, "Invalid Date found in the configuration file", "HavanoPOS", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            Me.Show()
-            Exit Sub
-        End If
-        Me.WindowState = FormWindowState.Minimized
+                MessageBox.Show(Me, "Invalid Date found in the configuration file", "HavanoPOS", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                Me.Show()
+                Exit Sub
+            End If
+
+            Me.WindowState = FormWindowState.Minimized
+        Catch ex As Exception
+            Me.WindowState = FormWindowState.Normal
+            lblStatus.Text = "Fiscal Day status unknown"
+        End Try
+
         tmr_start.Enabled = True
         'FrmTest.ShowDialog()
     End Sub
@@ -226,32 +238,37 @@ Public Class FrmMonitor
         Dim rcount As Integer = 0
         Dim TotaltaxAmount As Decimal = 0
         Dim TotalAmount As Decimal = 0
-        con = New SqlConnection(cs)
-        con.Open()
-        cmd = con.CreateCommand()
-        cmd = New SqlCommand("select Name,Qty,Rate,Amount,Vat from Item WHERE TxnId='" + trnxid + "'", con)
-        rdr = cmd.ExecuteReader()
-        While rdr.Read()
-            rcount = rcount + 1
-            Dim tax As Decimal = Convert.ToDecimal(rdr(4).ToString)
-            Dim taxRate As Decimal = Convert.ToDecimal(tax) / 100
-            Dim tax_amount As Decimal = (Convert.ToDecimal(rdr(3).ToString) * taxRate) / (1 + taxRate)
+        Try
+            con = New SqlConnection(cs)
+            con.Open()
+            cmd = con.CreateCommand()
+            cmd = New SqlCommand("select Name,Qty,Rate,Amount,Vat from Item WHERE TxnId='" + trnxid + "'", con)
+            rdr = cmd.ExecuteReader()
+            While rdr.Read()
+                rcount = rcount + 1
+                Dim tax As Decimal = Convert.ToDecimal(rdr(4).ToString)
+                Dim taxRate As Decimal = Convert.ToDecimal(tax) / 100
+                Dim tax_amount As Decimal = (Convert.ToDecimal(rdr(3).ToString) * taxRate) / (1 + taxRate)
 
-            Dim itm As String = String.Format(
-                    "<ITEM>" &
-                    "<HH>{0}</HH>" &
-                    "<ITEMCODE>{1}</ITEMCODE>" &
-                    "<ITEMNAME>{2}</ITEMNAME>" &
-                    "<QTY>{3}</QTY>" &
-                    "<PRICE>{4}</PRICE>" &
-                    "<TOTAL>{5}</TOTAL>" &
-                    "<VAT>{6}</VAT>" &
-                    "<VATR>{7}</VATR>" &
-                    "</ITEM>", rcount, GenerateRandomItemID, rdr(0).ToString, rdr(1).ToString, rdr(2).ToString, rdr(3).ToString, tax_amount.ToString("N2"), taxRate.ToString("N2"))
+                Dim itm As String = String.Format(
+                        "<ITEM>" &
+                        "<HH>{0}</HH>" &
+                        "<ITEMCODE>{1}</ITEMCODE>" &
+                        "<ITEMNAME>{2}</ITEMNAME>" &
+                        "<QTY>{3}</QTY>" &
+                        "<PRICE>{4}</PRICE>" &
+                        "<TOTAL>{5}</TOTAL>" &
+                        "<VAT>{6}</VAT>" &
+                        "<VATR>{7}</VATR>" &
+                        "</ITEM>", rcount, GenerateRandomItemID, rdr(0).ToString, rdr(1).ToString, rdr(2).ToString, rdr(3).ToString, tax_amount.ToString("N2"), taxRate.ToString("N2"))
 
-            full_item = String.Join("", itm)
-            itm_list = itm_list + full_item
-        End While
+                full_item = String.Join("", itm)
+                itm_list = itm_list + full_item
+            End While
+        Catch ex As Exception
+            lblStatus.Text = "Failed: Some Item Informations are not Valid"
+        End Try
+
         con.Close()
 
         xmlstr = xmlstr + itm_list + "</ITEMS>"
