@@ -22,10 +22,9 @@ Partial Class msgdialog
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(msgdialog))
         Me.lblmsgtitle = New System.Windows.Forms.Label()
         Me.lblmsgcontent = New System.Windows.Forms.Label()
-        Me.CustomLineControl1 = New CustomLineControl()
+        Me.CustomLineControl1 = New Havano_Fiscal.CustomLineControl()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GelButton2 = New GelButtons.GelButton()
         Me.GelButton1 = New GelButtons.GelButton()
@@ -126,7 +125,6 @@ Partial Class msgdialog
         Me.btnCancel.FlatAppearance.BorderSize = 0
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        '  Me.btnCancel.Image = Global.RetailPOS.My.Resources.Resources.Button_Delete_icon
         Me.btnCancel.Location = New System.Drawing.Point(338, 18)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(30, 27)
@@ -137,7 +135,6 @@ Partial Class msgdialog
         '
         'PictureBox1
         '
-        ' Me.PictureBox1.Image = Global.RetailPOS.My.Resources.Resources.Delete_iconDialog
         Me.PictureBox1.Location = New System.Drawing.Point(3, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(28, 35)
@@ -182,10 +179,9 @@ Partial Class msgdialog
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "msgdialog"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Havano Pos"
+        Me.Text = "Havano Fiscal"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)

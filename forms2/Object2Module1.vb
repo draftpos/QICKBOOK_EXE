@@ -34,16 +34,16 @@ SELECT
     it.Amount AS ItemTotal,
     it.Vat AS VatStatus,
     CASE 
-        WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount
+        WHEN LOWER(it.vat) = 's'  or  rtrim(it.vat)='15' THEN (15.0 / 115.0) * it.Amount
         ELSE 0
     END AS ItemVat,
     SUM(CASE 
-        WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount
+        WHEN LOWER(it.vat) = 's'  or  rtrim(it.vat)='15' THEN (15.0 / 115.0) * it.Amount
         ELSE 0
     END) OVER () AS TotalVat,
     SUM(it.Amount) OVER () AS Total,
     SUM(it.Amount) OVER () - SUM(CASE 
-        WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount
+        WHEN LOWER(it.vat) = 's'  or  rtrim(it.vat)='15' THEN (15.0 / 115.0) * it.Amount
         ELSE 0
     END) OVER () AS Total_Exclusive
 FROM 
@@ -179,16 +179,16 @@ i.Message As Reaon,
     it.Amount AS ItemTotal,
  it.Vat AS vatstat ,
 CASE 
-        WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount
+        WHEN LOWER(it.vat) = 's'  or  rtrim(it.vat)='15' THEN (15.0 / 115.0) * it.Amount
         ELSE 0
     END AS ItemVat,
     SUM(CASE 
-        WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount
+        WHEN LOWER(it.vat) = 's'  or  rtrim(it.vat)='15' THEN (15.0 / 115.0) * it.Amount
         ELSE 0
     END) OVER () AS TotalVat,
     SUM(it.Amount) OVER () AS Total,
     SUM(it.Amount) OVER () - SUM(CASE 
-        WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount
+        WHEN LOWER(it.vat) = 's'  or  rtrim(it.vat)='15' THEN (15.0 / 115.0) * it.Amount
         ELSE 0
     END) OVER () AS Total_Exclusive 
   FROM 

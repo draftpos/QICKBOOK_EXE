@@ -18,30 +18,29 @@ Public Class frmdgwrecords
         dgw.Rows.Clear()
         Dim sql As String
         sql = "
-        SELECT 
-            i.[id],
-            i.[TxnId],
-            i.[CustomerName],
-            i.[TxnDate],
-            i.[CustomerListId],
-            i.[Amount],
-            i.[AppliedAmount],
-            i.[Subtotal],
-            i.[SalesTaxPercentage],
-            i.[SalesTaxTotal],
-            i.[BalanceRemaining],
-            i.[Currency],
-            i.[ExchangeRate],
-            i.[BalanceRemainingInHomeCurrency],
-            i.[InvoiceNumber],
-            i.[HavanoZimraStatus],
-            SUM(CASE WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount ELSE 0 END) AS TotalVat,
-            SUM(it.Amount) AS Total,
-            SUM(it.Amount) - SUM(CASE WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount ELSE 0 END) AS Total_Exclusive
-        FROM [Invoice] i
-        INNER JOIN [Item] it ON it.TxnId = i.TxnId
-        WHERE i.[TxnDate] >= @StartDate AND i.[TxnDate] <= @EndDate "
-
+    SELECT 
+        i.[id],
+        i.[TxnId],
+        i.[CustomerName],
+        i.[TxnDate],
+        i.[CustomerListId],
+        i.[Amount],
+        i.[AppliedAmount],
+        i.[Subtotal],
+        i.[SalesTaxPercentage],
+        i.[SalesTaxTotal],
+        i.[BalanceRemaining],
+        i.[Currency],
+        i.[ExchangeRate],
+        i.[BalanceRemainingInHomeCurrency],
+        i.[InvoiceNumber],
+        i.[HavanoZimraStatus],
+        SUM(CASE WHEN LOWER(it.vat) = 's' or  rtrim(it.vat)='15' THEN (15.0 / 115.0) * it.Amount ELSE 0 END) AS TotalVat,
+        SUM(it.Amount) AS Total,
+        SUM(it.Amount) - SUM(CASE WHEN LOWER(it.vat) = 's'  or  rtrim(it.vat)='15' THEN (15.0 / 115.0) * it.Amount ELSE 0 END) AS Total_Exclusive
+    FROM [Invoice] i
+    INNER JOIN [Item] it ON it.TxnId = i.TxnId
+    WHERE i.[TxnDate] >= @StartDate AND i.[TxnDate] <= @EndDate "
         ' Add filters for SearchText if provided
         If Not String.IsNullOrWhiteSpace(datap) Then
             sql += " AND (i.[InvoiceNumber] = @SearchText OR i.[TxnId] LIKE '%' + @SearchText + '%') "
@@ -89,7 +88,7 @@ Public Class frmdgwrecords
         Dim sumTotal, vatTotal, totalExcl As Double
         sumTotal = 0 : vatTotal = 0 : totalExcl = 0
 
-        For Each row As DataRow In dt.Rows
+        For Each row As DataRow In dt.Rows.Cast(Of DataRow).Reverse()
             Dim statusDesc As String = If(SafeConvertToBoolean(row("HavanoZimraStatus")), "Submitted", "Pending")
             dgw.Rows.Add(row("InvoiceNumber"), row("TxnId"), row("CustomerName"), row("TxnDate"), row("TotalVat"), row("Total_Exclusive"), row("Total"),
                      row("Currency"), statusDesc)

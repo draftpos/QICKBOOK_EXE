@@ -42,7 +42,7 @@ Partial Class frm_Login
         '
         'pnl_login
         '
-        Me.pnl_login.BackColor = System.Drawing.Color.White
+        Me.pnl_login.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.pnl_login.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.pnl_login.Controls.Add(Me.Panel4)
         Me.pnl_login.Controls.Add(Me.Button3)
@@ -56,6 +56,7 @@ Partial Class frm_Login
         'Panel4
         '
         Me.Panel4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel4.BackColor = System.Drawing.Color.White
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel4.Controls.Add(Me.CheckBox1)
         Me.Panel4.Controls.Add(Me.Label3)
@@ -102,7 +103,7 @@ Partial Class frm_Login
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Navy
         Me.Button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Button1.Location = New System.Drawing.Point(58, 370)
+        Me.Button1.Location = New System.Drawing.Point(154, 370)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(82, 54)
         Me.Button1.TabIndex = 27
@@ -118,13 +119,14 @@ Partial Class frm_Login
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.Color.Navy
         Me.Button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.Button4.Location = New System.Drawing.Point(146, 370)
+        Me.Button4.Location = New System.Drawing.Point(40, 370)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(90, 54)
         Me.Button4.TabIndex = 26
         Me.Button4.Text = "Reconnect"
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button4.UseVisualStyleBackColor = False
+        Me.Button4.Visible = False
         '
         'Button2
         '

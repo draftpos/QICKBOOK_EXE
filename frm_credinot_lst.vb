@@ -28,9 +28,9 @@ Public Class frm_credinot_lst
            cm.[CreditRemaining],
            cm.[Message],
            cm.[HavanoZimraStatus],
-           SUM(CASE WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount ELSE 0 END) AS TotalVat,
+           SUM(CASE WHEN LOWER(it.vat) = 's'  or  rtrim(it.vat)='15' THEN (15.0 / 115.0) * it.Amount ELSE 0 END) AS TotalVat,
            SUM(it.Amount) AS Total,
-           SUM(it.Amount) - SUM(CASE WHEN LOWER(it.vat) = 's' THEN (15.0 / 115.0) * it.Amount ELSE 0 END) AS Total_Exclusive
+           SUM(it.Amount) - SUM(CASE WHEN LOWER(it.vat) = 's'   or  rtrim(it.vat)='15' THEN (15.0 / 115.0) * it.Amount ELSE 0 END) AS Total_Exclusive
         FROM [CreditMemo] cm
         INNER JOIN [Item] it ON it.TxnId = cm.TxnId
         WHERE cm.[TxnDate] >= @StartDate AND cm.[TxnDate] <= @EndDate"
@@ -75,7 +75,7 @@ Public Class frm_credinot_lst
         Dim totalExcl As Double = 0
 
         ' Process the results
-        For Each row As DataRow In dt.Rows
+        For Each row As DataRow In dt.Rows.Cast(Of DataRow).Reverse()
             Dim havanoStatus As Boolean = SafeConvertToBoolean(row("HavanoZimraStatus"))
             Dim statusDesc As String = If(havanoStatus, "Submitted", "Pending")
 
@@ -133,7 +133,4 @@ Public Class frm_credinot_lst
         ExportToExcel(dgw, saveFileDialog)
     End Sub
 
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-
-    End Sub
 End Class

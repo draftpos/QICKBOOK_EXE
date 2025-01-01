@@ -3178,3 +3178,202 @@ The statement has been terminated.
 2024-12-31 18:04:05 - Connected to the SQL Server database.
 2024-12-31 18:04:05 - Disconnected from the SQL database.
 2024-12-31 18:04:05 - Disconnected from the ERPNext database.
+2024-12-31 18:05:01 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 18:05:01 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-31 18:05:11 - Internet available. Running fetch process at 31-Dec-24 6:05:11 PM.
+2024-12-31 18:05:14 - Connected to the ERPNext database.
+2024-12-31 18:05:14 - Connected to the SQL Server database.
+2024-12-31 18:05:14 - Disconnected from the SQL database.
+2024-12-31 18:05:14 - Disconnected from the ERPNext database.
+2024-12-31 18:05:40 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 18:05:40 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2024-12-31 18:05:50 - Internet available. Running fetch process at 31-Dec-24 6:05:50 PM.
+2024-12-31 18:05:53 - Connected to the ERPNext database.
+2024-12-31 18:05:53 - Connected to the SQL Server database.
+2024-12-31 18:05:53 - Disconnected from the SQL database.
+2024-12-31 18:05:53 - Disconnected from the ERPNext database.
+2024-12-31 18:06:00 - Internet available. Running fetch process at 31-Dec-24 6:06:00 PM.
+2024-12-31 18:06:01 - Connected to the ERPNext database.
+2024-12-31 18:06:01 - Connected to the SQL Server database.
+2024-12-31 18:06:01 - Disconnected from the SQL database.
+2024-12-31 18:06:01 - Disconnected from the ERPNext database.
+2024-12-31 18:06:10 - Internet available. Running fetch process at 31-Dec-24 6:06:10 PM.
+2024-12-31 18:06:11 - Connected to the ERPNext database.
+2024-12-31 18:06:11 - Connected to the SQL Server database.
+2024-12-31 18:06:11 - Disconnected from the SQL database.
+2024-12-31 18:06:11 - Disconnected from the ERPNext database.
+2024-12-31 18:06:14 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2024-12-31 18:06:14 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2025-01-01 08:47:01 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2025-01-01 08:47:01 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2025-01-01 08:47:11 - Internet available. Running fetch process at 01-Jan-25 8:47:11 AM.
+2025-01-01 08:47:14 - Connected to the ERPNext database.
+2025-01-01 08:47:14 - Connected to the SQL Server database.
+2025-01-01 08:47:14 - Disconnected from the SQL database.
+2025-01-01 08:47:14 - Disconnected from the ERPNext database.
+2025-01-01 08:47:21 - Internet available. Running fetch process at 01-Jan-25 8:47:21 AM.
+2025-01-01 08:47:21 - Connected to the ERPNext database.
+2025-01-01 08:47:21 - Connected to the SQL Server database.
+2025-01-01 08:47:21 - Disconnected from the SQL database.
+2025-01-01 08:47:21 - Disconnected from the ERPNext database.
+2025-01-01 08:47:31 - Internet available. Running fetch process at 01-Jan-25 8:47:31 AM.
+2025-01-01 08:47:32 - Connected to the ERPNext database.
+2025-01-01 08:47:32 - Connected to the SQL Server database.
+2025-01-01 08:47:32 - Disconnected from the SQL database.
+2025-01-01 08:47:32 - Disconnected from the ERPNext database.
+2025-01-01 08:47:41 - Internet available. Running fetch process at 01-Jan-25 8:47:41 AM.
+2025-01-01 08:47:41 - Connected to the ERPNext database.
+2025-01-01 08:47:41 - Connected to the SQL Server database.
+2025-01-01 08:47:41 - Disconnected from the SQL database.
+2025-01-01 08:47:41 - Disconnected from the ERPNext database.
+2025-01-01 08:47:51 - Internet available. Running fetch process at 01-Jan-25 8:47:51 AM.
+2025-01-01 08:47:51 - Connected to the ERPNext database.
+2025-01-01 08:47:51 - Connected to the SQL Server database.
+2025-01-01 08:47:51 - Disconnected from the SQL database.
+2025-01-01 08:47:51 - Disconnected from the ERPNext database.
+2025-01-01 08:48:01 - Internet available. Running fetch process at 01-Jan-25 8:48:01 AM.
+2025-01-01 08:48:01 - Connected to the ERPNext database.
+2025-01-01 08:48:01 - Connected to the SQL Server database.
+2025-01-01 08:48:01 - Disconnected from the SQL database.
+2025-01-01 08:48:01 - Disconnected from the ERPNext database.
+2025-01-01 08:48:11 - Internet available. Running fetch process at 01-Jan-25 8:48:11 AM.
+2025-01-01 08:48:11 - Connected to the ERPNext database.
+2025-01-01 08:48:12 - Connected to the SQL Server database.
+2025-01-01 08:48:12 - Disconnected from the SQL database.
+2025-01-01 08:48:12 - Disconnected from the ERPNext database.
+2025-01-01 08:48:21 - Internet available. Running fetch process at 01-Jan-25 8:48:21 AM.
+2025-01-01 08:48:21 - Connected to the ERPNext database.
+2025-01-01 08:48:21 - Connected to the SQL Server database.
+2025-01-01 08:48:21 - Disconnected from the SQL database.
+2025-01-01 08:48:21 - Disconnected from the ERPNext database.
+2025-01-01 08:48:31 - Internet available. Running fetch process at 01-Jan-25 8:48:31 AM.
+2025-01-01 08:48:31 - Connected to the ERPNext database.
+2025-01-01 08:48:32 - Connected to the SQL Server database.
+2025-01-01 08:48:32 - Disconnected from the SQL database.
+2025-01-01 08:48:32 - Disconnected from the ERPNext database.
+2025-01-01 08:48:41 - Internet available. Running fetch process at 01-Jan-25 8:48:41 AM.
+2025-01-01 08:48:41 - Connected to the ERPNext database.
+2025-01-01 08:48:42 - Connected to the SQL Server database.
+2025-01-01 08:48:42 - Disconnected from the SQL database.
+2025-01-01 08:48:42 - Disconnected from the ERPNext database.
+2025-01-01 08:48:51 - Internet available. Running fetch process at 01-Jan-25 8:48:51 AM.
+2025-01-01 08:48:52 - Connected to the ERPNext database.
+2025-01-01 08:48:52 - Connected to the SQL Server database.
+2025-01-01 08:48:52 - Disconnected from the SQL database.
+2025-01-01 08:48:52 - Disconnected from the ERPNext database.
+2025-01-01 08:49:01 - Internet available. Running fetch process at 01-Jan-25 8:49:01 AM.
+2025-01-01 08:49:02 - Connected to the ERPNext database.
+2025-01-01 08:49:02 - Connected to the SQL Server database.
+2025-01-01 08:49:02 - Disconnected from the SQL database.
+2025-01-01 08:49:02 - Disconnected from the ERPNext database.
+2025-01-01 08:49:11 - Internet available. Running fetch process at 01-Jan-25 8:49:11 AM.
+2025-01-01 08:49:11 - Connected to the ERPNext database.
+2025-01-01 08:49:12 - Connected to the SQL Server database.
+2025-01-01 08:49:12 - Disconnected from the SQL database.
+2025-01-01 08:49:12 - Disconnected from the ERPNext database.
+2025-01-01 08:49:21 - Internet available. Running fetch process at 01-Jan-25 8:49:21 AM.
+2025-01-01 08:49:21 - Connected to the ERPNext database.
+2025-01-01 08:49:22 - Connected to the SQL Server database.
+2025-01-01 08:49:22 - Disconnected from the SQL database.
+2025-01-01 08:49:22 - Disconnected from the ERPNext database.
+2025-01-01 08:49:31 - Internet available. Running fetch process at 01-Jan-25 8:49:31 AM.
+2025-01-01 08:49:32 - Connected to the ERPNext database.
+2025-01-01 08:49:32 - Connected to the SQL Server database.
+2025-01-01 08:49:32 - Disconnected from the SQL database.
+2025-01-01 08:49:32 - Disconnected from the ERPNext database.
+2025-01-01 08:49:41 - Internet available. Running fetch process at 01-Jan-25 8:49:41 AM.
+2025-01-01 08:49:41 - Connected to the ERPNext database.
+2025-01-01 08:49:42 - Connected to the SQL Server database.
+2025-01-01 08:49:42 - Disconnected from the SQL database.
+2025-01-01 08:49:42 - Disconnected from the ERPNext database.
+2025-01-01 08:49:51 - Internet available. Running fetch process at 01-Jan-25 8:49:51 AM.
+2025-01-01 08:49:52 - Connected to the ERPNext database.
+2025-01-01 08:49:53 - Connected to the SQL Server database.
+2025-01-01 08:49:53 - Disconnected from the SQL database.
+2025-01-01 08:49:53 - Disconnected from the ERPNext database.
+2025-01-01 08:50:01 - Internet available. Running fetch process at 01-Jan-25 8:50:01 AM.
+2025-01-01 08:50:02 - Connected to the ERPNext database.
+2025-01-01 08:50:02 - Connected to the SQL Server database.
+2025-01-01 08:50:02 - Disconnected from the SQL database.
+2025-01-01 08:50:02 - Disconnected from the ERPNext database.
+2025-01-01 08:50:11 - Internet available. Running fetch process at 01-Jan-25 8:50:11 AM.
+2025-01-01 08:50:12 - Connected to the ERPNext database.
+2025-01-01 08:50:12 - Connected to the SQL Server database.
+2025-01-01 08:50:12 - Disconnected from the SQL database.
+2025-01-01 08:50:12 - Disconnected from the ERPNext database.
+2025-01-01 09:29:59 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2025-01-01 09:29:59 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2025-01-01 09:30:09 - Internet available. Running fetch process at 01-Jan-25 9:30:09 AM.
+2025-01-01 09:30:12 - Connected to the ERPNext database.
+2025-01-01 09:30:12 - Connected to the SQL Server database.
+2025-01-01 09:30:12 - Disconnected from the SQL database.
+2025-01-01 09:30:12 - Disconnected from the ERPNext database.
+2025-01-01 09:30:20 - Internet available. Running fetch process at 01-Jan-25 9:30:20 AM.
+2025-01-01 09:30:20 - Connected to the ERPNext database.
+2025-01-01 09:30:20 - Connected to the SQL Server database.
+2025-01-01 09:30:20 - Disconnected from the SQL database.
+2025-01-01 09:30:20 - Disconnected from the ERPNext database.
+2025-01-01 09:30:30 - Internet available. Running fetch process at 01-Jan-25 9:30:30 AM.
+2025-01-01 09:30:30 - Connected to the ERPNext database.
+2025-01-01 09:30:30 - Connected to the SQL Server database.
+2025-01-01 09:30:30 - Disconnected from the SQL database.
+2025-01-01 09:30:30 - Disconnected from the ERPNext database.
+2025-01-01 09:30:40 - Internet available. Running fetch process at 01-Jan-25 9:30:40 AM.
+2025-01-01 09:30:40 - Connected to the ERPNext database.
+2025-01-01 09:30:40 - Connected to the SQL Server database.
+2025-01-01 09:30:40 - Disconnected from the SQL database.
+2025-01-01 09:30:40 - Disconnected from the ERPNext database.
+2025-01-01 09:30:50 - Internet available. Running fetch process at 01-Jan-25 9:30:50 AM.
+2025-01-01 09:30:50 - Connected to the ERPNext database.
+2025-01-01 09:30:50 - Connected to the SQL Server database.
+2025-01-01 09:30:50 - Disconnected from the SQL database.
+2025-01-01 09:30:50 - Disconnected from the ERPNext database.
+2025-01-01 09:34:39 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2025-01-01 09:34:39 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2025-01-01 09:34:49 - Internet available. Running fetch process at 01-Jan-25 9:34:49 AM.
+2025-01-01 09:34:51 - Connected to the ERPNext database.
+2025-01-01 09:34:52 - Connected to the SQL Server database.
+2025-01-01 09:34:52 - Disconnected from the SQL database.
+2025-01-01 09:34:52 - Disconnected from the ERPNext database.
+2025-01-01 09:34:59 - Internet available. Running fetch process at 01-Jan-25 9:34:59 AM.
+2025-01-01 09:34:59 - Connected to the ERPNext database.
+2025-01-01 09:34:59 - Connected to the SQL Server database.
+2025-01-01 09:34:59 - Disconnected from the SQL database.
+2025-01-01 09:34:59 - Disconnected from the ERPNext database.
+2025-01-01 09:35:09 - Internet available. Running fetch process at 01-Jan-25 9:35:09 AM.
+2025-01-01 09:35:09 - Connected to the ERPNext database.
+2025-01-01 09:35:09 - Connected to the SQL Server database.
+2025-01-01 09:35:09 - Disconnected from the SQL database.
+2025-01-01 09:35:09 - Disconnected from the ERPNext database.
+2025-01-01 09:35:19 - Internet available. Running fetch process at 01-Jan-25 9:35:19 AM.
+2025-01-01 09:35:19 - Connected to the ERPNext database.
+2025-01-01 09:35:19 - Connected to the SQL Server database.
+2025-01-01 09:35:19 - Disconnected from the SQL database.
+2025-01-01 09:35:19 - Disconnected from the ERPNext database.
+2025-01-01 09:35:29 - Internet available. Running fetch process at 01-Jan-25 9:35:29 AM.
+2025-01-01 09:35:29 - Connected to the ERPNext database.
+2025-01-01 09:35:29 - Connected to the SQL Server database.
+2025-01-01 09:35:29 - Disconnected from the SQL database.
+2025-01-01 09:35:29 - Disconnected from the ERPNext database.
+2025-01-01 09:35:39 - Internet available. Running fetch process at 01-Jan-25 9:35:39 AM.
+2025-01-01 09:35:39 - Connected to the ERPNext database.
+2025-01-01 09:35:39 - Connected to the SQL Server database.
+2025-01-01 09:35:39 - Disconnected from the SQL database.
+2025-01-01 09:35:39 - Disconnected from the ERPNext database.
+2025-01-01 09:38:25 - SQL database. Data Source=CONFIDENCE-PRO;Initial Catalog=FetchInv;User ID=sa;Password=12345;MultipleActiveResultSets=True
+2025-01-01 09:38:25 - FetchSalesInvoiceDetails service started. Press [Enter] to exit.
+2025-01-01 09:38:35 - Internet available. Running fetch process at 01-Jan-25 9:38:35 AM.
+2025-01-01 09:38:37 - Connected to the ERPNext database.
+2025-01-01 09:38:38 - Connected to the SQL Server database.
+2025-01-01 09:38:38 - Disconnected from the SQL database.
+2025-01-01 09:38:38 - Disconnected from the ERPNext database.
+2025-01-01 09:38:46 - Internet available. Running fetch process at 01-Jan-25 9:38:46 AM.
+2025-01-01 09:38:46 - Connected to the ERPNext database.
+2025-01-01 09:38:46 - Connected to the SQL Server database.
+2025-01-01 09:38:46 - Disconnected from the SQL database.
+2025-01-01 09:38:46 - Disconnected from the ERPNext database.
+2025-01-01 09:38:56 - Internet available. Running fetch process at 01-Jan-25 9:38:56 AM.
+2025-01-01 09:38:56 - Connected to the ERPNext database.
+2025-01-01 09:38:56 - Connected to the SQL Server database.
+2025-01-01 09:38:56 - Disconnected from the SQL database.
+2025-01-01 09:38:56 - Disconnected from the ERPNext database.
