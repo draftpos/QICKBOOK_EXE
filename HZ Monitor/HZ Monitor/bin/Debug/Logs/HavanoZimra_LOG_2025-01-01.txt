@@ -1,0 +1,40 @@
+2025-01-01 05:46:47.6187|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2025-01-01 05:46:48.4410|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2025-01-01 05:47:56.9438|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2025-01-01 05:47:57.5308|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2025-01-01 05:48:07.7696|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2025-01-01 05:48:08.0675|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2025-01-01 07:09:20.4235|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2025-01-01 07:09:21.3679|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2025-01-01 07:12:30.4546|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2025-01-01 07:12:30.9622|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2025-01-01 07:13:36.3901|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2025-01-01 07:13:36.5947|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2025-01-01 07:21:29.0068|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2025-01-01 07:21:29.4698|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2025-01-01 07:21:39.7634|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2025-01-01 07:21:39.9646|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2025-01-01 07:44:19.3537|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2025-01-01 07:44:19.3797|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH235CU6:00000001"}
+2025-01-01 07:44:20.6180|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2025-01-01 07:44:20.6180|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH235CV7:00000001"}
+2025-01-01 07:44:30.2833|INFO|HavanoZimra.HavanoZimralib|Close fiscal day request failed 
+2025-01-01 07:44:30.2833|INFO|HavanoZimra.HavanoZimralib|Request status {"type":"https://httpstatuses.io/422","title":"Unprocessable Entity","status":422,"detail":"Close day failed. FiscalDayNo is not same as current fiscal day no.","errorCode":"FISC02","operationID":"0HN8VVH235D0T:00000001"}
+2025-01-01 07:44:39.1301|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2025-01-01 07:44:39.1301|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH235D39:00000001"}

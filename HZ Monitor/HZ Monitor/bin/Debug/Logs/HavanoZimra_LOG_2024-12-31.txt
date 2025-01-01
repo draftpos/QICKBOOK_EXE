@@ -78,3 +78,19 @@
 
 2024-12-31 15:58:38.4011|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
 
+2024-12-31 17:35:54.5083|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2024-12-31 17:35:55.1923|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2024-12-31 17:36:10.3677|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2024-12-31 17:36:10.7507|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2024-12-31 18:28:03.2559|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2024-12-31 18:28:04.6979|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2024-12-31 18:28:54.9439|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+
+2024-12-31 18:28:55.4789|ERROR|HavanoZimra.HavanoZimralib|An error occurred: The system cannot find the path specified.
+

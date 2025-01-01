@@ -27,7 +27,7 @@ Public Class FrmMonitor
     Dim CustomerName, TradeName, CustomerVATNumber, CustomerAddress, CustomerTelephoneNumber, CustomerTIN As String
     Dim CustomerEmail, CustomerProvince, CustomerStreet, CustomerHouseNo, CustomerCity As String
     Dim mytable As String = ""
-
+    Private appMutex As Mutex
     Private Sub FrmMonitor_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
         If Me.WindowState = FormWindowState.Minimized Then
             MyNotifyIcon.Visible = True
@@ -83,11 +83,35 @@ Public Class FrmMonitor
         MessageBox.Show(Me, msg, "HavanoZimra Monitor", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
         btnStart.Text = "Start Fical Day"
+        tmr_start.Enabled = True
     End Sub
+    Function CheckFilesAndFolders() As String
+        Dim startupPath As String = Application.StartupPath
+        Dim certFolderPath As String = Path.Combine(startupPath, "havano_cert")
+        Dim configFilePath As String = Path.Combine(startupPath, "havanoconfig.ini")
+
+        Dim resultMessage As String = ""
+        If Not Directory.Exists(certFolderPath) Then
+            resultMessage &= "The 'havano_cert' folder does not exist." & Environment.NewLine
+        End If
+
+        If Not File.Exists(configFilePath) Then
+            resultMessage &= "The 'havanoconfig.ini' file does not exist."
+        End If
+        Return resultMessage
+    End Function
+
     Private Async Sub FrmMonitor_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim result As String = CheckFilesAndFolders()
+        If result <> "" Then
+            MessageBox.Show(result, "Check Files and Folders", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Application.Exit()
+        End If
+
         InitCulturalFormattingChanges()
         MyNotifyIcon.Text = "HavanoZimra Monitor"
         MyNotifyIcon.Visible = False
+
 
         ' Add a context menu to the NotifyIcon
         Dim contextMenu As New ContextMenuStrip()
@@ -117,6 +141,7 @@ Public Class FrmMonitor
             If resMsg = "FiscalDayClosed" Then
                 resMsg = "Fiscal Day is Closed, Please Open fiscal day"
                 lblStatus.Text = "Fiscal Day is Closed"
+                tmr_start.Enabled = False
                 MessageBox.Show(Me, resMsg, "HavanoPOS", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 Me.Show()
                 Exit Sub
@@ -129,7 +154,7 @@ Public Class FrmMonitor
 
             If maxdayHrs < 0 Then
                 MessageBox.Show(Me, "Invalid Date found in the configuration file", "HavanoPOS", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                Me.Show()
+                tmr_start.Enabled = False
                 Exit Sub
             End If
 
@@ -137,9 +162,11 @@ Public Class FrmMonitor
         Catch ex As Exception
             Me.WindowState = FormWindowState.Normal
             lblStatus.Text = "Fiscal Day status unknown"
+            tmr_start.Enabled = False
         End Try
-
+        MyNotifyIcon.ShowBalloonTip(1000)
         tmr_start.Enabled = True
+
         'FrmTest.ShowDialog()
     End Sub
     Private Async Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
@@ -148,13 +175,6 @@ Public Class FrmMonitor
             btnClose.Text = "Closing..."
 
             Dim hm As New HavanoZimralib
-            Dim invoiceNos As List(Of String) = hm.GetAllQueuedInvoices
-            If invoiceNos.Count > 0 Then
-                MessageBox.Show(Me, "You have some invoice in the queue, please process all queue invoice before closing day", "HavanoZimra Monitor", MessageBoxButtons.OK, MessageBoxIcon.Warning)
-                btnClose.Text = "Close Fiscal Day"
-                btnClose.Enabled = True
-                Exit Sub
-            End If
 
             Dim msg As String = Await hm.CloseFiscalDay()
             Thread.Sleep(7000)
@@ -166,7 +186,7 @@ Public Class FrmMonitor
             If resMsg = "FiscalDayClosed" Then
                 hm.UpdateCloseDay()
             End If
-
+            tmr_start.Enabled = False
         Catch ex As Exception
             MessageBox.Show(Me, ex.Message, "HavanoZimra Monitor Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             btnClose.Text = "Close Fiscal Day"
@@ -266,7 +286,7 @@ Public Class FrmMonitor
                 itm_list = itm_list + full_item
             End While
         Catch ex As Exception
-            lblStatus.Text = "Failed: Some Item Informations are not Valid"
+            lblStatus.Text = "Failed: Some Item Information are not Valid"
         End Try
 
         con.Close()
@@ -310,8 +330,9 @@ Public Class FrmMonitor
                 lblStatus.Text = "HavanoZimra Status: " & message
                 'MessageBox.Show(Me, "HavanoZimra Status: " & message, "HavanoPOS", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try
-            Thread.Sleep(5000)
+            Thread.Sleep(4000)
         Next
+        lblnotify.Text = "Waiting for Havano Fiscal request..."
         tmr_start.Start()
     End Function
     Public Sub GetCompanyDetails()

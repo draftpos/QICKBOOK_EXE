@@ -132,7 +132,7 @@ Partial Class FrmMonitor
         Me.lblnotify.Name = "lblnotify"
         Me.lblnotify.Size = New System.Drawing.Size(393, 51)
         Me.lblnotify.TabIndex = 5
-        Me.lblnotify.Text = "Waiting for Quickbook request..."
+        Me.lblnotify.Text = "Waiting for Havano Fiscal request..."
         Me.lblnotify.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'GroupBox1
@@ -189,8 +189,10 @@ Partial Class FrmMonitor
         '
         'MyNotifyIcon
         '
+        Me.MyNotifyIcon.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info
+        Me.MyNotifyIcon.BalloonTipText = "Hz Monitor is Running"
         Me.MyNotifyIcon.Icon = CType(resources.GetObject("MyNotifyIcon.Icon"), System.Drawing.Icon)
-        Me.MyNotifyIcon.Text = "NotifyIcon1"
+        Me.MyNotifyIcon.Text = "Hz Monitor Running"
         Me.MyNotifyIcon.Visible = True
         '
         'FrmMonitor
