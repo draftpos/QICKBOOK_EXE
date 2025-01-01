@@ -40,7 +40,7 @@ CREATE TABLE [dbo].[Company](
 	[Logo] [image] NULL,
 	[ItemWiseVAT] [nvarchar](10) NULL,
 	[QTC] [nvarchar](max) NULL,
-	[ServiceTaxNo] [nvarchar](50) NULL
+	[ServiceTaxNo] [nvarchar](250) NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
 /****** Object:  Table [dbo].[CreditMemo]    Script Date: 27/12/2024 06:44:46 ******/
