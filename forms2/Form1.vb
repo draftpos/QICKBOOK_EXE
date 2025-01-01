@@ -444,6 +444,7 @@ Public Class Form1
         msgcontent = ""
         inputdialog.ShowDialog()
         If msgresponse Then
+            Me.Hide()
             PrintA4(dialog_input_response_data)
         End If
     End Sub
@@ -482,18 +483,24 @@ Public Class Form1
 
     Private Sub CompanyInfoToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CompanyInfoToolStripMenuItem.Click
         frm_company.Dispose()
+        ' Me.Hide()
         frm_company.ShowDialog()
+
+
     End Sub
 
     Private Async Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         pnlsqlsettings.Visible = True
         pnl_login.Visible = False
         Await ServerEnumerationAsync()
+        ' Me.Hide()
     End Sub
 
     Private Sub ShowInvoicesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ShowInvoicesToolStripMenuItem.Click
         frmdgwrecords.Dispose()
+        Me.Hide()
         frmdgwrecords.ShowDialog()
+
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
@@ -504,13 +511,16 @@ Public Class Form1
         msgtitle = "ENTER CREDITNOTE NO"
         msgcontent = ""
         inputdialog.ShowDialog()
+
         If msgresponse Then
+            Me.Hide()
             creditnotePrintA4(dialog_input_response_data)
         End If
     End Sub
 
     Private Sub UsersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles UsersToolStripMenuItem.Click
         frm_credinot_lst.Dispose()
+        Me.Hide()
         frm_credinot_lst.ShowDialog()
     End Sub
 

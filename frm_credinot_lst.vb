@@ -3,11 +3,28 @@
 Imports System.Data.SqlClient
 
 Public Class frm_credinot_lst
+    Private Sub frm_company_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Form1.Show()
+    End Sub
+    Protected Overrides Sub WndProc(ByRef m As Message)
+        Const WM_SYSCOMMAND As Integer = &H112
+        Const SC_MINIMIZE As Integer = &HF020
+
+        ' Check if the minimize button was clicked
+        If m.Msg = WM_SYSCOMMAND AndAlso m.WParam.ToInt32() = SC_MINIMIZE Then
+            ' Minimize the entire application
+            For Each frm As Form In Application.OpenForms
+                frm.WindowState = FormWindowState.Minimized
+            Next
+        End If
+
+        MyBase.WndProc(m)
+    End Sub
     Private Sub frmdgwrecords_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DateTimePicker1.Value = Now.Date.ToString("dd/MM/yyyy")
         DateTimePicker2.Value = Now.Date.ToString("dd/MM/yyyy")
         LoadData("")
-        '  InitializeRefreshTimer()
+
     End Sub
     Function LoadData(datap As String) As Boolean
         dgw.Rows.Clear()

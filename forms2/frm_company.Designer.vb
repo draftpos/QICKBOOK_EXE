@@ -33,8 +33,6 @@ Partial Class frm_company
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.txtterm = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.txtmail = New System.Windows.Forms.TextBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.txtVatNo = New System.Windows.Forms.TextBox()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -53,12 +51,14 @@ Partial Class frm_company
         Me.cmbCountry = New System.Windows.Forms.ComboBox()
         Me.txtContactNo = New System.Windows.Forms.TextBox()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.txtfax = New System.Windows.Forms.TextBox()
         Me.txtEmail = New System.Windows.Forms.TextBox()
         Me.txtTIN = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.txtmail = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.txtfax = New System.Windows.Forms.TextBox()
         Me.GelButton1 = New GelButtons.GelButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GelButton2 = New GelButtons.GelButton()
@@ -215,28 +215,6 @@ Partial Class frm_company
         Me.Label15.Size = New System.Drawing.Size(32, 13)
         Me.Label15.TabIndex = 415
         Me.Label15.Text = "Term"
-        '
-        'txtmail
-        '
-        Me.txtmail.BackColor = System.Drawing.Color.White
-        Me.txtmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtmail.Location = New System.Drawing.Point(560, 213)
-        Me.txtmail.Name = "txtmail"
-        Me.txtmail.Size = New System.Drawing.Size(217, 21)
-        Me.txtmail.TabIndex = 407
-        Me.txtmail.Visible = False
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(517, 217)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(47, 13)
-        Me.Label1.TabIndex = 406
-        Me.Label1.Text = "Email 2:"
-        Me.Label1.Visible = False
         '
         'txtVatNo
         '
@@ -427,28 +405,6 @@ Partial Class frm_company
         Me.Label13.TabIndex = 28
         Me.Label13.Text = "Contact No. :"
         '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label12.Location = New System.Drawing.Point(527, 194)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(31, 13)
-        Me.Label12.TabIndex = 27
-        Me.Label12.Text = "Fax :"
-        Me.Label12.Visible = False
-        '
-        'txtfax
-        '
-        Me.txtfax.BackColor = System.Drawing.Color.White
-        Me.txtfax.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtfax.Location = New System.Drawing.Point(560, 187)
-        Me.txtfax.Name = "txtfax"
-        Me.txtfax.Size = New System.Drawing.Size(217, 21)
-        Me.txtfax.TabIndex = 7
-        Me.txtfax.Visible = False
-        '
         'txtEmail
         '
         Me.txtEmail.BackColor = System.Drawing.Color.White
@@ -488,6 +444,50 @@ Partial Class frm_company
         Me.Label11.Size = New System.Drawing.Size(41, 13)
         Me.Label11.TabIndex = 26
         Me.Label11.Text = "Email :"
+        '
+        'txtmail
+        '
+        Me.txtmail.BackColor = System.Drawing.Color.White
+        Me.txtmail.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtmail.Location = New System.Drawing.Point(560, 213)
+        Me.txtmail.Name = "txtmail"
+        Me.txtmail.Size = New System.Drawing.Size(217, 21)
+        Me.txtmail.TabIndex = 407
+        Me.txtmail.Visible = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(517, 217)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(47, 13)
+        Me.Label1.TabIndex = 406
+        Me.Label1.Text = "Email 2:"
+        Me.Label1.Visible = False
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label12.Location = New System.Drawing.Point(527, 194)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(31, 13)
+        Me.Label12.TabIndex = 27
+        Me.Label12.Text = "Fax :"
+        Me.Label12.Visible = False
+        '
+        'txtfax
+        '
+        Me.txtfax.BackColor = System.Drawing.Color.White
+        Me.txtfax.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtfax.Location = New System.Drawing.Point(560, 187)
+        Me.txtfax.Name = "txtfax"
+        Me.txtfax.Size = New System.Drawing.Size(217, 21)
+        Me.txtfax.TabIndex = 7
+        Me.txtfax.Visible = False
         '
         'GelButton1
         '

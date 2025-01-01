@@ -16,4 +16,8 @@ Public Class frmReport
         Cursor = Cursors.Default
         Timer1.Enabled = False
     End Sub
+
+    Private Sub frm_company_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Form1.Show()
+    End Sub
 End Class

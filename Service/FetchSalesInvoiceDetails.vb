@@ -171,6 +171,8 @@ Module FetchSalesInvoiceDetails
                                     tax_rate = 15.0
                                 ElseIf tax_rate = "E" Then
                                     tax_rate = 0.0
+                                Else
+                                    tax_rate = 0.0
                                 End If
 
                                 ' Insert invoice details only once per invoice

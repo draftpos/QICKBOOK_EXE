@@ -13,6 +13,9 @@ Public Class frmdgwrecords
         Next
         ' InitializeRefreshTimer()
     End Sub
+    Private Sub frm_company_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Form1.Show()
+    End Sub
 
     Function LoadData(datap As String, currency As String) As Boolean
         dgw.Rows.Clear()
