@@ -62,3 +62,35 @@
 2025-01-02 08:52:12.6356|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH23OENH:00000001"}
 2025-01-02 08:52:17.9671|INFO|HavanoZimra.HavanoZimralib|Status Request sent
 2025-01-02 08:52:17.9671|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN8VVH23OEP2:00000001"}
+2025-01-02 15:45:05.7332|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2025-01-02 15:45:05.7855|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN9B14IKILJ9:00000001"}
+2025-01-02 15:45:12.3003|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2025-01-02 15:45:12.3003|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN9B14IKILL5:00000001"}
+2025-01-02 16:00:32.0234|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2025-01-02 16:00:32.0784|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN9B14IKIS5O:00000001"}
+2025-01-02 16:00:33.8765|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2025-01-02 16:00:33.8765|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN9B14IKIS76:00000001"}
+2025-01-02 16:08:16.5306|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2025-01-02 16:08:16.5876|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN9B14IKIVK5:00000001"}
+2025-01-02 16:08:18.2656|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2025-01-02 16:08:18.2656|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN9B14IKIVKL:00000001"}
+2025-01-02 16:33:07.9649|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2025-01-02 16:33:07.9989|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN9B14IKJAPV:00000001"}
+2025-01-02 16:33:09.7493|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2025-01-02 16:33:09.7493|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN9B14IKJARE:00000001"}
+2025-01-02 17:02:52.2685|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2025-01-02 17:02:52.3105|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN9B14IKJO51:00000001"}
+2025-01-02 17:02:56.0196|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2025-01-02 17:02:56.0196|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN9B14IKJO7C:00000001"}
+2025-01-02 17:04:53.5489|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2025-01-02 17:04:53.6159|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN9B14IKJP5R:00000001"}
+2025-01-02 17:04:56.4752|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2025-01-02 17:04:56.4752|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":903,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN9B14IKJP6G:00000001"}
+2025-01-02 17:05:12.4820|INFO|HavanoZimra.HavanoZimralib|Receipt Submitted
+2025-01-02 17:05:12.4820|INFO|HavanoZimra.HavanoZimralib|Invoice Successfully Sent
+2025-01-02 17:05:35.7844|INFO|HavanoZimra.HavanoZimralib|Receipt Submitted
+2025-01-02 17:05:35.7844|INFO|HavanoZimra.HavanoZimralib|Invoice Successfully Sent
+2025-01-02 17:06:32.7674|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2025-01-02 17:06:32.8994|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":905,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN9B14IKJPSC:00000001"}
+2025-01-02 17:06:35.7164|INFO|HavanoZimra.HavanoZimralib|Status Request sent
+2025-01-02 17:06:35.7164|INFO|HavanoZimra.HavanoZimralib|{"fiscalDayStatus":"FiscalDayCloseFailed","lastReceiptGlobalNo":905,"lastFiscalDayNo":21,"fiscalDayClosingErrorCode":"ReceiptsWithValidationErrors","operationID":"0HN9B14IKJPTJ:00000001"}

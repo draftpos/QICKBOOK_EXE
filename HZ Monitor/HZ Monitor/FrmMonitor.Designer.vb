@@ -177,6 +177,7 @@ Partial Class FrmMonitor
         '
         'tmr_start
         '
+        Me.tmr_start.Enabled = True
         Me.tmr_start.Interval = 5000
         '
         'PictureBox1

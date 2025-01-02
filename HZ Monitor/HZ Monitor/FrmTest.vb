@@ -3,7 +3,7 @@
 Public Class FrmTest
     Private Sub btnAddInvoice_Click(sender As Object, e As EventArgs) Handles btnAddInvoice.Click
         ' Define the data to insert
-        Dim txnId As String = "TXN12347"
+        Dim txnId As String = txtid.Text
         Dim customerName As String = "John Doe"
         Dim txnDate As String = Now.ToShortDateString
         Dim customerListId As String = "CL12345"
@@ -61,7 +61,7 @@ Public Class FrmTest
         Dim qty As Single = 1
         Dim rate As Decimal = 25
         Dim amount As Decimal = qty * rate
-        Dim txnId As String = "TXN12347"
+        Dim txnId As String = txtid.Text
         Dim vat As String = "15"
 
         ' SQL Insert statement

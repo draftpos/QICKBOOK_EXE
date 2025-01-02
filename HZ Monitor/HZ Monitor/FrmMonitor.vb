@@ -56,11 +56,16 @@ Public Class FrmMonitor
     End Sub
 
     Dim InvoiceRecieptNo As String = ""
+
+    Private Sub lblStatus_Click(sender As Object, e As EventArgs) Handles lblStatus.Click
+        'FrmTest.ShowDialog()
+    End Sub
+
     Dim OriginalInvoiceNo As String = ""
     Dim CreditNoteNo As String
     Private Sub tmr_start_Tick(sender As Object, e As EventArgs) Handles tmr_start.Tick
         StartSendingInvoice()
-        tmr_start.Stop()
+        'tmr_start.Stop()
     End Sub
 
     Private Sub btnImgExit_Click(sender As Object, e As EventArgs) Handles btnImgExit.Click
@@ -85,6 +90,7 @@ Public Class FrmMonitor
         btnStart.Text = "Start Fical Day"
         lblnotify.Text = "Waiting for Havano Fiscal request..."
         tmr_start.Enabled = True
+        tmr_start.Start()
     End Sub
     Function CheckFilesAndFolders() As String
         Dim startupPath As String = Application.StartupPath
@@ -150,6 +156,7 @@ Public Class FrmMonitor
                 lblStatus.Text = "Fiscal Day is Opened"
                 lblnotify.Text = "Waiting for Havano Fiscal request..."
                 tmr_start.Enabled = True
+                tmr_start.Start()
             End If
 
 
@@ -169,7 +176,7 @@ Public Class FrmMonitor
         MyNotifyIcon.ShowBalloonTip(1000)
         lblnotify.Text = "Waiting for Havano Fiscal request..."
         tmr_start.Enabled = True
-
+        tmr_start.Start()
         'FrmTest.ShowDialog()
     End Sub
     Private Async Sub btnClose_Click(sender As Object, e As EventArgs) Handles btnClose.Click
@@ -335,7 +342,9 @@ Public Class FrmMonitor
             Thread.Sleep(4000)
         Next
         lblnotify.Text = "Waiting for Havano Fiscal request..."
+        lblStatus.Text = "Fiscal Day Opened"
         'tmr_start.Start()
+        tmr_start.Enabled = True
     End Function
     Public Sub GetCompanyDetails()
         con = New SqlConnection(cs)
@@ -503,9 +512,11 @@ Public Class FrmMonitor
                 Console.WriteLine(id)
                 GetItemXML(id)
                 SendTax()
+                tmr_start.Enabled = True
                 Exit Sub
             Next
         End If
+
 
         If CheckCreditNote() Then
             mytable = "CreditMemo"
@@ -516,8 +527,10 @@ Public Class FrmMonitor
                 Console.WriteLine(id)
                 GetItemXML(id)
                 SendTax()
+                tmr_start.Enabled = True
                 Exit Sub
             Next
+
         End If
 
     End Sub
