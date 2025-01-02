@@ -2,6 +2,8 @@
 
 Public Class frmdgwrecords
     Private Sub frmdgwrecords_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'dgw.DefaultCellStyle.WrapMode = DataGridViewTriState.False
+
         DateTimePicker1.Value = Now.Date.ToString()
         DateTimePicker2.Value = Now.Date.ToString()
         LoadData("", "")
