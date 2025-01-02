@@ -422,6 +422,7 @@ Public Class Form1
         '  ProgressBar1.Visible = True
         ' Timer1.Enabled = True
         PictureBox1.SizeMode = PictureBoxSizeMode.AutoSize
+        ReadConfig()
         'pnl_login.BringToFront()
         'pnlsqlsettings.BringToFront()
         FetchSalesInvoiceDetails.Main()

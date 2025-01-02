@@ -84,7 +84,7 @@ WHERE
         Dim mysqlparameter As New List(Of SqlParameter)()
         mysqlparameter.Add(New SqlParameter("@InvNo", InvNo))
         Dim dt As DataTable = Crud(sql, mysqlparameter)
-        Dim rpt As New DReport1 'The report you created.
+        Dim rpt As New DReport1 'Therpt you created.
         Dim myConnection As SqlConnection
         Dim MyCommand, MyCommand1, mycmd3, mycmd4 As New SqlCommand()
         Dim myDA, myDA1, myda3, myda4 As New SqlDataAdapter()
@@ -132,15 +132,27 @@ WHERE
         rpt.Subreports(1).SetDataSource(myDS)
         rpt.Subreports(2).SetDataSource(myDS)
         rpt.SetDataSource(myDS)
-        'rpt.SetParameterValue("p1", rdr.GetValue(0).ToString())
-        'rpt.SetParameterValue("p2", rdr.GetValue(1).ToString())
-        'rpt.SetParameterValue("p3", rdr.GetValue(2).ToString())
-        'rpt.SetParameterValue("p4", rdr.GetValue(3).ToString()) : rpt.SetParameterValue("MainParaterms", $"Terms and Conditions {companyInfo.QTC}")
-        'rpt.SetParameterValue("cusdata", "")
-        'rpt.SetParameterValue("vatno", companyInfo.VatNo)
-        'rpt.SetParameterValue("fiscadata", "")
-        'rpt.SetParameterValue("currency", dtable2(0)("CurrencyCode"))
-
+        rpt.SetParameterValue("VatFlag", VatFlag)
+        rpt.SetParameterValue("Tax5", Tax5)
+        rpt.SetParameterValue("Tax15", Tax15)
+        rpt.SetParameterValue("Tax0", Tax0)
+        rpt.SetParameterValue("TaxE", TaxE)
+        rpt.SetParameterValue("TIN", TIN)
+        rpt.SetParameterValue("VAT", VAT)
+        rpt.SetParameterValue("activationKey", activationKey)
+        rpt.SetParameterValue("deviceSerialNo", deviceSerialNo)
+        rpt.SetParameterValue("DeviceID", DeviceID)
+        rpt.SetParameterValue("DeviceModelName", DeviceModelName)
+        rpt.SetParameterValue("DeviceModelVersion", DeviceModelVersion)
+        rpt.SetParameterValue("ZimraServer", ZimraServer)
+        rpt.SetParameterValue("VerificationServer", VerificationServer)
+        rpt.SetParameterValue("ReceiptCounter", ReceiptCounter)
+        rpt.SetParameterValue("ReceiptGlobalNo", ReceiptGlobalNo)
+        rpt.SetParameterValue("ReceiptPrintForm", ReceiptPrintForm)
+        rpt.SetParameterValue("FiscalDayNo", FiscalDayNo)
+        rpt.SetParameterValue("FiscalDate", FiscalDate)
+        rpt.SetParameterValue("PreviousReceiptHash", PreviousReceiptHash)
+        rpt.SetParameterValue("FiscalDayStatus", FiscalDayStatus)
         frmReport.CrystalReportViewer1.ReportSource = rpt
         frmReport.ShowDialog()
         Return True '   Exit Sub
@@ -229,7 +241,7 @@ WHERE
         Dim mysqlparameter As New List(Of SqlParameter)()
         mysqlparameter.Add(New SqlParameter("@d1", InvNo))
         Dim dt As DataTable = Crud(sql, mysqlparameter)
-        Dim rpt As New creditnote 'The report you created.
+        Dim rpt As New creditnote 'Therpt you created.
         Dim myConnection As SqlConnection
         Dim MyCommand, MyCommand1, mycmd3, mycmd4 As New SqlCommand()
         Dim myDA, myDA1, myda3, myda4 As New SqlDataAdapter()
@@ -279,6 +291,10 @@ WHERE
         rpt.Subreports(2).SetDataSource(myDS)
         '  rpt.Subreports(3).SetDataSource(myDS)
         rpt.SetDataSource(myDS)
+        ' report.SetParameterValue("FiscalDate", FiscalDate)
+        rpt.SetParameterValue("FiscalDayNo", FiscalDayNo)
+         rpt.SetParameterValue("deviceSerialNo", deviceSerialNo)
+        rpt.SetParameterValue("DeviceID", DeviceID)
         frmReport.CrystalReportViewer1.ReportSource = rpt
         frmReport.ShowDialog()
         Return True '   Exit Sub
