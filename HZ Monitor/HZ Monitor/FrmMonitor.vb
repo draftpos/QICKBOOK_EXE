@@ -83,6 +83,7 @@ Public Class FrmMonitor
         MessageBox.Show(Me, msg, "HavanoZimra Monitor", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
         btnStart.Text = "Start Fical Day"
+        lblnotify.Text = "Waiting for Havano Fiscal request..."
         tmr_start.Enabled = True
     End Sub
     Function CheckFilesAndFolders() As String
@@ -147,7 +148,8 @@ Public Class FrmMonitor
                 Exit Sub
             Else
                 lblStatus.Text = "Fiscal Day is Opened"
-
+                lblnotify.Text = "Waiting for Havano Fiscal request..."
+                tmr_start.Enabled = True
             End If
 
 
@@ -165,6 +167,7 @@ Public Class FrmMonitor
             tmr_start.Enabled = False
         End Try
         MyNotifyIcon.ShowBalloonTip(1000)
+        lblnotify.Text = "Waiting for Havano Fiscal request..."
         tmr_start.Enabled = True
 
         'FrmTest.ShowDialog()
@@ -185,8 +188,8 @@ Public Class FrmMonitor
             MessageBox.Show(Me, resMsg, "HavanoZimra Monitor", MessageBoxButtons.OK, MessageBoxIcon.Information)
             If resMsg = "FiscalDayClosed" Then
                 hm.UpdateCloseDay()
+                tmr_start.Enabled = False
             End If
-            tmr_start.Enabled = False
         Catch ex As Exception
             MessageBox.Show(Me, ex.Message, "HavanoZimra Monitor Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             btnClose.Text = "Close Fiscal Day"
@@ -300,7 +303,6 @@ Public Class FrmMonitor
         Dim response As String = ""
         'Dim CurrRate As Decimal = 1.0
         If item_xml = "<ITEMS></ITEMS>" Then
-            tmr_start.Start()
             Exit Function
         End If
         item_xml = item_xml.Replace("&", "and")
@@ -333,7 +335,7 @@ Public Class FrmMonitor
             Thread.Sleep(4000)
         Next
         lblnotify.Text = "Waiting for Havano Fiscal request..."
-        tmr_start.Start()
+        'tmr_start.Start()
     End Function
     Public Sub GetCompanyDetails()
         con = New SqlConnection(cs)

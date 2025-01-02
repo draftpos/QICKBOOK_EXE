@@ -8,7 +8,8 @@
     Partial Friend Class MyApplication
         Private Sub MyApplication_StartupNextInstance(sender As Object,
                                                       e As ApplicationServices.StartupNextInstanceEventArgs) Handles Me.StartupNextInstance
-            MessageBox.Show(Me, "Hz Monitor  is already running", "Hz Monitor", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            'MessageBox.Show("Hz Monitor  is already running", "Hz Monitor", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            FrmMonitor.Show()
         End Sub
     End Class
 

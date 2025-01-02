@@ -132,7 +132,7 @@ Partial Class FrmMonitor
         Me.lblnotify.Name = "lblnotify"
         Me.lblnotify.Size = New System.Drawing.Size(393, 51)
         Me.lblnotify.TabIndex = 5
-        Me.lblnotify.Text = "Waiting for Havano Fiscal request..."
+        Me.lblnotify.Text = "Hz Monitor Stopped"
         Me.lblnotify.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'GroupBox1
