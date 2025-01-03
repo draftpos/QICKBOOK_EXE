@@ -26,9 +26,14 @@ Public Class frm_credinot_lst
         LoadData("")
 
     End Sub
+    Dim sumTotal As Double = 0
+    Dim vatTotal As Double = 0
+    Dim totalExcl As Double = 0
     Function LoadData(datap As String) As Boolean
         dgw.Rows.Clear()
-
+        sumTotal = 0
+        vatTotal = 0
+        totalExcl = 0
         ' Define the SQL query
         Dim sql As String = "
         SELECT 
@@ -87,9 +92,7 @@ Public Class frm_credinot_lst
         Dim dt As DataTable = Crud(sql, parameters)
 
         ' Initialize totals
-        Dim sumTotal As Double = 0
-        Dim vatTotal As Double = 0
-        Dim totalExcl As Double = 0
+
 
         ' Process the results
         For Each row As DataRow In dt.Rows.Cast(Of DataRow).Reverse()
@@ -105,11 +108,11 @@ Public Class frm_credinot_lst
             totalExcl += Val(row("Total_Exclusive"))
             vatTotal += Val(row("TotalVat"))
         Next
-
+        LoadData_creditnot_on_salesinvoice(TextBox1.Text, "")
         ' Update labels
-        lbltotalExcl.Text = totalExcl.ToString("N2")
-        lbltotalsum.Text = sumTotal.ToString("N2")
-        lbltotalvat.Text = vatTotal.ToString("N2")
+        ' lbltotalExcl.Text = totalExcl.ToString("N2")
+        'lbltotalsum.Text = sumTotal.ToString("N2")
+        'lbltotalvat.Text = vatTotal.ToString("N2")
 
         ' Return True if data exists, otherwise False
         Return dt.Rows.Count > 0
@@ -149,5 +152,111 @@ Public Class frm_credinot_lst
     Private Sub GelButton1_Click(sender As Object, e As EventArgs) Handles GelButton1.Click
         ExportToExcel(dgw, saveFileDialog)
     End Sub
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Function LoadData_creditnot_on_salesinvoice(searchText As String, selectedCurrency As String) As Boolean
+        '       dgw.Rows.Clear()
+        Dim sql As String = "
+    SELECT 
+        i.[id],
+        i.[TxnId],
+        i.[CustomerName],
+        i.[TxnDate],
+        i.[CustomerListId],
+        i.[Amount],
+        i.[AppliedAmount],
+        i.[Subtotal],
+        i.[SalesTaxPercentage],
+        i.[SalesTaxTotal],
+        i.[BalanceRemaining],
+        i.[Currency],
+        i.[ExchangeRate],
+        i.[BalanceRemainingInHomeCurrency],
+        i.[InvoiceNumber],
+        i.[HavanoZimraStatus],
+        SUM(CASE WHEN LOWER(it.vat) = 's' OR RTRIM(it.vat) = '15' THEN (15.0 / 115.0) * it.Amount ELSE 0 END) AS TotalVat,
+        SUM(it.Amount) AS Total,
+        SUM(it.Amount) - SUM(CASE WHEN LOWER(it.vat) = 's' OR RTRIM(it.vat) = '15' THEN (15.0 / 115.0) * it.Amount ELSE 0 END) AS Total_Exclusive
+    FROM [Invoice] i
+    INNER JOIN [Item] it ON it.TxnId = i.TxnId
+    WHERE i.[TxnDate] >= @StartDate AND i.[TxnDate] <= @EndDate AND i.[Subtotal] < 0"
+
+        ' Add optional filters
+        If Not String.IsNullOrWhiteSpace(searchText) Then
+            sql += " AND (i.[InvoiceNumber] = @SearchText OR i.[TxnId] LIKE '%' + @SearchText + '%')"
+        End If
+        If Not String.IsNullOrWhiteSpace(selectedCurrency) Then
+            sql += " AND i.[Currency] = @Currency"
+        End If
+
+        ' Group by Invoice fields
+        sql += "
+    GROUP BY 
+        i.[id],
+        i.[TxnId],
+        i.[CustomerName],
+        i.[TxnDate],
+        i.[CustomerListId],
+        i.[Amount],
+        i.[AppliedAmount],
+        i.[Subtotal],
+        i.[SalesTaxPercentage],
+        i.[SalesTaxTotal],
+        i.[BalanceRemaining],
+        i.[Currency],
+        i.[ExchangeRate],
+        i.[BalanceRemainingInHomeCurrency],
+        i.[InvoiceNumber],
+        i.[HavanoZimraStatus]"
+
+        ' Prepare parameters
+        Dim parameters As New List(Of SqlParameter) From {
+        New SqlParameter("@StartDate", DateTimePicker1.Value),
+        New SqlParameter("@EndDate", DateTimePicker2.Value)
+    }
+        If Not String.IsNullOrWhiteSpace(searchText) Then
+            parameters.Add(New SqlParameter("@SearchText", searchText))
+        End If
+        If Not String.IsNullOrWhiteSpace(selectedCurrency) Then
+            parameters.Add(New SqlParameter("@Currency", selectedCurrency))
+        End If
+
+        ' Execute query
+        Dim dt As DataTable = Crud(sql, parameters)
+
+        ' Populate DataGridView
+        For Each row As DataRow In dt.Rows.Cast(Of DataRow).Reverse()
+            Dim statusDesc As String = If(SafeConvertToBoolean(row("HavanoZimraStatus")), "Submitted", "Pending")
+            dgw.Rows.Add(row("InvoiceNumber"), row("TxnId"), row("CustomerName"), row("TxnDate"), row("TotalVat"), row("Total_Exclusive"), row("Total"),
+                   statusDesc)
+            sumTotal += Convert.ToDouble(row("Total"))
+            totalExcl += Convert.ToDouble(row("Total_Exclusive"))
+            vatTotal += Convert.ToDouble(row("TotalVat"))
+        Next
+
+        ' Update labels
+        lbltotalExcl.Text = totalExcl.ToString("N2")
+        lbltotalsum.Text = sumTotal.ToString("N2")
+        lbltotalvat.Text = vatTotal.ToString("N2")
+
+        ' Return True if records found
+        Return dt.Rows.Count > 0
+    End Function
 
 End Class
